@@ -1,0 +1,18 @@
+{
+  "title": "11 January // Lecture 1",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "#Comp 410: Data Structures and Algorithms\nDr. David Stotts\n\n###Office\nFB 144\nTTH 13h-14h30\n919.590.6133\n\n**help-comp410@cs.unc.edu** for course questions/help\n\nClass site: [www.cs.unc.edu/~stotts/COMP410-s17/](www.cs.unc.edu/~stotts/COMP410-s17/)\nHW on Calendar, Assignments page\nSubmit via Sakai\nExam: Star Wars day at 12h\n\n###Code\nProgramming in Java (n'importe quel IDE)\nTypical assignment: implement data structure; main method tests data structure\n\"Oracle\" test suites on SAKAI\nWhen zipping, include everything (except the specific test.java files)"
+    },
+    {
+      "type": "markdown",
+      "data": "####BubbleSort"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function bubbleSort (vals) {\n    var temp;\n    var len = vals.length;\n    for (var i = 0; i < len - 1; i++) {\n        for (var k = 0; k < len - i; k++) {\n            if (vals[k] > vals[k+1]) {\n                temp = vals[k];\n                vals[k] = vals[k+1];\n                vals[k+1] = temp;\n            }\n        }\n    }\n    return vals;\n}"
+    }
+  ]
+}

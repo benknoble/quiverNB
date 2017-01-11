@@ -1,0 +1,10 @@
+{
+  "title": "Test",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$"
+    }
+  ]
+}

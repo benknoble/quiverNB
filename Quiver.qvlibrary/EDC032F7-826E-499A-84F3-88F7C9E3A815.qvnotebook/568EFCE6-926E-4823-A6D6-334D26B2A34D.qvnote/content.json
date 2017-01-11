@@ -1,0 +1,14 @@
+{
+  "title": "Bash",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "##Git Tips\n\nThis is useful to operate on each branch"
+    },
+    {
+      "type": "code",
+      "language": "sh",
+      "data": "for branch in `ls .git/refs/heads`; do\n    git checkout $branch\n    #operate on branch, like git merge or git push\ndone; git checkout master"
+    }
+  ]
+}
