@@ -12,7 +12,7 @@
     {
       "type": "code",
       "language": "javascript",
-      "data": "function bubbleSort (vals) {\n    var temp;\n    var len = vals.length;\n    for (var i = 0; i < len - 1; i++) {\n        for (var k = 0; k < len - i; k++) {\n            if (vals[k] > vals[k+1]) {\n                temp = vals[k];\n                vals[k] = vals[k+1];\n                vals[k+1] = temp;\n            }\n        }\n    }\n    return vals;\n}"
+      "data": "function bubbleSort (vals) {\n  var temp;\n  var len = vals.length;\n  for (var i = 0; i < len - 1; i++) {\n    for (var k = 0; k < len - i; k++) {\n        if (vals[k] > vals[k+1]) {\n            temp = vals[k];\n            vals[k] = vals[k+1];\n            vals[k+1] = temp;\n        }\n    }\n  }\n  return vals;\n}"
     }
   ]
 }

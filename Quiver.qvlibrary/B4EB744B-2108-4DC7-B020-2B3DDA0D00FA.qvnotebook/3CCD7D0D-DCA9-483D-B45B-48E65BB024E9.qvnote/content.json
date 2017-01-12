@@ -1,0 +1,27 @@
+{
+  "title": "12 January // Introduction",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "#Math 383: Intro to Differential Equations\nDavid Adalsteinsson\n\n##Office\ndavid@unc.edu\nPhillips 312\n15h30-16h30 TTh\n\nDo not sit in row 3,6,9\n\n###Work\nWebAssign, Worksheet, Weekly written problem"
+    },
+    {
+      "type": "markdown",
+      "data": "#ODEs (Differential Equations)\nConnected to IVPs (Initial Value Problems)\n- Simplest: $y'=1$\n- Function described by property rather than mapping of values $x \\to \\mathbb{R}$\n- $\\int_{t_0} ^ t y'dt = \\int_{t_0} ^ t 1 dt$ gives $y(t)=y(t_0) + (t-t_0)$\n- Class of lines with slope one\n- With intial point $(t_0, y(t_0))$, you can identify unique solution\n- $y' = f(t)$\n  - $y(t) = \\int f(t)dt + C$\n- $y' = y$ (recurrence relation?)\n  - Solving a system of functions\n  - $\\frac{dy}{dt} = y$\n  - Can create a direction field (slope field)\n  - Solution connects the dots"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$y'(t) = y^2 - 2y + 3 \\iff$\n$y'(t) = (y-3)(y+1) $\nCritical points when $y'(t)$ is $0$. Occurs when $y = 1,3$"
+    },
+    {
+      "type": "markdown",
+      "data": "###Analytically"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$1.$\n$y'=\\lambda y.$\n$\\frac{dy}{dt} = \\lambda y.$\n$dy = \\lambda y\\cdot dt.$\n$\\frac{dy}y = \\lambda dt.$\nvia integration $\\log y = \\lambda t + C.$\n\nAlternatively, $\\frac{y'}y = \\lambda$ gives $\\log y = \\lambda t + C.$\n\nFinally, $y = Ce^{\\lambda t}.$\n\n$2.$\n$y' = y + 1$\nIntegrating Factors\n$y'-y = 1$\nMultiply by $\\mu(t)$\n$\\mu(t)y'-\\mu(t)y = \\mu(t)$ (Looks like the product rule)\nPick $\\mu(t)$ such that $\\mu'(t) = -\\mu(t)$, e.g. $\\mu(t) = e^{-t}$\n\nThen $e^{-t}y'(t) - e^{-t}y(t) = e^{-t}$\n$\\therefore (e^{-t}y(t))' = e^{-t}$ and $e^{-t}y(t) = -e^{-t} + C$.\nFinally, $y(t) = \\frac{-e^{-t} + C}{e^{-t}} = -1 + C e^t$"
+    }
+  ]
+}
