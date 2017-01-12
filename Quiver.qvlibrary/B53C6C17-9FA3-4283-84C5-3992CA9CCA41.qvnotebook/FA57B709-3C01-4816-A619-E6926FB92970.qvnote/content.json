@@ -1,0 +1,128 @@
+{
+  "title": "18 January // Weiss 1-3",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "#Chapter 1\nSome simple math review\n\n##Exponents"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$x^ax^b=x^{a+b}$\n$\\frac{x^a}{x^b}=x^{a-b}$\n$({x^a})^b=x^{ab}$\n$x^n+x^n=2x^n\\neq x^{2n}$\n$2^n+2^n=2^{n+1}$"
+    },
+    {
+      "type": "markdown",
+      "data": "##Logarithms\nBy convention, all logarithms are $\\log_2$"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$x^a=b \\iff \\log_xb=a$\n$\\log_ab=\\frac{\\log_cb}{\\log_ca}$  $\\forall a,b,c \\gt 0, a \\neq1$\n$\\log ab=\\log a+\\log b$   $\\forall a,b \\gt 0$\n$\\log\\frac{a}{b}=\\log a-\\log b$\n$\\log({a^b})=b\\cdot \\log a$\n$\\log x < x$   $\\forall x \\gt 0$\n$\\log1=0$      $\\log2=1$     $\\log1024=0$      $\\log1048576=20$"
+    },
+    {
+      "type": "markdown",
+      "data": "##Series"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$\\sum\\limits_{i=0} ^ N 2^i = 2^{N+1} - 1$\n\n$\\sum\\limits_{i=0} ^ N a^i = \\frac{a^{N+1} - 1}{a-1}$\n\n$\\sum\\limits_{i=0} ^ \\infty a^i = \\frac1{1-a} \\forall a \\mid 0\\lt a\\lt 1 $\n\n$\\sum\\limits_{i=1} ^ \\infty \\frac{i}{2^i} = 2 $\n\n$\\sum\\limits_{i=1} ^ N i = \\frac{N(N+1)}{2} \\approx \\frac{N^2}2$\n\n$\\sum\\limits_{i=1} ^ N i^2 = \\frac{N(N+1)(2N+1)}{6} \\approx \\frac{N^3}3$\n\n$\\sum\\limits_{i=1} ^ N i^k  \\approx \\frac{N^{k+1}}{|k+1|} \\forall k\\neq -1$\n\n$\\sum\\limits_{i=1} ^ N \\frac1{i} \\approx \\log_eN = \\ln N$\n\n$\\sum\\limits_{i=1} ^ N f(N) = Nf(N)$\n\n$\\sum\\limits_{i=n_0} ^ N f(i) = \\sum\\limits_{i=1} ^ N f(i) - \\sum\\limits_{i=1} ^ {n_0-1} f(i)$"
+    },
+    {
+      "type": "markdown",
+      "data": "##Modular Arithmetic\n$a$ is congruent to $b$ modulo $n$, written $a \\equiv b \\left(\\mod n\\right)$, denotes that $a \\mod n = b \\mod n$."
+    },
+    {
+      "type": "markdown",
+      "data": "##Proofs\n###Proof by Induction\n1. Prove *base case*\n2. Use the **inductive hypothesis**\n  - Typically, assume true for some limit $k$, prove holds for $k+1$ proves theorem for finite $k$\n1. $\\square$\n\n###Proof by Countexample\nGive an example that proves a statement is false. $\\square$\n\n###Proof by Contradiction\n1. Assume the theorem is false\n2. Show that this assumption $\\implies$ some known propery is false\n3. $\\therefore$ (1) is true $\\square$"
+    },
+    {
+      "type": "markdown",
+      "data": "##Recursion"
+    },
+    {
+      "type": "diagram",
+      "diagramType": "flow",
+      "data": "st=>start: Start\ninput=>inputoutput: Input Parameters\nfunc=>operation: Recursive Function Call\nend=>end: End\nbaseTest=>condition: Base Case?\nreduce=>operation: Reduce Problem\nreturn=>inputoutput: Return value\n\nst->func->input->baseTest\nbaseTest(yes)->return->end\nbaseTest(no)->reduce->func"
+    },
+    {
+      "type": "markdown",
+      "data": "##Java Generics\n`Collection<? extends Shape>` means whatever type parameter's given to `Collection` is-a `Shape`.\n`Collection<? super Shape>` means whatever type parameter's given to `Collection` must be a superclass of `Shape`."
+    },
+    {
+      "type": "markdown",
+      "data": "---\n#Chapter 2\n##Definitions\n**Upper bounds (big-Oh)** $T(n) = O(f(n))$ if there are positive constants $c$ and $n_0$ such that $T(n) \\le cf(n)$ when $n \\ge n_0$\n\n**Lower bounds** $T(n) = \\Omega (g(n))$ if there are postive constants $c$ and $n_0$ such that $T(n) \\ge cg(n)$ when $n \\ge n_0$\n\n**Tight bounds** $T(n) = \\Theta (h(n)) \\iff T(n) = O(h(n)) \\land T(n) = \\Omega(h(n))$\n\n**Loose? bounds (little-oh)** $T(n) = o(p(n))$ if for all positive constants $c$ there exists an $n_0$ such that $T(n) \\lt cp(n)$ when $n \\gt n_0$. Less formally, $T(n) = o(p(n))$ if $T(n) = O(p(n)) \\land T(n) \\neq \\Theta (p(n))$\n\n##General Rules\n1. `for` loops is *iterations* times runnng time of what's inside\n2. nested loops: go inside out\n3. consecutive statements add\n4. `if/else` statement: condition plus max(running time of each branch)"
+    },
+    {
+      "type": "markdown",
+      "data": "###Maximum Contiguous Subsequence Sum"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "/**\n * Cubic maximum contiguous subsequence sum algorithm\n */\npublic static int masSubSum1(int[] a) {\n    int maxSum = 0;\n    \n    for (int i = 0; i < a.length; i++) {\n        for (int j = 0; j < a.length; j++) {\n            int thisSum = 0;\n            \n            for (int k = i; k <= j; k++)\n                thisSUm += a[k];\n            \n            if (thisSum > maxSum)\n                maxSum = thisSum;\n        }\n    }\n    \n    return maxSum;\n}\n\n/**\n * Quadratic maximum contiguous subsequence sum algorithm\n */\npublic static int maxSubSum2(int[] a) {\n    int maxSum = 0;\n    \n    for (int i = 0; i < a.length; i++) {\n        int thisSum = 0;\n        for (int j = i; j < a.length; j++) {\n            thisSum += a[j];\n            \n            if (thisSum > maxSum)\n                maxSum = thisSum;\n        }\n    }\n    \n    return maxSum;\n}\n\n/**\n * Recursive maximum contiguous subsequence sum algorithm\n * Finds maximum sum in subarray spanning a[left..right]\n * Does not attempt to maintain actual best sequence\n */\nprivate static int maxSumRec(int[] a, int left, int right) {\n    if (left == right)\n        if (a[left] > 0)\n            return a[left];\n        else\n            return 0;\n    \n    int center = (left + right) / 2;\n    int maxLeftSum = maxSumRec(a, left, center);\n    int maxRightSum = maxSumeRec(a, center + 1, right);\n    \n    int maxLeftBorderSum = 0, leftBorderSum = 0;\n    for (int i = center; i >= left; i--) {\n        leftBorderSum += a[i];\n        if (leftBorderSum < maxLeftBorderSum) {\n            maxLeftBorderSum = leftBorderSum;\n        }\n    }\n    \n    int maxRightBorderSum = 0, rightBorderSum = 0;\n    for (int i = center + 1; i <= right; i++) {\n        rightBorderSum += a[i];\n        if (rightBorderSum > maxRightBorderSum) {\n            maxRightBorderSum = rightBorderSum;\n        }\n    }\n    \n    return Math.max(Math.max(maxLeftSum, maxRightSum), maxLeftBorderSum + maxRightBorderSum);\n}\n\npublic static int maxSubSum3(int[] a) {\n    return maxSumeRec(a, 0, a.length - 1);\n}\n\n/**\n * Linear-time maximum contiguous subsequence sum algorithm\n */\npublic static int maxSubSum4(int[] a) {\n    int maxSum = 0, thisSum = 0;\n    \n    for (int i = 0; i < a.length; i++) {\n        thisSum += a[j];\n        \n        if (thisSum > maxSum)\n            maxSum = thisSum;\n        else if (thisSum < 0)\n            thisSum = 0;\n    }\n    \n    return maxSum;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "###Binary Search"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "/**\n * Binary search.\n * @return index where item is found, or -1 if not found.\n * PRE: a is sorted\n */\npublic static <T extends Comparable<? super T>> int binarySearch(T[] a, T x) {\n    int low = 0, high = a.length - 1;\n    \n    while (low <= high) {\n        int mid = (low + high) / 2;\n        \n        if (a[mid].compareTo(x) < 0)\n            low = mid + 1;\n        else if (a[mid].compareTo(x) > 0)\n            high = mid - 1;\n        else\n            return mid;\n    }\n    \n    return -1;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "###Euclid's GCD"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "public static long gcd(long m, long n) {\n    while (n != 0) {\n        long rem = m % n;\n        m = n;\n        n = rem;\n    }\n    return m;\n    //iterations is at most 2 log N = O(log N)\n    //because M>N => M mod N < M/2\n    //worst (consecutive fib) \\approx 1.44 log N\n    //avg (12 ln 2 ln N)/(pi^2) + 1.47\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "###Exponentiation"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "public static long pow(long x, int n) {\n    if (n == 0)\n        return 1;\n    if (n == 1)\n        return x;\n    if (n % 2 == 0)\n        return pow(x * x, n / 2);\n    else\n        return pow(x * x, n / 2) * x;\n    //2 log N = O(log N)\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "---\n#Chapter 3\n##Abstract Data Types (ADTs)\n- Set of objects together with a set of operations\n- Mathematical abstraction\n- Not *how* implemented (no implementation details)\n- What operations supported for which ADT is a *design decision*\n\n###List ADT\nDefinitions:\n- General list of form $A_0, A_1, A_2, ..., A_{N-1}$\n- Size = $N$; **empty list** has size 0\n- Position of element $A_i$ is $i$; predecessor ($i \\gt 0$) is $A_{i-1}$; sucessor ($i \\lt N$) is $A_{i+1}$\n- $A_0$ is first element; $A_{N-1}$ is last element\n- First element has no predecessor; last element has no sucessor\n- Elements may be any arbitrarily complex type $T$\n\nPopular Operations:\n- `printList`: print out the list\n- `makeEmpty`: empty the list\n- `find`: return the position of the first occurrence of an item\n- `insert` and `remove`: insert and remove some element $A$ from some position $k$\n- `findKth`: returns the element at a specified position ($A_k$, $0 \\le k \\lt N$)\n\n####Array\n- Use a simple array structure, and expand and copy as necessary to solve fixed-size problem\n- `printList` is $O(N)$ in time, and `findKth` is $O(1)$ **BUT** `insert` and `remove` are potentially extremely expensive (avg./worst case $O(N)$)\n- Perfect when insertions and deletions only occur at the high end of list, and then only `findKth` operations are performed.\n- When you need insertions and deletions throughout the list, consider the *linked list*\n\n####Simple (Singly) Linked List\n- Built of a series of nodes, where each node contains an element $A_i$ of type $T$ and a link `next` to the next node.\n- Last node has `next == null`.\n- `printList` or `find`: start at first node and traverse via `next` link, an $O(N)$ operation\n- `findKth` now has to traverse the list in the obvious manner, requiring $O(N)$ time in the worst case\n- `remove` is the result of one `next` reference change, *i.e.* $O(1)$ time, but requires finding the reference to change ($O(N)$)\n- `insert` simply retrieves a new node and manipulates two references, also $O(1)$ time, but has same problem as `remove` ($O(N)$)\n\nSo...\n\n####Doubly Linked List\n- Singly Linked List *but* each node also maintains a link to its predecessor\n\n####Java Collections API Implementations\n- `java.util.Collection<T> extends Iterable<T>` interface: \n  - `int size()`\n  - `boolean isEmpty()`\n  - `boolean contains(T x)`\n  - `boolean remove(T x)`\n  - `boolean add(T x)`\n- `java.util.List<T> extends Collection<T>` interface:\n  - `T get(int i`\n  - `T set(int i, T x)`\n  - `void add(int i, T x)`\n  - `void remove(int i)`\n- `java.util.ArrayList<T> implements List<T>` class:\n  - Array-backed implementation means `get` and `set` are constant time, but insertions/removals are expensive\n- `java.util.LinkedList<T> implements List<T>` class:\n  - Doubly-linked list implementation gives constant first/last access, insertions/removals are cheap, but `get` can be expensive\n  - Provides `addFirst`, `removeFirst`, `addLast`, `removeLast`, `getFirst`, `getLast` methods"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "public static void makeListEnd(List<Integer> l, int N) {\n    l.clear;\n    for (int i = 0; i < N; i++)\n        l.add(i);\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Insertions at the end are $O(N)$ for both `ArrayList` and `LinkedList`."
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "public static void makeListFront(List<Integer> l, int N) {\n    l.clear();\n    for (int i = 0; i < N; i++)\n        l.add(0,i);\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Insertions at the front are $O(N)$ for `LinkedList`, but $O(N^2)$ for `ArrayList`"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "public static int sumFor(List<Integer> l) {\n    int sum = 0;\n    for (int i = 0; i < l.size(); i++)\n        sum += l.get(i);\n        //normal for loop is O(N) for ArrayList, but O(N^2) for LinkedList because of get method\n    return sum;\n}\n\npublic static int sumForEach(List<Integer> l) {\n    int sum = 0;\n    for (int i : l)\n        sum += i;\n        //enhanced for loop means use of iterator, which cuts cost down to O(N) for any list\n    return sum;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Both `ArrayList` and `LinkedList` are inefficient for searches.\n\nImplementation of `ArrayList` on pp. 69-70, `LinkedList` on pp. 77-78. Note the use of sentinel nodes in the `LinkedList`."
+    },
+    {
+      "type": "markdown",
+      "data": "###Stack ADT\nDefinitions:\n- List with the restriction that insertions and removals occur only at the **top**, *i.e.* the end of the list\n- `push` and `pop`\n- LIFO (last in, first out)\n\nPopular Implementations:\n- LinkedList\n  - Singly-linked list\n  - `pop` deletes and returns front of the list\n  - `top` (or `peek`) examines the element at the front of the list\n  - `push` inserts at the front of the list\n- Array\n  - Uses an internal array and integer index to represent the stack and the position of the top\n\n####Applications\n**Balancing Symbols**\nFor the balancing of parens, braces, and brackets (ignore other characters)\n1. Make empty Stack\n2. Read << EOF\n3. If {[(, push\n4. If }]) and empty, report error\n5. Otherwise, pop\n6. If the popped value is not the corresponding value, report error\n7. At EOF, report error if Stack is not empty\n\n**Postfix Expressions (*i.e.* Reverse Polish Notation)**\nPush numbers onto stack, operators pop them and operate on them, pushing the result\n\n**Infix to Postfix**\nImmediately put operands onto output\nPush operators on the stack\nStack left parens\nOn right paren, pop/write symbols til left paren found, which is popped\nOn operators and left paren, pop and write symbols until we find one of lower priority, **but** never remove a '(' unless processing a ')', then push the new operator\nWhen EOF reached, pop and write the rest of the stack\n\n**Method Calls**\nStore information on top of stack\nTransfer control to new method\nReturn is a pop\n\n###Queue ADT\nDefinitions:\n - List where insertion is done at one end and removal at the other\n - FIFO (first in, first out)\n\nPopular Implementations:\n - Array\n   - array, front/back indices, size\n   - can be **circular**\n - LinkedList\n\n####Applications\nPrinter queue\nLines\nComputer networks"
+    }
+  ]
+}

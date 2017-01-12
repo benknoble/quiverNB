@@ -23,7 +23,7 @@
     },
     {
       "type": "text",
-      "data": "<div>Code Cell</div><div><br></div>"
+      "data": "<h3>Code Cell</h3>"
     },
     {
       "type": "code",
