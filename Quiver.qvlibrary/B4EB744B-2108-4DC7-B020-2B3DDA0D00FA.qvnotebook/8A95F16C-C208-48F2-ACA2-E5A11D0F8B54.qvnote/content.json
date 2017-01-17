@@ -1,0 +1,10 @@
+{
+  "title": "17 January // Lecture 2",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$ty'+2y=4t^2$ ($\\star$)\nHas form $y'+py=g$\n\nFirst trick: multiply by $\\mu$ to shoehorn into product rule\n$\\mu' = \\mu p$\n$\\mu(t) = e^{\\int p(t)dt}$\n$(\\mu y)' = \\mu g$ because multiplying gives $(\\mu y' + \\mu py = \\mu g) \\equiv (\\mu y' + \\mu ' y = \\mu g)$\n$\\mu y = \\int \\mu g + C$\n$y(t) = \\frac{1}{\\mu(t)} \\left[\\int \\mu(s)g(s)ds +C\\right]$\n\nAlternatively,\n$\\int _{t_0} ^ t (\\mu y)' ds = \\int _{t_0} ^ t (\\mu g)(s)ds$, giving constant $C = \\mu(t_0)y(t_0)$, which incorporates the initial conditions.\n\nFor ($\\star$),\nthis gives $p = \\frac 2 t, g = 4t$. Then $\\mu = e^{\\int \\frac {2dt} t} = e^{2\\log t} = t^2$. Then we have $t^2y' + 2ty = 4t^3$, or $(t^2y)' = 4t^3.$\nIntegrating gives $\\int _{t_0} ^ t (s^2y)ds = \\int _{t_0} ^ t 4s^3ds$ which results in $y(t) = \\frac {t^4 + 1}{t^2}$ for $t_0 = 1, y(t_0) = 2$.\n\nSecond trick: Separable equation (so-called because you separate a function from it's dependents)\nGiven a relation between $y'(t)$ and $t$, separate expressions of $t$ and $y$ or $y'$ and integrate.\n$y' = \\frac{4x - x^3}{4 + y^3}$ can be $(4 + y^3)y' = 4x - x^3$, where both sides are now easily integrable.\n$(f(y(x)))' = f'(y(x))y'(x)$, so $f'(y) = 4 + y^3$.\nThis lets us integrate the previous separated equation, because $(4y + \\frac {y^4} 4)' = (\\int {4x - x^3})' = (2x^2 - \\frac {x^4} 4)'$.\nThus, $4y + \\frac {y^4} 4 = 2x^2 - \\frac {x^4} 4 + C$. Moving terms of $x$ and $y$ to the same side gives a polynomial relation.\n\nModeling\n$Q(t)$ is amount of salt\n$\\frac {Q(t)} V$ is density\n$Q'(t) = \\rho_{in} v_{in} dt - \\frac {Q(t)} V v_{in}dt$"
+    }
+  ]
+}
