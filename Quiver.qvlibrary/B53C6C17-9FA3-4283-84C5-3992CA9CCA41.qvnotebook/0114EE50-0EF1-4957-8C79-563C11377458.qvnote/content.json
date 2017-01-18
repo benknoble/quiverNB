@@ -1,0 +1,77 @@
+{
+  "title": "18 January // Lecture 2",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "#Data Structures and Analysis\n##Abstract Data Types (ADTs)\n\n*Abstraction* separate from *implementation*\nUseful for orgnazing *data*\n*Type* is collection of values and operations on it\n\n###How to Define *Behaviour*\n\nOne ADT definition is correct for many implementations\nAn *abstraction* is a \"model\"\n\n####Example Model of UNC"
+    },
+    {
+      "type": "diagram",
+      "diagramType": "flow",
+      "data": "enroll=>start: Enroll\ntuition=>operation: Pay Tuition\nfall=>operation: Take Fall Classes\nspring=>operation: Take Spring Classes\ngrad=>operation: Graduate\nemails=>end: Get Emails from Alumni Association\nreqs=>condition: Are graduation requirements fulfilled?\n\nenroll->tuition->fall->spring->reqs\nreqs(yes)->grad->emails\nreqs(no)->tuition"
+    },
+    {
+      "type": "markdown",
+      "data": "\nWrite no code before it's time\n\n###How can Data be Abstract?\n\n*Data* values together with *behaviour*\nOperations become *functions* that *transform* arguments\n\nGuttag's Method\nFunctional Signature: List of *operations*, *types* of arguments, and *types* of results\nThen provide an *axiomatic specification* of the behavior\n\n###Stack of Ts\n\nLIFO\n\nOperations"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "new();\npush(T);\nT pop();\nint size();\nT top();"
+    },
+    {
+      "type": "markdown",
+      "data": "In functional notation,"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "stk = new();\nprint(size(stk));\nstk = push(stk, 73);\n//...\nprint(size(stk));\nstk = pop(stk);\nprint(size(stk));\nprint(top(stk));"
+    },
+    {
+      "type": "markdown",
+      "data": "**MATH** (*i.e.* some notation)"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$new: \\to STACK$\n$push: STACK \\times T \\to STACK$\n$pop: STACK \\to STACK$\n$top: STACK \\to T$\n$size: STACK \\to Nat$"
+    },
+    {
+      "type": "markdown",
+      "data": "Axioms"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "//examples\npop(push(new(), -3)) == new();\npop(push(push(new(), 7), 4)) == push(new(), 7);\nsize(push(new(), -3)) == size(new()) + 1;\nsize(new()) == 0;\nsize(push(new(), 6)) == 1;\ntop(push(new(), 6)) == 6;\ntop(push(push(new(), 3), -8)) == -8;"
+    },
+    {
+      "type": "markdown",
+      "data": "Find canonical operations (those that generate Stack)\nThen, write axioms where the left hand side is the application of non-canonical op to a canonical op (cross-product)\n\nCanonical:\n1. Push (necessary, where pop is not)\n2. New\n\nNon-canonical:\n1. Size\n2. Pop\n3. Top\n\nActual axioms (applications of non-canonical to canonical operations)"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$\\forall S: STACK, i: T$\n\n$size(new()) = 0$\n$size(push(S, i)) = size(S) + 1$\n$pop(new()) = new()$ or err, or NULL\n$pop(push(S,i)) = S$\n$top(new()) = err$\n$top(push(S, i)) = i$"
+    },
+    {
+      "type": "markdown",
+      "data": "###Queue of Ts\n\nFIFO\n\nOperations have same signatures (different names)\nDifference comes from axioms"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "new();          //canonical\nenqueue(T);     //canonical\nT dequeue();    //non-canonical\nuint size();    //non-canonical\nT front();      //non-canonical"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$new: \\to QUEUE$\n$enqueue: QUEUE \\times T \\to QUEUE$\n$dequeue: QUEUE \\to QUEUE$\n$front: QUEUE \\to T$\n$size: QUEUE \\to Nat$\n\n$\\forall Q:QUEUE, i: T$\n\n$size(new()) = 0$\n$size(enqueue(Q, i)) = size(Q) + 1$\n$front(new()) = err$\n$front(enqueue(Q,i)) = ite(Q=new(), i, front(Q))$    (ite is if than else)\n$dequeue(new()) = new()$\n$dequeue(enqueue(Q,i)) = ite(Q=new(), Q, enqueue(deueue(Q),i)$"
+    },
+    {
+      "type": "markdown",
+      "data": ""
+    }
+  ]
+}
