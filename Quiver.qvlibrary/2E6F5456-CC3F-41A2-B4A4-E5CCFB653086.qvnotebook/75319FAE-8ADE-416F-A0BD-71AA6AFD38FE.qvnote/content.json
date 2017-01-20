@@ -1,0 +1,9 @@
+{
+  "title": "20 January // Lecture 4: Motion",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "###At the Equator\n- Declination of star at zenith is $0^{\\circ}$\n- Polaris has declination $90^{\\circ}N$\n- Polaris is $0^{\\circ}$ above the horizon\n\n###North Pole\n- Zenith is $90^{\\circ}N$\n- Polaris has declination $90^{\\circ}N$\n- Polaris at $90^{\\circ}N$ above the horizon\n\n###Boulder ($40^{\\circ}N$)\n- Zenith is $40^{\\circ}N$\n- Equator is $40^{\\circ}S$ of my Zenith ($0^{\\circ}$)\n- North Pole is $50^{\\circ}N$ of my Zenith ($90^{\\circ}N$)\n\n##Rules\nYour latitude tells you\n1. How many degrees Polaris is above the horizon\n2. The declination of the star at your zenith\n3. The number of degrees the Celestial Equator is below the zenith\n\n##How to Deal with Motion of Stars in the Sky\nRise East, set West (Northern and Southern Hemisphere)"
+    }
+  ]
+}

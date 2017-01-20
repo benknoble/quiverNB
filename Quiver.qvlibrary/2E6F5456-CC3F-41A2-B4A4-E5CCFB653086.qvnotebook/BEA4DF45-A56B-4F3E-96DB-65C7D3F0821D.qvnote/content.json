@@ -3,7 +3,7 @@
   "cells": [
     {
       "type": "markdown",
-      "data": "*Celestial Sphere*\npoles align\nequators align\necliptic is the apparent path of the Sun around the celestial sphere\nPolaris at north pole\n*Zenith* is point directly above head\nView stars in hemisphere\n*Horizon* is where sky appears to touch the ground. You cannot see anything below your horizon\n*Altitude* is angle between point on celestial sphere and horizon\n*Meridian* \nCare about cardinal directions relative to horizon\n*rising and setting*\nLatitude (parallel to equator)\nLongitude (perpendicular to equator)\nCelestial sphere has same lines (celestial latitude, *i.e.* declinations; celestial longitude, *i.e.* right acensions)"
+      "data": "*Celestial Sphere*\n- poles align\n- equators align\n- ecliptic is the apparent path of the Sun around the celestial sphere\n- Polaris at north pole\n\n*Zenith* is point directly above head\nView stars in hemisphere\n*Horizon* is where sky appears to touch the ground. You cannot see anything below your horizon\n*Altitude* is angle between point on celestial sphere and horizon\n*Meridian* \n\nCare about cardinal directions relative to horizon\n*rising and setting*\n\n- Latitude (parallel to equator)\n- Longitude (perpendicular to equator)\n- Celestial sphere has same lines (celestial latitude, *i.e.* declinations; celestial longitude, *i.e.* right acensions)"
     }
   ]
 }
