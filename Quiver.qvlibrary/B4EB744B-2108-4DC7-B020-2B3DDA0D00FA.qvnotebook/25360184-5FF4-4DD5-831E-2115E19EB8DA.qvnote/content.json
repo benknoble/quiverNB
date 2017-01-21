@@ -1,0 +1,23 @@
+{
+  "title": "21 January // Sections 2.1 and 2.2",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "#2.1 Integrating Factors"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "General form $$\\frac{dy}{dt} + p(t)y = g(t)$$\n\nMultiply by $\\mu(t)$ and change to product rule; integrate\n\nWe can in fact find that for the general form $$\\mu(t) = \\exp \\int p(t)dt$$ and that $$y(t) = \\frac 1 {\\mu(t)} \\left[ \\int _{t_0} ^t \\mu(s)g(s)ds + C \\right]$$"
+    },
+    {
+      "type": "markdown",
+      "data": "#2.2 Separable Equations"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "General form $$\\frac{dy}{dx} = f(x,y)$$\n\nWe want to discuss a subclass of functions. We write $$M(x,y) + N(x,y)\\frac{dy}{dx} = 0$$ (usually by letting $M(x,y) = -f(x,y)$ and $N(x,y) = 1$, but there are other ways).\n\nThen, if $M$ is a function of only $x$ and $N$ of only $y$, we have $$M(x) + N(y)\\frac{dy}{dx} = 0$$ which can be separated and directly integrated."
+    }
+  ]
+}
