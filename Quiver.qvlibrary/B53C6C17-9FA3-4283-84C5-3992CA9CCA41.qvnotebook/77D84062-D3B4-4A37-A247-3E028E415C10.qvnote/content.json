@@ -1,0 +1,28 @@
+{
+  "title": "23 January // Lecture 3",
+  "cells": [
+    {
+      "type": "code",
+      "language": "ocaml",
+      "data": "(* SMLNJ             *)\n(* STI: Stack of Int *)\n(* basic LIFO list   *)\ndatatype STI = New\n   | push of STI * int ;\n\nfun size (New) = 0\n  | size (push(S,i)) = size(S) + 1 ;\n\nfun pop (New) = New\n  | pop (push(S,i)) = S ;\n\nfun empty (New) = true\n  | empty (S) = (size(S)=0) ;\n\nexception topEmptyStack;\n\nfun top (New) = raise topEmptyStack\n  | top (push(S,i)) = i ;"
+    },
+    {
+      "type": "code",
+      "language": "ocaml",
+      "data": "(* SMLNJ                              *)\n(* BST: bounded stack of int          *)\n(* pushing on  afull stack is a no-op *)\ndatatype BST = New of int\n    | push of BST * int\n    ;\n   \nfun empty (New(n)) = true\n    | empty (push(S,i)) = false\n    ;\n\nfun max (New(n)) = n\n    | max (push(S,i)) = max(S) ;\n\nfun size (New(n)) = 0\n    | size (push(B,i)) = if size(B)=max(B)\n                        then max(B)\n                        else size(B) + 1\n    ;\n\nfun full (New(m)) = m=0\n    | full (push(S,i)) = if size(S)>=max(S)-1\n                        then true\n                        else false\n    ;\n\nexception topEmptyStack;\n\nfun top (New(n)) = raise topEmptyStack \n  | top (push(S,i)) = if full(S) \n                       then top(S) \n                       else i \n  ;\n\nfun pop (New(n)) = New(n)\n  | pop (push(S,i)) = if full(S)\n                       then pop(S)\n                       else S \n  ;"
+    },
+    {
+      "type": "markdown",
+      "data": "#Lists and List-based Data Structure (Stack, Queue)\n\nLists one of first data structures (LISP: List Processing)\nOperations:\n1. create new\n  - $new: \\to List$\n2. insert\n  - $insert: List \\times Element \\times Int \\to List$\n3. remove\n  - $remove: List \\times Int \\to List$\n4. retrieve\n  - $get: List \\times Int \\to Element$\n5. empty?\n  - $empty: List \\to Boolean$\n6. size\n  - $size: List \\to Nat$\n(7. search/find)\n  - $find: List \\times Element \\to Int$\n\nCanonical operations:\nnew, insert\n\nNon-Canonical operation:\neverything else\n\nAxioms:"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$\\forall L:List; e,f:Element; i:Integer$\n$size(new()) = 0$\n$size(insert(L,e,i)) = size(L) + 1$\n$empty(new()) = true$\n$empty(insert(L,e,i)) = false$\n$get(new(), i) = err$\n$get(insert(L,e,k), i) = $ if $(i = k)$ then $e$\n                            else if $(i < k)$ then $get(L,i)$\n                            else $get(L, i-1)$\n$find(new(), e) = err$\n$find(insert(L,e,i), f) = $ if $(e = f)$ then $i$\n                            else if $(find(L,f) < i)$ then $find(L,f)$\n                            else $find(L,f)+1$\n$remove(new(), i) = err$\n$remove(insert(L,e,k), i) = $ if $(i = k)$ then $L$\n                            else if $(i > k)$ then $insert(remove(L,i-1), e, k)$\n                            else $insert(remove(L,i), e, k-1)$"
+    },
+    {
+      "type": "markdown",
+      "data": "##Implementations\n1. Array\n2. Linked-list (possibly doubly or singly)\n\nArrays:\n - Insert is $O(n)$\n - Remove $O(n)$\n - Get $O(1)$\n - Find $O(n)$\n - Empty $O(1)$\n - Size $O(1)$"
+    }
+  ]
+}
