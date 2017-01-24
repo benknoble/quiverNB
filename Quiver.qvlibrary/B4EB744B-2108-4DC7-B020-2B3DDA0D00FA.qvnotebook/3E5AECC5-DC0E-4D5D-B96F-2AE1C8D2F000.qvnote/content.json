@@ -1,0 +1,10 @@
+{
+  "title": "24 January // Lecture 4",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Section 2.7\n\nNumerical Methods\n\n- Typically, you try to find an analytical solution, but sometimes that's too difficult or it doesn't exist\n\nEuler's Method\n\n$(t_0, y_0), n=0$\n$(t1 = t_0 + h, y_1 \\approx y_0 + hf(t_0,y_0)), n=1$\nRepeat ad infinitum.\n$y_{n+1} = y_n + hf(t_n,y_n)$ for $n=0,1,2,\\dots$\n$t_{n+1} = t_n + h$ for $n=0,1,2,\\dots$\n\nEuler Error\n\n$y(T) - y_{\\frac T h} \\approx Ch$\nThink taylor series, order, big-Oh, etc. $Ch$ is the leading term for $h \\to 0$\n\nExample:\n\n$y' = 2y$\n$y(t) = y_0e^{2t}$\n$y_1 = y_0 + h2y_0 = (1+2h)y_0$\n$y_2 = (1+2h)^2y_0$\n$y_n = (1+2h)^ny_0$\n\nImprove on Euler's Method\nWant $y(T) - y_{\\frac T h} \\approx Ch^n$ for some $n \\ge 2$\n\nPreviously, at each step we effectively restarted the problem\n\n$y_1 = y(t_0 + h) = y(t_0) + hy'(t_0) + \\frac {h^2} 2 y''(t_0) + \\cdots$ Euler truncates at at the first term of the series, using $y'(t) = f(t,y)$\n\nInstead, use $y''(t) = f_t(t,y) + f_y(t,y)y' = f_t + f_yf$. This enables a better approximation, but requres the computation of the partials $\\frac{\\partial f}{\\partial t}$ and $\\frac{\\partial f}{\\partial y}$. And of course, further orders require more ridiculousll-complex partials.\n\nRunge-Kutta 2\n\n$k_1 = f(t_n,y_n)$\n$k_2 = f(t_n + \\frac h 2, y_n + \\frac h 2 k_1)$\n$y_{n+1} = y_n + hk_2$\nReuses previous information to compute the next step to give error $O(h^2)$"
+    }
+  ]
+}
