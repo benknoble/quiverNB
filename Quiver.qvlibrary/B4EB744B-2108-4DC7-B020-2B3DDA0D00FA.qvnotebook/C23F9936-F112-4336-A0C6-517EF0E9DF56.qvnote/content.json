@@ -1,0 +1,10 @@
+{
+  "title": "26 January // Lecture 5",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Looking at graphs\n$2y' + ty = 2, y(0) = 1$\n$y' = \\frac {2-ty} 2$\n\n$\\frac {dy}{dx} = \\frac {(y-3)cos(x)} {1+2y^2}$"
+    }
+  ]
+}
