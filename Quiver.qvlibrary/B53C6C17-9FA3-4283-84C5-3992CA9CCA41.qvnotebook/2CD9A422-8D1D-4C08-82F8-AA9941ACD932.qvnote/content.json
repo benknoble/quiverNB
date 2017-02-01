@@ -1,0 +1,45 @@
+{
+  "title": "1 February // Lecture 6",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "1. Poll Everywhere\n\n>Q: Which of these best describes the worst case time complexity of BubbleSort on a list of $n$ elements?\n>\n>A: $O(n^2)$\n\n>Q: Sorting a sequence of $n$ numbers by adding them successively to a list (finding and putting them into the proper location by value) has worst case time complexity of?\n>\n>A: $O(n^2)$: this is insertion sort via LinkedList because of the expensive $O(n)$ `get` operation. For an ArrayList, would involve shifting, which is also $O(n)$\n\n>Q: Which time complexity is theoretically worse than $O(n^2)$?\n>\n>A: $O(2^n)$ is more expensive. $O(2\\times n^2)$ is *technically* worse, but only marginally. $O(2^n)$ is a better option. *\"Theoretically\"* was the keyword to throw out leading constant terms and analyze the graph shapes.\n\n>Q: What of these expressions best describes the time complexity of this code/algorithm?"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "for (i = 0; i < MAX; i++) {\n    for (k = 0; k <= i; k++) {\n        arr[k,i] = 2;\n    }\n}"
+    },
+    {
+      "type": "markdown",
+      "data": ">A: $O(\\frac 1 2 {MAX}^2)$ because the inner loop runs less than $MAX$ most times. Remember $\\sum _{i=0} ^n i = \\frac {n(n+1)} 2 = O(\\frac 1 2 n^2)$ from Lecture 4.\n\n>Q: Consider an algorithm that you are told has worst case time complexity that is $O(n^3)$. Which of the following is also a valid (but not necessarily good) description of the worst case time complexity for this algorithm?\n>\n>A: $O(2^n)$, because it clearly outpaces $O(n^3)$ for large enough $n$.\n\n#Trees (cont.)\n(review terminology)\n\n##Recursive Definition\nRoot is a Node, and it's \"leaves\" are also Trees. The root could have 0 children. (Think of a node with subtrees hanging off; each subtree is just one Node with more subtrees...)\n\nThe max number of children of a node determines the *arity* of a tree. For an $n$*-ary* tree, a Node has at max $n$ children\n\n(view examples of trees in lecture ppt)\n\n###Building a Tree\nWith Linked Cells (Tree Cell Structure)"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "tree {\n    root: string\n    child1: tree\n    child2: tree\n    child3: tree\n    child4: tree\n    child5: tree\n    //...\n    //having explicit links as above is not extendable/scalability to the general n-ary tree...\n}\n\n//Consider:\ntree {\n    root: string\n    children: list[tree]\n    //at least somewhat more scalable\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "####Special Case: Arity 2, Binary Tree\nEvery Node has 0,1, or 2 children\n`Left` and `Right` child\nNot worried about wasted space if each Node only has `{data, left, right}` fields"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "binarytree {\n    root: string\n    left: tree\n    right: tree\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "##Traversals\nVisit all nodes in some order, following edges\nVisiting a node simply means doing something with its data value\n\n###Depth First\nGo as deep as possible before stopping (and backtracking)\n\n1. PreOrder\n  - Visit root, the recursively visit children ($L$ to $R$)\n2. PostOrder\n  - Visit (recursively) children ($L$ to $R$) and finally visit root\n3. InOrder\n  - Visit $L$ child, then visit root, then visit $R$\n  - (For $n$-ary tree, need to decide where in the \"middle\" to put root visit)\n\n###Breadth First\nDeal with all children before going to the next depthl\nUses levels to get node order, not tree links\nUse Queue $Q$ to keep track\n1. Enqueue root on $Q$\n2. Dequeue a node $n$ from $Q$ and examine\n  - Do work\n  - Add all children of $n$ to $Q$\n3. If $Q$ empty, finish\n4. Otherwise, goto step $2$\n\n#Binary Trees (esp. Search trees)\nBinary tree has arity $2$\nLinked-cell structure"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "BinCell {\n    root: string\n    left: BinCell\n    right: BinCell\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "##Extra Conditions\n1. All values $val \\gt$ all values in $T_L$ (left subtree)\n2. All values $val \\lt$ all values in $T_R$ (right subtree)\n(For some total ordering condition)\n3. $T_L$ and $T_R$ are both BSTs (Recursive)\n(Assume no duplicates)\n\nOnly useful when values can be ordered (see Total Ordering on Wikipedia)\nBasically, need LessThan and Equals functions for the data\n\nNot all Binary Trees are Binary Search Trees\n\nDegenerate case: ordered values fall on one branch, which degenerates into a linked list. (Think $1 \\to 2 \\to 3 \\to 4 \\to 5$, which is *technically* BST but looks like linked-list.) Branches give the algorithms speed."
+    }
+  ]
+}

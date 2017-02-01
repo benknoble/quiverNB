@@ -1,0 +1,14 @@
+{
+  "title": "1 February // Lecture 9: Moons, Phases, and Stuff",
+  "cells": [
+    {
+      "type": "diagram",
+      "diagramType": "flow",
+      "data": "st=>start: Start\nnewm=>operation: New Moon\nwaxcres=>operation: Waxing Crescent (Right)\n1st=>operation: First Quarter\nwaxgib=>operation: Waxing Gibbous (Right)\nfull=>operation: Full Moon\nwangib=>operation: Waning Gibbous (Left)\n3rd=>operation: Third Quarter\nwancres=>operation: Waning Crescent (Left)\n\nst->newm->waxcres->1st->waxgib->full->wangib->3rd->wancres->newm"
+    },
+    {
+      "type": "markdown",
+      "data": "Moon always $50\\%$ illuminated"
+    }
+  ]
+}
