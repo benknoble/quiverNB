@@ -1,0 +1,10 @@
+{
+  "title": "7 February // Lecture 8",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$y'' + p(t)y' + g(t)y = 0$$\nLinear ODE in y, with non-constant coefficients\n\n$$L[y] = y'' + p(t)y' + g(t)y$$\n\nLinearity to solve all IVP from 2 solutions\n\nIf $y_1, y_2$ are solutions to $L[y]$, they are called a fundamental set if any solution to $L[y]$ can be written a linear combination of $y_1$ and $y_2$\n\n$$y(t) = c_1y_1(t) + c_2y_2(t)$$\n\nTo satisfy the IVP, we want\n$$\\left[\\begin{matrix} y_0 \\\\ y'_0 \\end{matrix} \\right] = \\left[\\begin{matrix} y(t_0) \\\\ y'(t_0) \\end{matrix}\\right] = c_1 \\left[\\begin{matrix} y_1(t_0) \\\\ y'_1(t_0) \\end{matrix}\\right] + c_2 \\left[\\begin{matrix} y_2(t_0) \\\\ y'_2(t_0) \\end{matrix}\\right] = \\left[\\begin{matrix} y_1(t_0) & y_2(t_0) \\\\ y'_1(t_0) & y'_2(t_0) \\end{matrix}\\right] \\left[\\begin{matrix} c_1 \\\\ c_2 \\end{matrix}\\right]$$\n\nIf the Wronskian $W$ of the matrix of functions $y_1,y_2$ and their derivatives is not $0$ (i.e., $W \\neq 0$) then there is a unique solution $c_1,c_2$ for a given initial value $y_0,y'_0,t_0$. We say the vectors are linearly independent.\n\nIf $W=0$, then we manipulate $W$ into two equivalent fractions and see that the slope of the vectors is the same and thus cannot be linearly combined into a solution. They are linearly dependent.\n\n$$y'' + 6y' + 8y = 0$$\n\nFind fundamental solutions\n(typically, guess $y = e^{rt}$, giving $r = -2, -4$)\nDo these form a fundamental set of solutions (is the Wronskian $0$)?\n$W = -4e^{-2t}e^{-4t} - 2e^{-4t}e^{-2t} = -6e^{-6t} \\neq 0$\n\nAside\n$$\\cosh(t) = \\frac{e^t + e^{-t}} 2$$\n$$\\sinh(t) = \\frac{e^t - e^{-t}} 2$$\n$$\\cosh'(t) = \\sinh(t)$$\n$$\\sinh'(t) = \\cosh(t)$$\n\nDoing the linear combination $\\frac 1 2 e^{-2t} + \\frac 1 2 e{-4t} = \\frac 1 2 e^{-3t} (e^t + e^{-t}) = e^{-3t}\\cosh(t)$ means this is a solution. We obtain $e^{-3t}\\sinh(t)$ by similar methods."
+    }
+  ]
+}
