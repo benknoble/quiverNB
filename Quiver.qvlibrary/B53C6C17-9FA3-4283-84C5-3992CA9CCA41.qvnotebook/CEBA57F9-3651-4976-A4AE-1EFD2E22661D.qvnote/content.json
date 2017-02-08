@@ -1,0 +1,18 @@
+{
+  "title": "8 February // Lecture 8",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "(spent some time discussing the assignment)\n1. PollEverywhere\n\n>Q: Binary Search Tree containing $n$ keys: inserting a new key has worst case time complexity of ...\n>\n>A: $O(n)$ because of the degenerate case\n\n>Q: Binary Search Tree containing $n$ keys: inserting a new key has average case time complexity of ...\n>\n>A: $O(\\log n)$ because the height of the tree is on average $\\log n$ for randomly inserted data\n\n>Q: A Binary Search Tree has a height of 15. What is the least number of nodes that might be in that BST?\n>\n>A: $16$ because of the degenerate case\n\n>Q: A Binary Search Tree has a height of 15. What is the greatest number of nodes that might be in that BST?\n>\n>A: $2^{16} - 1$ (see notes from the previous lecture)\n\n>Q: Here is a Binary Search Tree. Click on the circle where \"heels\" will go when inserted. (new image)\n>\n>A: Left of iota. Less than Kappa, greater then Gamma, less that iota."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "//Looking at recursion's pitfalls\n//Similar to linked list code\n\nfunction myMain() {\n    var list = makeCell(\"alpha\");\n    var cur = list;\n    \n    //the idea of pointers to the next nodes\n    cur.next = makeCell(\"beta\");\n    cur = cur.next;\n    cur.next = makeCell(\"gamma\");\n    cur = cur.next;\n    cur.next = makeCell(\"delta\");\n    cur = cur.next;\n    cur.next = makeCell(\"epsilon\");\n    cur = cur.next;\n    cur.next = makeCell(\"zeta\");\n    cur = cur.next;\n    //list is now\n    //(val: alpha, next: -> (val: beta, next: -> (val: gamma, next: -> (val: delta, next: -> (val: epsilon, next: -> (val: zeta, next: -> null))))))\n    \n    //load up big list\n    var MAX = 40000;\n    var bigList = makeCell(\"start\");\n    var cur = bigList;\n    for (var n=1; n<MAX; n++) {\n        cur.next = makeCell(randomString(10));\n        cur = cur.next;\n    }\n    \n    //printIter is iterative\n    //printRec is recursive (dangerous for big lists!!)\n    printIter(bigList);\n    printRec(bigList);\n    //uh oh! breaks for large numbers\n}\n\nfunction makeCell(v) {\n    var cell = {\n        val: v,\n        next: null\n    };\n    \n    return cell;\n}\n\nfunction printIter(c) {\n    var cur = c;\n    while (cur!==null) {\n        alert(cur.val);\n        cur = cur.next;\n    }\n}\n\nfunction printRec(c) {\n    if (c!==null) {\n        alert(cur.val);\n        printRec(c.next);\n    }\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Binary search trees are good for recursion when the tree is bushy ($\\log 1000000 \\approx 20$) but when its linear recursion can blow up\n\n##Sorting with BST\n- How?\n- $O(?)$\n\nBuild the tree and do an in-order traversal of the tree\nSo how expensive is the in-order traversal of the tree, and what is the cost of building a tree?\n\nBuilding the tree: \nInserting a single element is average case $O(\\log n)$, worst case $O(n)$\nSo inserting $n$ elements is average case $O(n \\log n)$, worst case $O(n^2)$\n\nTraversal: $O(n)$ time in average and worst case\n\nTotal: average case $O(n \\log n)$, worst case $O(n^2)$\n\n##Improvement\nDifference between $O(n^2)$ and $O(n \\log n)$?\nFor for $n = 1000000$, this is $1000000 \\times 1000000$ versus $1000000 \\times 20$\nFor a computer that performs $1$ million operations per second, thats $1$ million seconds ($11.5$ days) versus $20$ seconds."
+    }
+  ]
+}
