@@ -1,0 +1,9 @@
+{
+  "title": "13 February // Lecture 13: Kepler’s 3rd Law",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "$P^2 = K a^3$\nThe square orbital period of a planet is proportional to the cube of its semi-major axis.\nIf the planet orbits the Sun, and $P$ is measured in years, and $a$ is measured in AUs, the $K = 1\\frac{{yr}^2}{{AU}^3}$\n\n"
+    }
+  ]
+}

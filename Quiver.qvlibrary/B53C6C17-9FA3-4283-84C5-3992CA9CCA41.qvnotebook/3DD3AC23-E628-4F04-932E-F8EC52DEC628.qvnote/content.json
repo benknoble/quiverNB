@@ -1,0 +1,27 @@
+{
+  "title": "13 February // Lecture 9",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "1. Exam date: 8 March\n2. PollEverywhere\n\n> Q: For any particular set of keys (values), there is exactly one Binary Search Tree that properly organizes those keys according to the BST ordering property (T/F).\n> A: False because it depends on insert order\n\n> Q: If I want to list the keys in a Binary Search Tree in alphabetic order, I use a tree traversal that is\n> A: In-order, because it's \"in order.\"\n\n> Q: Using a Binary Search Tree to sort $n$ items, we get an improvement in sort times over the $O(n^2)$ of BubbleSort (T/F).\n> A: Both. Worst-case is $O(n^2)$, but we tend to see better results assuming random inserts (avg case is $O(n\\log n)$).\n\n> Q: For a BST with $n$ nodes, the worst case time complexity of a post-order traversal is\n> A: At least $O(n)$ because we must reach all $n$ nodes. And the amount of work done at each node is constant. So $O(n)$\n\n> Q: For a BST with $n$ nodes, the best case time complexity of a post-order traversal is\n> A: $O(n)$ because we _must_ reach all nodes, or it isn't a complete traversal.\n\n#Time Complexity involving Tree\n\nRecall that a full, complete binary tree has nodes $n = (2^{h+1} - 1)$ for height $h$\nThis gives a $\\log n$ speed up for traversing each path\n\nFor a full traversal, though, we must visit all $n$ nodes\n\nFibonacci programmed recursively is a binary tree of recursive calls\nHas height $n-1$ to compute $Fib(n)$, so about $2^n - 1$ nodes (calls), so runtime of recursive Fib is $O(2^n)$\n\n##Recursion and Function Calls\nFunction calls create a tree of memory maps (part of function calls stack)\nFunctions call other functions. We cannot have more active memory hunks than functions defined in a program _assuming there's no recursion_\n\nWhen a function calls itself, it is recursion\nTypically similar pattern:"
+    },
+    {
+      "type": "code",
+      "language": "scala",
+      "data": "def func(n) = {\n    if (baseCase(n)) value\n    else func(reduceProblem(n))\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Recursive code _needs_ a base case (armadillo, joke from powerpoint) to stop the the recursion\n\n**Example: Factorial**\n$1\\! = 1$ (base case)\n$2\\! = 2 \\times 1\\!$\n$3\\! = 3 \\times 2\\!$\n$\\cdots$\n\nSo,"
+    },
+    {
+      "type": "code",
+      "language": "scala",
+      "data": "def fact(n) = \n    if (n == 1) 1\n    else n * fact(n-1)"
+    },
+    {
+      "type": "markdown",
+      "data": "Any loop can be expressed recursively, _and vice-versa_\nRecursion _does NOT_ give you extra computing power: it is simply a notational convenience in programming\n\n###Run-time System\nThe \"insides\" of a programming language: mechanisms necessary to make all the pieces work\nStatic memory: where your code lives (doesn't change, static)\nTwo main dynamic memory piles:\n1. Stack (function call return management)\n2. The Heap (for objects, \"new\" calls)\n\nFunction calls maintain a call frame, stack frame, or activation record\nContains space for parameters, local variables, and return address\n\nWhy is this important? We can model recursive calls using a runtime stack\n\nSee powerpoint for factorial recursive call model"
+    }
+  ]
+}
