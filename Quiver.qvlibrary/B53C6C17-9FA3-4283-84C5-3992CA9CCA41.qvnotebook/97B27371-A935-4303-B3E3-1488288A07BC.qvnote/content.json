@@ -1,0 +1,72 @@
+{
+  "title": "15 February // Lecture 10",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "1. PollEverywhere\n\n> Q: Consider this code. The amount of run-time stack space it needs can be characterized as\n> A: There are a bounded number of method calls, and each one requires finite memory. So the stack space needed is finite and bounded with proportion to the input. "
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n    var x = 5;\n    var res = factorial(x);\n    print(res);\n}\n\nfunction factorial (n) {\n    if (n == 1) return 1;\n    return n * factorial (n-1);\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "> Q: Consider this code. The amount of run-time stack space it needs can be characterized as\n> A: Since the code asks for user input, the input to the `factorial` function is unrestricted. However, we know `factorial` requires finite memory. We do not thus know how much stack space is required, but we know it is finite. Unbounded memory.\n**However**, we have a slight issue. If the input is negative, `factorial` will never return, requiring infinite memory.\nEven further, JS does not require that input $n$ is an integer, so `factorial(1.5)` is infinite recursion!"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n    var x = getUserInput();\n    var res = factorial(x);\n    print(res);\n}\n\nfunction factorial (n) {\n    if (n == 1) return 1;\n    return n * factorial (n-1);\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "> Q: Consider this code. The amount of run-time stack space it needs can be characterized as\n> A: Unbounded! Notice that this follows the same argument as the previous question, but the slight tweak (`<=` vs. `==`) prevents the infinite-memory-on-negative-input problem we ran into before."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n    var x = getUserInput();\n    var res = factorial(x);\n    print(res);\n}\n\nfunction factorial (n) {\n    if (n <= 1) return 1;\n    return n * factorial (n-1);\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "> Q: Consider this code. The amount of run-time stack space it needs can be characterized as\n> A: Infinite. Consider that the recursive call looks like `factorial(6) => factorial(4) => factorial(2) => factorial(0) =>...` because $x-2 \\neq 1$ for $x = 1 (\\mod 2)$, so the base case is never reached and it never terminated."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n    var x = 5;\n    var res = factorial(x);\n    print(res);\n}\n\nfunction factorial (n) {\n    if (n == 1) return 1;\n    return n * factorial (n-1);\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "#Runtime (cont.)\nCall Stack is made of stack frames, but it has limited memory. It can blow out if recursion never hits the armadillo. It is disciplined memory.\n\nWe also have the Heap. It's a \"pool\" of memory, from which we dynamically grab chunks. No systematic discipline. It is possible to get memory from the Heap during a function execution and have said memory live on after function return. For a Stack, memory on the call frame is freed when the function returns (pops from the Stack).\n\nEx:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {//Call frame on stack\n    TCell tcm;\n    tcm = objMaker();\n}\n\nfunction objMaker() { //Call frame on stack\n    TCell tc = new TCell();//memory from stack\n    TCell tx = new TCell();//memory from stack\n    return tc; //note that memory occupied by tc remains in use because tcm holds onto the reference\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "###Program Memory Use\n\n- Static memory (machine instructions, literals, static variables)\n- Call Stack\n- Heap\n\nBut it's all in one physical RAM space (see image in ppt)\nSometimes, the heap fills up with unreachable objects, which also reduces the amount of memory available. This is called fragmentation.\nIn C, `malloc` gave heap space in bytes and `free` must be called to return space to the heap\nIn Java, the Garbage Collector/JVM will, on an as needed base, free up the unreachable objects' memory so that you don't have this problem\n\n#Lists Recursively\nList is\n- null OR\n- [ value ] and [ next $\\to$ List ]\n\n#Trees Recursively\nTree is \n- null OR\n- [ value ] and [ left $\\to$ Tree] and [ right $\\to$ Tree ]"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function insert(nVal) {\n    if (nVal == value) return false\n    if (nVal < value) {\n        if (left !== null) left.insert(nVal);//recursive\n        else {/*add new node as left*/ return true; }\n    } else if (nVal > value) {\n        if (right !== null) right.insert(nVal);//recursive\n        else {/*add new node as right*/ return true; }\n    }\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "#Priority Queue\nLike a normal Queue (line), but some things have higher priority than other, like OS processes or emergency room issues.\nElements are composed of two pieces:\n- Data value\n- Priority (typically, lower number has higher priority...)\nElements treated like a blob/cloud, and when you dequeue (get the next element) you get the one with the highest priority\n\nADT for Priority Queue of $T$"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "enq: $PQ \\times T \\times priority \\to PQ$\ndeq: $PQ \\to PQ$\nfront: $PQ \\to T$\nsize, empty, &c."
+    },
+    {
+      "type": "markdown",
+      "data": "Enq puts an item in the PQ, front gives the item with highest priority, deq removes highest priority item from PQ\nPQ is not FIFO or LIFO; it's based on priorities.\n\n###Implementation?\nOrdered List\n- insert is $O(n)$\n- remove is $O(1)$ because the list is sorted\n- obvious front is then $O(1)$\n\nCould use unordered list to make insert cheap, but makes remove expensive\n\nWe'll see better implementations on Monday..."
+    }
+  ]
+}

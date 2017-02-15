@@ -1,0 +1,9 @@
+{
+  "title": "15 February // Lecture 14: AU",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "1. Some kind of scantron survey for research thing?\n2. Moving on...\n\nWe left off with angular shift, $\\theta$\nDistance between two observation points: *baseline*\nIf Earth could move around the circle centered on Venus, angular shift would be $360^\\circ$\nRatio: $\\frac{baseline}{C} = \\frac{baseline}{2\\pi(distance)} = \\frac{\\theta}{360^\\circ}$\nUsed to solve for the distance to an object\n$3600'' = 60' = 1^\\circ$\nEarth's diameter: $12,700$ km"
+    }
+  ]
+}
