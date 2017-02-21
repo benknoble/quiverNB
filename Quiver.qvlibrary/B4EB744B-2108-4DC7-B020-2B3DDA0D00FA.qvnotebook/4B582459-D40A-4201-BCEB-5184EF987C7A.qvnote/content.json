@@ -1,0 +1,10 @@
+{
+  "title": "21 February // Lecture 11",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Cf. Worksheets #10-11 for methods of undetermined coefficients. This works well for $p,q$ are constant, $g$ is simple.\n\n$$y'' + p(t)y' + q(t)y = g(t)$$\n\nMethod of Variation of Parameters\n\nFirst, say $y'' + p(t)y' + q(t)y = 0$. We know we need $y_1,y_2$ that solve the homogeneous equation.\nThen, we need to use those solutions to build $g(t)$. So we guess $$y(t) = \\mu_1(t)y_1(t) + \\mu_2(t)y_2(t)$$\nSince $y = \\mu_1y_1 + \\mu_2y_2$, we have $y' = \\mu'_1y_1 + \\mu_1y'_1 + \\mu'_2y_2 + \\mu_2y'_2$ and clearly then we can find $y''$ in terms of $\\mu_1,\\mu_2,y_1,y_2$. It gets messy, but you can set up $y'' + py' + qy = g$.\n\nCan we avoid $y''$ in terms of the 'mess'?\nWe pick $\\mu_1,\\mu_2$ such that $\\mu'_1y_1 + \\mu'_2y_2 = 0$.\n\nThen, $$y'' + py' + qy = \\mu_1(qy_1 + py'_1 + y''_1) + \\mu_2(qy_2 + py'_2 y''_2) + \\mu'_1y'_1 + \\mu'_2y'_2 = \\mu'_1y'_1 + \\mu'_2y'_2 = g$$\n\nRequirements:\n$\\mu'_1y_1 + \\mu'_2y_2 = 0$\n$\\mu'_1y'_1 + \\mu'_2y'_2 = g$\n\nTurn it into a matrix!\n$\\matrixstart y_1 & y_2 \\\\ y'_1 & y'_2 \\matrixend \\matrixstart \\mu'_1 \\\\ \\mu'_2 \\matrixend = \\matrixstart 0 \\\\ g \\matrixend$"
+    }
+  ]
+}
