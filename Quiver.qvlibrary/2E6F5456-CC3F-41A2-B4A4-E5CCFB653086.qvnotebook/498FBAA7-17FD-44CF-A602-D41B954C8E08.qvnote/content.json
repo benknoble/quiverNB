@@ -1,0 +1,23 @@
+{
+  "title": "22 February // Lecture 17: Gravitation",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$P^2 = \\left( \\frac{4\\pi^2}{G(M_1 + M_2)} \\right) a^3$$"
+    },
+    {
+      "type": "markdown",
+      "data": "We just figure out $K$ for arbitrary orbits\nWhen we use $G = 6.67 \\times 10^{-11} m^3 kg^{-1} s^{-2}$, we need $M_1,M_2$ in $kg$, $P$ in $s$, $a$ in $m$\n\nWhen you know the angular size $\\theta$ of an object in the sky, you can use this ratio to find it's actual size"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$\\frac{d}{C} = \\frac{d}{2\\pi r} = \\frac{\\theta}{360^\\circ}$$"
+    },
+    {
+      "type": "markdown",
+      "data": "where $r$ is the distance between Earth and said object"
+    }
+  ]
+}
