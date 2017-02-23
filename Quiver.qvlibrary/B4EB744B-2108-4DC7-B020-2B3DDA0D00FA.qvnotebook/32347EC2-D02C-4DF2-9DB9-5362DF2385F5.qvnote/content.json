@@ -1,0 +1,10 @@
+{
+  "title": "23 February // Lecture 12",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$y'' + p(t)y' + q(t)y = g(t)$$\nThe linear coefficient ODE is a special case:\n$$y'' + ay' + by = g(t)$$\nThe differential operator $L[y]$ is in this case $y'' + ay' + by$, but technically we have\n$$L[y] = \\left( \\frac{d^2}{dx^2} + a\\frac{d}{dx} + b \\right) y$$\n\nThen we can have equations like $L[y] = 0, L[y] = g$.\nIf we have $L[y_1] = 0, L[y_2] = g$, then clearly $L[y_1 + y_2] = L[y_1] + L[y_2] = g$. Similarly, $L[cy_1 + y_2] = L[cy_1] + L[y_2] = g$.\n\nWe can expand this to arbitrary $y_n, g_m$ such that $L[y] = g_1 + g_2 + \\dots + g_m, L[y_1 + y_2 + \\dots + y_n] = L[y]$ because some number of $y_i : 0 \\lt i \\lt n$ exist such that $L[y_i] = 0$, and $m$ $y_i$ exist such that $L[y_i] = g_i$.\n\nCf. Worksheet #$12$"
+    }
+  ]
+}
