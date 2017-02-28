@@ -1,0 +1,10 @@
+{
+  "title": "28 February // Lecture 13",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "We examined friction dampening, with an equation $mx'' + \\gamma x' + kx = 0$.\nThen we took it further to $mx'' + \\gamma x' + kx = g(t)$\n\nOnce we find $x_1,x_2,x_s$, we have\n$$\\matrixstart x_1(0) & x_2(0) \\\\ x'_1(0) & x'_2(0) \\matrixend \\matrixstart c_1 \\\\ c_2 \\matrixend = \\matrixstart x_0 - x_s(0) \\\\ v_0 - x'_s(0) \\matrixend$$\nfor the IVP.\n\nFor $\\gamma = 0$, there is no dampening (pure oscillation). For $\\gamma \\neq 0$, there is a dampening oscillation.\nWe obtain $x_1,x_2$ as solutions of the homogeneous equation $mx'' + \\gamma x' + kx = 0$, and then $x_s$ using variation of parameters or undetermined coefficients.\n\nWe further noted that when the forcing term $g(t)$ is a solution to the ODE, then we have a situation with harmonic resonance, and the frequency of the oscillations with increase with time.\n\nFood for thought:\n$$mx'' + \\gamma x' + kx = sin(\\alpha t) = \\Im(e^{\\alpha t})$\nSo we can solve $mx'' + \\gamma x' + kx = e^{\\alpha t}$, so we guess $Ae^{\\alpha t}$, which is far simpler!\n$mA\\alpha^2 + \\gamma A \\alpha + Ak = 1, A = \\frac{1}{m\\alpha^2 + \\gamma\\alpha + k}$\n\nLinear independence and higher order ODEs\nCf worksheet #$13$\n\n2nd order ODEs have characteristic equation $a_0r^2 + a_1r + a_2 = 0$\n3rd order ODEs have characteristic equation $a_0r^3 + a_1r^2 + a_2r + a_3 = 0$\n4th order ODEs have characteristic equation $a_0r^4 + a_1r^3 + a_2r^2 + a_3r + a_4 = 0$\n&c.\n\nSolutions: $r_1,r_2,r_3,\\cdots r_n$\n\nFit the same patterns"
+    }
+  ]
+}
