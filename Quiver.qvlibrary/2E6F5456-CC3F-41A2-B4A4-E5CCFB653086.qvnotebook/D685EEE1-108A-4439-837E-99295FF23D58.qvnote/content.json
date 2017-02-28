@@ -3,7 +3,7 @@
   "cells": [
     {
       "type": "markdown",
-      "data": "Light is important.\nChemo-physical stuff! Atoms and particles (but not quarks or dark matter)!\nAccelerating charges create light; light accelerates charges\n$\\lambda = \\frac{v}{f}$\n$c = 3 \\times 10^8 \\frac{m}{s}$\nSince all light waves have the same speed $v = c$, for any light wave $w$ we have $\\lambda_w = \\frac{c}{f_w}$\n$E = hf, h = 6.63 \\times 10^{-34} \\frac{kgm^2}{s}$ is Planck's constant used in the Einstein-Plank equation for wave energy\nGamma > X-rays > Ultra*violet* > Visible (VIBGYOR) > Infra*red* > (microwaves) Radio"
+      "data": "Light is important.\nChemo-physical stuff! Atoms and particles (but not quarks or dark matter)!\nAccelerating charges create light; light accelerates charges\n$\\lambda = \\frac{v}{f}$\n$c = 3 \\times 10^8 \\frac{m}{s}$\nSince all light waves have the same speed $v = c$, for any light wave $w$ we have $\\lambda_w = \\frac{c}{f_w}$\n$E = hf, h = 6.63 \\times 10^{-34} \\frac{kgm^2}{s}$ is Planck's constant used in the Einstein-Plank equation for wave energy\n(FREQUENCY): Gamma > X-rays > Ultra*violet* > Visible (VIBGYOR) > Infra*red* > (microwaves) Radio"
     }
   ]
 }
