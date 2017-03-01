@@ -1,0 +1,9 @@
+{
+  "title": "1 March // Lecture 20: Interferometers",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Radio telescopes require large diameter dishes because of how resolution works\n\nAn interferometer is one way to solve this problem, wherein `telescope[]` acts like one telescope because they are connected to each other\nDoing so is called interferometry\n\n$LCP_{Interferometer} = nA = n\\pi r^2$\n\n$baseline = B = \\Delta_{telescopes}$, the distance between the two farthest apart telescopes\n\n$resolution = R = \\frac{\\lambda}{B}$"
+    }
+  ]
+}
