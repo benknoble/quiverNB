@@ -3,7 +3,7 @@
   "cells": [
     {
       "type": "markdown",
-      "data": "#Telescopes\n2 basic types: refractors & reflectors\nRefractors use lenses to focus light\nReflectors use mirrors\n\nLargest refracting telescope: Yerkes (40\") in ?New Zealand?\nLargest reflecting telescope: Gran Telescopio Canarias (10.4 m)\n\nThings telescopes can do:\n1. Brighten an object (Light Collection Power (LCP))\n2. Enhance visible details (Resolution)\n3. Magnify an image\n\nMagnification is pretty important\n\n$LCP \\propto r^2$ because it depends on the area of the telescope\n\nWant smaller resolution\n$\\theta \\propto \\frac{\\lambda}{d}$"
+      "data": "#Telescopes\n2 basic types: refractors & reflectors\nRefractors use lenses to focus light\nReflectors use mirrors\n\nLargest refracting telescope: Yerkes (40\") in ?New Zealand?\nLargest reflecting telescope: Gran Telescopio Canarias (10.4 m)\n\nThings telescopes can do:\n1. Brighten an object (Light Collection Power (LCP))\n2. Enhance visible details (Resolution)\n3. Magnify an image\n\nMagnification is pretty unimportant\n\n$LCP \\propto r^2$ because it depends on the area of the telescope\n\nWant smaller resolution\n$\\theta \\propto \\frac{\\lambda}{d}$"
     }
   ]
 }
