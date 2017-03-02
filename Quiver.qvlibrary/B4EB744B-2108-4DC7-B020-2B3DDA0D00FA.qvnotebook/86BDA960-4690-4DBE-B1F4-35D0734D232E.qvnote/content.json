@@ -1,0 +1,32 @@
+{
+  "title": "2 March // Lecture 14",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "#Textbook on masses/springs and circuits"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Spring constant $k = \\frac{mg}{L}$ where $L$ is the displacement caused by the mass\n\n$mu''+\\gamma u' + ku = F$\n\nFor $mu'' + ku = 0$, we have\n$\\omega_0^2 = \\frac k m$\n\n$u = A\\cos(\\omega_0 t) + B\\sin(\\omega_0 t) = R\\cos(\\omega_0 t - \\delta)$  where\n\n$R = \\sqrt{A^2 + B^2}, A = R\\cos\\delta, B = R\\sin\\delta, \\tan\\delta = \\frac B A$\n\nPeriod $T = \\frac{2\\pi}{\\delta}$\n\nFor $mu'' + \\gamma u' + ku = 0$,\n$r_1,r_2 = \\frac{\\gamma}{2m} \\left(-1 \\pm \\sqrt{1 - \\frac{4km}{\\gamma^2}}\\right)$\n\nCases:\n1. $\\gamma^2 - 4km \\gt 0 \\implies u = Ae^{r_1t} + Be^{r_2t}$\n2. $\\gamma^2 - 4km = 0 \\implies u = (A + Bt)e^{\\frac{-\\gamma t}{2m}}$\n3. $\\gamma^2 - 4km \\lt 0 \\implies u = e^{\\frac{-\\gamma t}{2m}}\\left(A\\cos(\\mu t) + B\\sin(\\mu t)\\right), \\mu = \\frac{({4km-\\gamma^2})^\\frac{1}{2}}{2m} > 0$"
+    },
+    {
+      "type": "markdown",
+      "data": "#Circuits"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$L$: inductance ($H$)\n$I$: current ($A$)\n$R$: resistance ($\\Omega$)\n$C$: capacitance ($F$)\n$E$: impressed voltage ($V$)\n$Q$: total charge ($C$)\n\n$1V = 1\\Omega \\times 1A = \\frac{1C}{1F} = 1H \\times \\frac{1A}{1s}$\n\n$I = Q'$\n$LI' + RI + \\frac Q C = E(t)$\n\n$LQ'' + RQ' + \\frac Q C = E$ where $Q_0 = Q(t_0), I_0 = I(t_0) = Q'(t_0)$\nor\n$LI'' + RI' + \\frac I C = E'$ where $I(t_0) = I_0, I'(t_0) = I'_0 = \\frac{E(t_0) - RI_0 - \\frac{Q_0}{C}}{L}$"
+    },
+    {
+      "type": "markdown",
+      "data": "#Class notes"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "This time we're actually doing linear independence and $3\\times3$ matrices\n\n$\\det\\matrixstart a & b & c \\\\ d & e & f \\\\ g & h & i \\matrixend = a\\det\\matrixstart e & f \\\\ h & i\\matrixend - b\\det\\matrixstart d & f \\\\ g & i \\matrixend + d\\det\\matrixstart d & e \\\\ g & h \\matrixend$\n\nLet $A = \\matrixstart a & b & c \\\\ d & e & f \\\\ g & h & i \\matrixend, v = \\matrixstart x \\\\ y \\\\ z \\matrixend$\nFor equations $Aw = v$, we see that $w = A^{-1}v = ?$\n\nWe need $A^{-1}$ and when we can actually use it.\n\nFirst though, we talk about matrix operations, like row subtraction and stuff\nGaussian elimination! Woohoo! Cf. wksht #14\n\nOk, back to $A^{-1}$\nClearly, $AA^{-1} = \\matrixstart 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\matrixend$, so we solve. All of them at the same time.\n\nAlright, finally, back to linear independence.\nThree functions, $f,g,h$\n\nNope. ran out of time"
+    }
+  ]
+}
