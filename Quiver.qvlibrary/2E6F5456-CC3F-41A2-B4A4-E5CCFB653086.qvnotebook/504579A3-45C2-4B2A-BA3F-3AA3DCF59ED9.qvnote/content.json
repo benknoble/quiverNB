@@ -1,0 +1,9 @@
+{
+  "title": "3 March // Lecture 21: Spectra",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Spectroscopy: study of spectrum of light produced by an object\nAbsorption spectrum\nEmission spectrum\n\npp 63-64\n\nBlackbody (thermal) spectrum\n\nLuminosity: how much energy is emitted as light each second\nDetermined (for a blackbody (hot dense body)) s completely determined by its surface area and its temperature\n\nStefan-Boltzmann Law\n$L = \\sigma AT^4$\n$\\sigma = 5.67 \\times 10^{13} W m^{-2} K^{-4}$"
+    }
+  ]
+}
