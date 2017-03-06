@@ -1,0 +1,9 @@
+{
+  "title": "6 March // Lecture 22: Spectra (cont.)",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "*spectral curve* -- graph that shows the energy emitted as light per second for each wavelength\nBlackbody spectrum always has a spectral curve of a specific shape (front-loaded hill)\nPeak wavelength determined entirely by temperature\n$\\lambda_{peak} = \\frac {.0029 m-K}{T}$ Wein's law"
+    }
+  ]
+}

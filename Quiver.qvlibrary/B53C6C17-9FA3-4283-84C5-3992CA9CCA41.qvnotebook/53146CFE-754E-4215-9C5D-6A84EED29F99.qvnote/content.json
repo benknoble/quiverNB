@@ -1,0 +1,27 @@
+{
+  "title": "6 March // Lecture 15",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Poll Everywhere\n\n> Q: In a splay tree with $n$ nodes, each individual access operation (insert, remove, contains, findMin, etc.) has worst case time complexity of $O(\\log n)$.\n> A: False. This is not amortized. Each individual operation could take a lot of time\n\n> Q: Consider a splay tree of $n$ nodes. The splay operation helps balance because it will take a tree (perhaps stretched, tending towards list-shape) and always shorten its longest path.\n> A: False. Sometimes the splay makes it longer.\n\n> Q: Consider a splay tree of $n$ nodes that contains the key \"foo\". If we do 2 consecutive find (contains) operations on \"foo\" the second one always take worst case time $O(1)$.\n> A: True. The splay brings \"foo\" to the top, so the second find is very quick (just checking at the root).\n\n#Maps and Sets\n\nSets are from math class; something is either in a set or not\n\nWe add items, we remove items, and we want to know if a set contains an item (plus size, empty, etc.)\nAdd will enforce uniqueness.\nWe also might want some operations that operate on Sets, like intersection and union!"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "add: $SET \\times elt \\to SET$\nremove: $SET \\times elt \\to SET$\ncontains: $SET \\times elt \\to boolean$"
+    },
+    {
+      "type": "markdown",
+      "data": "###Think implementation...\nArrays? not efficient when we need to do contains (or resize array), $O(n)$ and $O(n^2)$ worst case\nWhat about a BST? build efficiently (esp if balanced)--simply don't allow duplicates. Gives $O(\\log n)$ when balanced\nJava even has a `TreeSet<T>` class\n\n###Maps (also called Dictionaries) are association of keys with values\nDictionary, would be like word:definition\nMap, think key maps to value ($M:k \\to v$)\nSame structure: simply a group of (key, value) pairs. A key is either in or not in the Map (like a set), but if it is it has a value associated with it that we want access to\n\nWe insert/retrieve via key, but use the associated value"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "get: $MAP \\times key \\to value$\nput: $MAP \\times key \\times value \\to MAP$\nremove: $MAP \\times key \\to MAP$\nhasKey: $MAP \\times key \\to boolean$\nkeys: $MAP \\to SET<Key>$\nvalues: $MAP \\to ?<Value>$ (? is just some arbitrary data structure, like a list or array)"
+    },
+    {
+      "type": "markdown",
+      "data": "`put` will enforce uniqueness of keys\n\nWhile functions are often continuous in math, in comp sci a map is a discrete function from a specific domain to a specific range\n\nKeys must be unique, values not necessarily so\nEach key must map to only one value\nValues may have multiple keys, but keys will never have multiple values\n\n###Implementation?\n\nImplemented like a Set to get $O(\\log n)$ performance\n\nJava has a `TreeMap` which is like this, and a `HashMap` which is vastly different\n\nHashMap-style implementations give us constant-time performance $O(1)$ most of the time--it can have a degenerate case, but it's rare (and usually due to the hash function, not the data structure)"
+    }
+  ]
+}
