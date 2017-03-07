@@ -1,0 +1,10 @@
+{
+  "title": "7 March // Lecture 15",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Cf. wksheet #$15$\nStill no linear independence\n\nDegression into systems of ODEs\n\nDef: $u_1, u_2, u_3$ are linearly dependent if $\\exists c_1,c_2,c_3 \\neq 0$ such that $\\sum{c_iu_i} = 0$\n\nEquivalent to: $\\matrixstart u_1 & u_2 & u_3\\matrixend c = 0$"
+    }
+  ]
+}
