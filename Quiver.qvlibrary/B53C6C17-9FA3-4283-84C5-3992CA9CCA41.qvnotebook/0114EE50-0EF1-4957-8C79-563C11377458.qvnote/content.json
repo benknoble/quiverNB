@@ -67,7 +67,7 @@
     {
       "type": "latex",
       "language": "latex",
-      "data": "$new: \\to QUEUE$\n$enqueue: QUEUE \\times T \\to QUEUE$\n$dequeue: QUEUE \\to QUEUE$\n$front: QUEUE \\to T$\n$size: QUEUE \\to Nat$\n\n$\\forall Q:QUEUE, i: T$\n\n$size(new()) = 0$\n$size(enqueue(Q, i)) = size(Q) + 1$\n$front(new()) = err$\n$front(enqueue(Q,i)) = ite(Q=new(), i, front(Q))$    (ite is if than else)\n$dequeue(new()) = new()$\n$dequeue(enqueue(Q,i)) = ite(Q=new(), Q, enqueue(deueue(Q),i)$"
+      "data": "$new: \\to QUEUE$\n$enqueue: QUEUE \\times T \\to QUEUE$\n$dequeue: QUEUE \\to QUEUE$\n$front: QUEUE \\to T$\n$size: QUEUE \\to Nat$\n\n$\\forall Q:QUEUE, i: T$\n\n$size(new()) = 0$\n$size(enqueue(Q, i)) = size(Q) + 1$\n$front(new()) = err$\n$front(enqueue(Q,i)) = ite(Q=new(), i, front(Q))$    (ite is if than else)\n$dequeue(new()) = new()$\n$dequeue(enqueue(Q,i)) = ite(Q=new(), Q, enqueue(dequeue(Q),i)$"
     },
     {
       "type": "markdown",

@@ -17,7 +17,7 @@
     {
       "type": "latex",
       "language": "latex",
-      "data": "get: $MAP \\times key \\to value$\nput: $MAP \\times key \\times value \\to MAP$\nremove: $MAP \\times key \\to MAP$\nhasKey: $MAP \\times key \\to boolean$\nkeys: $MAP \\to SET<Key>$\nvalues: $MAP \\to ?<Value>$ (? is just some arbitrary data structure, like a list or array)"
+      "data": "get: $MAP \\times key \\to value$\nput: $MAP \\times key \\times value \\to MAP$\nremove: $MAP \\times key \\to MAP$\nhasKey: $MAP \\times key \\to boolean$\nkeys: $MAP \\to SET.Key$\nvalues: $MAP \\to ?.Value$ (? is just some arbitrary data structure, like a list or array)"
     },
     {
       "type": "markdown",
