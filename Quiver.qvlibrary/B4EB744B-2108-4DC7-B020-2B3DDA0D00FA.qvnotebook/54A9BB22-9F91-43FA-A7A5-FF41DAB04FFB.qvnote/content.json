@@ -1,0 +1,10 @@
+{
+  "title": "9 March // Lecture 16",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Looking at things like $Y'=AY$ where $Y'$ is a vector of $y$s derivatives, $Y$ is a vector of the fundamental set of solutions, and $A$ is the matrix of their coefficients. We want to then align them with the initial conditions ($Y(t_0)$)\n\nLater, we'll have $Y'=AY+G$, and then finally $Y'(t) = F(t, Y(t)) \\forall t \\in \\mathbb{R}, Y(t) \\in \\mathbb{R}^n, n \\in \\mathbb{N}$\n\nEigenvalues & Eigenvectors for solving $Y' = AY$\n\nIf there is a $\\lambda$ such that $Av = \\lambda v$ then $\\frac{f'(t)}{f(t)} = \\lambda$ where $Y = fv, Y' = f'v$\n\nThe $\\lambda$ is an eigenvalue\n$v$ is an eigenvector\n\nSo, find $v \\in \\mathbb{R}^2, \\lambda \\in \\mathbb{R}$ so that $Av = \\lambda v$\nEquivalently, $Av - \\lambda v = 0 \\iff Av - \\lambda I v = \\bar0$  where $I$ is the identity matrix\nThen we can move $\\lambda$ into $A$ by $(A - \\lambda I)v = \\bar0$\n\nNeed nontrivial solution $v \\neq \\bar0$; i.e., $\\det(A - \\lambda I) = 0$ where the determinant $p(\\lambda)$ is a polynomial in $\\lambda$.\n\nThen for each eigenvalue $\\lambda$ find an eigenvector $v$ such that $Av = \\lambda v$. That is, you will use $(A - \\lambda I) = \\bar0$ as an augmented matrix and row-reduce. The bottom-row will zero out (since it's not invertible; there are infinitely many solutions). The solution then gives a vector $v$! We choose any constants $y$ that arise to be simple values $\\neq 0$, like $1$, to eliminate them.\n\nThen we have pairs $\\lambda_i, v_i$ for $i = 1,2,\\cdots$. We can verify that they satisfy $Av = \\lambda v$ readily. We further form solutions of the fundamental set $y_i = e^{\\lambda_i t}v_i$ and use those to solve the initial condition. This comes directly from the motivation for eigenvalues/vectors as above (solve the ODE in $f$)."
+    }
+  ]
+}
