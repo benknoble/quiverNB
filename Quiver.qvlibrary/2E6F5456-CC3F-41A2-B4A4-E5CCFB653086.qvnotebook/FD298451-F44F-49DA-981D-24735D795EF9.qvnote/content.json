@@ -1,0 +1,9 @@
+{
+  "title": "20 March // Lecture 25: Synchrotron Radiation",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Charged particles accelerate around a magnetic field and produces a continuous spectrum (this is synchrotron radiation) across all light\n\nCan't use the peak to determine the temperature of molecules\n\nBut we can add thermal radiation (blackbody spectra) to synchrotron radiation to produce a new graph"
+    }
+  ]
+}
