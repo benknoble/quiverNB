@@ -1,0 +1,10 @@
+{
+  "title": "21 March // Lecture 17",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Exam notes:\nIn: Solving $Ax = b$, computing $A^{-1}$, solving $Ax = b$ with $\\infty$ solutions\nOut: Eigenvalues $\\lambda$, Eigenvectors $v$\n\nCf. Wksht 17"
+    }
+  ]
+}
