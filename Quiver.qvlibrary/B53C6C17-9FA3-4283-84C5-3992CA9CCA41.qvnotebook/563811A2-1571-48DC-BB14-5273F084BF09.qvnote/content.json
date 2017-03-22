@@ -1,0 +1,36 @@
+{
+  "title": "22 March // Lecture 16",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Class previous Monday (20 March) cancelled\n\nPollEv\n\n> Q: Consider a SET of int... add, rem, member are the ops... if we implement this as a linked list, what is the time complexity (worst case) of the member operation?\n> A: $O(n)$ because you'd have to scan the entire list\n\n> Q: Consider a SET of int... add, rem, member are the ops... if we implement this as a linked list, what is the time complexity (worst case) of the add operation?\n> A: $O(1)$: simply add it at the beginning (will lead to duplicates and waste memory). By doing a contains (member) first, we avoid duplicates but we require $O(n)$ time. The tradeoff of cheap add for remove is negligible because remove will be $O(n)$ regardless\n\n> Q: Consider a SET of int... add, rem, member are the ops... if we implement this as an array list, what is the time complexity (worst case) of the member operation?\n> A: $O(n)$ because we still need to check the entire list\nClever way to get $O(1)$ if we're storing positive integers as an array of booleans where the index represents the value (i.e., `arr[i]` represents whether or not $i$ is in the set). However, it requires an extraordinary amount of space for, say, 1 million integers. Additionally, if we're not storing only positive integers, we need a way to map data values to positive integers uniquely.\n\n> Q: Consider a SET of int... add, rem, member are the ops... if we implement this as a BST, what is the time complexity (worst case) of the member operation?\n> A: $O(n)$ if not balanced like SPLT or AVL tree; else, $O(\\log n)$\n\n#Hashing\nMeans of organizing data that\n- allows `insert, delete, find` in $\\approx O(1)$\n- prevents ordering operations\n\nVocab\nThe *hash* or *hash value* is a magic integer computed from a *key*\n*Hash table* is the array where data is stored\n*HashMap* is a MAP ADT implemented via hashing or a hash table\n\n$hash(key) \\to int$ is the function that generates a hash\n$get(key)$ used to implement MAP via a hash table\n(basically, we return `table[hash(key)]`\n\nWhat happens if there is a collision (two objects mapping to the same integer)?\n\n##Hash Functions\nQualities of a good one:\n- spreads keys out well over the table (uniform distribution)\n- cheap to compute\n- minimizes collisions\n- an object should produce the same hash every time it is fed into the hash function, *regardless of any state change* (deterministic)\n\nOther issues: how to big to make the table, how to handle collisions?\n\nHashing makes `find`/`get` approximately $O(1)$ because we just have to index the table\n\n##The Hash Function\nmust turn *key type* into `int`\nWe will be using `string`s for this discussion\n\nSome hashing is done with other key types\n- git uses every object stored\n\nNo hash function is perfect\nEventually two keys will hash to the same value do the pigeonhole principle\n\n##How to Handle a Collision\nnumber of collisions is affected by quality of hash function and quantity of values\n\n###Issue 1: Bad Hash\nReturn the first character of the string $s$'s position in the alphabet $- 1$\nCheap, easy to compute, but collision for any two strings with the same first letter! Only 26 range elements, and the english words are not well distributed (lots of s,m,t words, not many x,z,q words)\n\n###Slightly Better\nPick the middle char, better distributed\nOr use several chars (or all of them) and build an integer arithmetically"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function hash (key, tabSize) {\n    hval = 0;\n    for (var i = 0; i < key.length(); i++)\n        hval += key.charAt(i);\n    return hval % tabSize;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "The above is an example of a typical (ish) hash function--it still has the problem that addition is commutative (\"abc\" and \"cba\" will have the same hash)\n\nIf the table is too large, the values will cluster at the small end. Let's try multipication to keep it spread out"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function hash (key, tabSize) {\n    hval = 0;\n    nt = tabsize/key.length();\n    for (var i = 0; i < key.length(); i++)\n        hval += key.charAt(i);\n    return (nt * hval) % tabSize;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Even better, using prime numbers and making use of integer overflow arithmetic (Java does similar):"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function hash (key, tabSize) {\n    hval = 7;\n    for (var i = 0; i < key.length(); i++)\n        hval = hval * 31 + key.charAt(31);\n    hval %= tabSize;\n    if (hval < 0) hval += tabSize;\n    return hval;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Complexity? $O(n)$ by the length of the key\n\n###Issue 2: Table Size\nBest to pick table size that is *prime* but it isn't likely to affect you much\nLoad factor $\\lambda$ is $\\frac{elements}{size}$ and is a measure of how much of the table we use\nDepends on how collisions are handled\n\n###Issue 3: Collision Resolution\n?? Next time"
+    }
+  ]
+}
