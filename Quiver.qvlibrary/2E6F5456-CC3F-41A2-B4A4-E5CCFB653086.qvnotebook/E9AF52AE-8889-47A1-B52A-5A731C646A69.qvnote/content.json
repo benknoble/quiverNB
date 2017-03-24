@@ -3,7 +3,7 @@
   "cells": [
     {
       "type": "markdown",
-      "data": "Galileo's observations of Venus' phases showed that Venus must orbit the Sun\ngeocentric versus heliocentric\nAlso discovered moon has craters, Sun spots, Jupiter's moons, Saturn's rings, Milky Way's stars, Neptune\n\n*Prograde Motion* is normal West to East motion\n*Retrograde Motion* is (strange) East to West motion\n*N.B.* This is only for over a series of nights, not daily motion (in which stars rise in E and set in W)\n*altitude* height of the star (how far above the horizon)\n*azimute* degrees clockwise from North\n\nRetrograde motion occurs *when a planet passes another*"
+      "data": "Galileo's observations of Venus' phases showed that Venus must orbit the Sun\ngeocentric versus heliocentric\nAlso discovered moon has craters, Sun spots, Jupiter's moons, Saturn's rings, Milky Way's stars, Neptune\n\n*Prograde Motion* is normal West to East motion\n*Retrograde Motion* is (strange) East to West motion\n*N.B.* This is only for over a series of nights, not daily motion (in which stars rise in E and set in W)\n*altitude* height of the star (how far above the horizon)\n*azimuth* degrees clockwise from North\n\nRetrograde motion occurs *when a planet passes another*"
     }
   ]
 }
