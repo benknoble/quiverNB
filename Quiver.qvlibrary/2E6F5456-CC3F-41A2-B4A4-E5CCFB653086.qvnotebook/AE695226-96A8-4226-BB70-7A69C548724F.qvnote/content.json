@@ -1,0 +1,18 @@
+{
+  "title": "27 March // Lecture 27: Doppler Shift",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Only happens when the object has a velocity component on the line between it and the observer\nRequires a high velocity to actually be visibly detected"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$\\frac{v}{c} = \\frac{\\lambda_{observed} - \\lambda_{rest}}{\\lambda_{rest}}$"
+    },
+    {
+      "type": "markdown",
+      "data": "$v$ will be negative if it's moving toward you: blueshifted (wavelength shorter)"
+    }
+  ]
+}
