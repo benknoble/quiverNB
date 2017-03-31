@@ -1,0 +1,9 @@
+{
+  "title": "31 March // Lecture 29: Planetary Temperatures",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Remember that $L = \\sigma AT^4 = \\sigma (4\\pi r^2) T^4$\n\nHow do we figure out the temperature of the planet?\n- Need to know how much energy the planet gives off\n- Also how much energy the planet recieves from the sun\n\nWe can find that $L_{in} = \\sigma (4\\pi r_{sun}^2)T^4 (\\frac{\\pi r_{planet}^2}{4\\pi d})$\n\nThen we find that $T_{planet} = T_{sun}\\sqrt{\\frac{r_{sun}}{2d}}$\n\nNow, how $T_{sun}, r_{sun}, d$?\n\n$T$ is simple, since we can use the peak wavelength or use Wein's law\nKnowing $T$ we can calculate $r$ based on the luminosity.\nWe can use Kepler's laws to calculate $d$. We can also use parallax/angular shift.\n\nLooks like something is missing based on observed data...\nWe're assuming the planet absorbs all the light, heats up, and re-emits it.\nBut it may reflect some sunlight\n\nA planet's albedo $A$ represents the fraction of reflected light $\\in [0,1]$\n\n$T_{planet} = T_{sun}{(1-A)}^\\frac{1}{4}\\sqrt{\\frac{r_{sun}}{2d}}$"
+    }
+  ]
+}
