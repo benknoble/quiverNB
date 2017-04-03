@@ -1,0 +1,9 @@
+{
+  "title": "3 April // Lecture 30: Planetary Temperatures",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Still missing something from the equation...\n\nIgnoring the atmosphere\n\nHas composition, pressure\n\nHow light particles interact with an atmosphere\n- Infrafred: absorbed, causing it to rotate and vibrate\n- Visible: transmitted through atmosphere\n- UV: Disassociate molecules when it's absorbed\n- X-rays: Disassociate molecules and atoms\n\nAtmosphere is like an ogre: it has layers\n- Troposphere: colder as you go up; only visible light reaches it\n- Stratosphere: warmer as you go towards the middle; UV light reaches it (Ozone $O_3$)\n- Thermosphere: warmer as you go up; heated by X-rays and UV light\n- Exosphere: satellites and stuff\n\nOxygen is horny: it likes to sleep around and bond with everything\n\nGreenhouse gases absorb (and re-emit) IR light, but transmits visible light\nIncludes $H_2O, CO_2, CH_4$"
+    }
+  ]
+}
