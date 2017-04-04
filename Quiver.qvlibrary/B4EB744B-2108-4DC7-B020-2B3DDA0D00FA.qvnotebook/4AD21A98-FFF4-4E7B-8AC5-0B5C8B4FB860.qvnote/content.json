@@ -1,0 +1,10 @@
+{
+  "title": "4 April // Lecture 20",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Continuing $Y' = AY$\n\nWe are guessing $Y = f(t)u \\implies f'(t)u = f(t)Au$\n$Au \\parallel u \\iff u$ is an eigenvector of $A$\n$Au = \\lambda u \\iff \\lambda$ is an eigenvalue of $A$\n$\\lambda = \\frac{f'(t)}{f(t)} \\iff f(t) = e^{\\lambda t} u$\n\nWe have $Y(t) = c_1e^{\\lambda_1 t}u_1 + c_2e^{\\lambda_2 t}u_2$\n$Y(0) = Y_0 = c_1u_1 + c_2u_2$; does this satisfy arbitary $Y_0$?\n\nSolvable $\\forall Y_0 \\iff \\matrixstart u_1 & u_2 \\matrixend \\matrixstart c_1 \\\\ c_2 \\matrixend = Y_0 \\iff \\matrixstart u_1 & u_2 \\matrixend$ is invertible $\\iff \\det \\matrixstart u_1 & u_2 \\matrixend \\neq 0$\n\nDefine $S := \\matrixstart u_1 & u_2 \\matrixend$\n\nThen $\\matrixstart c_1 \\\\ c_2 \\matrixend = S^{-1}Y_0$\n\nFurther, $Y(t) = S \\matrixstart c_1e^{\\lambda_1t} \\\\ c_2e^{\\lambda_2t} \\matrixend = S \\matrixstart e^{\\lambda_1t} & 0 \\\\ 0 & e^{\\lambda_2t} \\matrixend \\matrixstart c_1 \\\\ c_2 \\matrixend = S \\matrixstart e^{\\lambda_1t} & 0 \\\\ 0 & e^{\\lambda_2t} \\matrixend S^{-1} Y_0$\n\nWe let $\\Psi(t) = S \\matrixstart e^{\\lambda_1t} & 0 \\\\ 0 & e^{\\lambda_2t} \\matrixend S^{-1}$ and write $Y(t) = \\Psi(t)Y_0$. $\\Psi$ typically takes a form $e^{At}$.\n\nSketching is a coordinate mapping. Cf. wksht #$20$\n\nComplex:\n\n$\\lambda = a \\pm bi$\n$\\bar u = u \\pm iv$\n$Y_\\Re = e^{at}(u\\cos(bt) - v\\sin(bt))$\n$Y_\\Im = e^{at}(u\\sin(bt) + v\\cos(bt))$\n\n$Y = c_1Y_\\Re + c_2Y_\\Im$\n\n$S := \\matrixstart u & v \\matrixend$\n\n$Y(t) = e^{at} S \\matrixstart \\cos(bt) & \\sin(bt) \\\\ -\\sin(bt) & \\cos(bt) \\matrixend S^{-1}Y_0$\n\nCould this be a rotation by angle $\\theta = bt$?!"
+    }
+  ]
+}
