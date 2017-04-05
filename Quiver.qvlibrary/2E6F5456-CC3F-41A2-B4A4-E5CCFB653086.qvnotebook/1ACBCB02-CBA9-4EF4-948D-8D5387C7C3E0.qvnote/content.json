@@ -1,0 +1,9 @@
+{
+  "title": "5 April // Lecture 31: Planetary Temperatures",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Planets emit lots of IR light based on their temperature, and it has to get through the atmosphere first\n\nGreenhouse Effect:\n1. Earth emits infrared light as it heats up\n2. G-gases absorb/re-emit it\n3. Goes in random directions; some out to space, some to Earth to heat it up\n\nWe are heated by both the sun and by IR light from atmo."
+    }
+  ]
+}
