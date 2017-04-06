@@ -1,0 +1,10 @@
+{
+  "title": "6 April // Lecture 21",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Summarize $Y' = AY$\n\nCase 1)\n\n$\\lambda_1 \\neq \\lambda_2 \\in \\mathbb{R}$\n$S := \\matrixstart u_1 & u_2 \\matrixend$\n\n$Y(t) = S\\matrixstart e^{\\lambda_1 t} & 0 \\\\ 0 & e^{\\lambda_2 t}\\matrixend S^{-1} Y_0 = c_1 e^{\\lambda_1 t} u_1 + c_2  e^{\\lambda_2 t} u_2$\n\nCase 2)\n\n$\\lambda_{1,2} = a \\pm ib \\in \\mathbb{C}, b \\neq 0$\n$S := \\matrixstart u & v \\matrixend \\in \\mathbb{C}^{2\\times2}$ for eigenvectors $w = u + iv$\n\n$Y(t) = e^{at}S\\matrixstart \\cos(bt) & \\sin(bt) \\\\ -\\sin(bt) & \\cos(bt) \\matrixend S^{-1} Y_0 = c_1e^{at}(u\\cos(bt) - v\\sin(bt)) + c_2 e^{at}(u\\sin(bt) + v\\cos(bt))$\n\nClearly there's an oscillation and either a growth or decay, but figuring out how is not obvious from the expanded form.\n\nThe diagonal form makes it quite clear.\n\n$S^{-1}Y_0$ gives the coordinate of $Y_0$ in the eigenbasis ($c_1,c_2$-space), the matrix of trig $R$ rotates clockwise by a shift $\\theta = b$, $e^{at}$ causes it to decay (inward spiral), grow (outward spiral), or remain constant (circle), and finally $S$ maps this all back to the coordinate plane.\n\nCase 3)\n\n$\\lambda_1 = \\lambda_2$\nWe have a solution $Y_1(t) = e^{\\lambda t}u$, but it is not enough\n\nFind a second solution $Y_2(t)\\dots$\n\nTried multiplying by $t$ ($te^{\\lambda t}u$), which failed\n\nThen $Y_2(t) = e^{\\lambda t} w + te^{\\lambda t}\\nu$, which leads to to $\\nu = u, (A - \\lambda I)w = u$.\n\nFinally, $S := \\matrixstart u & w \\matrixend$,\n\n$Y(t) = e^{\\lambda t} S \\matrixstart 1 & t \\\\ 0 & 1 \\matrixend S^{-1} Y_0$"
+    }
+  ]
+}
