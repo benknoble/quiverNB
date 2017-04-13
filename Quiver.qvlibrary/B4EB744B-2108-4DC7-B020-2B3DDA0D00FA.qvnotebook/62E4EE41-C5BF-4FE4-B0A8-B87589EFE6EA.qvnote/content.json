@@ -1,0 +1,10 @@
+{
+  "title": "13 April // Lecture 23",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "if $A \\in \\mathbb{R}^{n\\times n}$ is diagonalizable (that is, it has $n$ eigenvectors that are linearly independent $v_1,\\dots,v_n$, corresponding $\\lambda_i$) and $Y = AY'$\n$\\implies$ $Y(t) = \\matrixstart v_1 \\cdots v_n \\matrixend \\matrixstart e^{\\lambda_1t} & \\cdots & 0 \\\\ 0 & \\ddots & 0 \\\\ 0 & \\cdots & e^{\\lambda_n t}\\matrixend {\\matrixstart v_1 \\cdots v_n \\matrixend}^{-1} Y_0$\n\n\nFor a case like\n\\begin{align}\n    v_1 &= u+iv \\\\\n    v_2 &= u-iv \\\\\n    v_3 &= v_3\n\\end{align}\n\nWe would have $Y(t) = \\matrixstart u & v & v_3 \\matrixend \\matrixstart e^{at}\\cos(bt) & e^{at}\\sin(bt) & 0 \\\\ -e^{at}\\sin(bt) & e^{at}\\cos(bt) & 0 \\\\ 0 & 0 & e^{\\lambda_3} \\matrixend {\\matrixstart u & v & v_3 \\matrixend}^{-1}Y_0$\n\n"
+    }
+  ]
+}
