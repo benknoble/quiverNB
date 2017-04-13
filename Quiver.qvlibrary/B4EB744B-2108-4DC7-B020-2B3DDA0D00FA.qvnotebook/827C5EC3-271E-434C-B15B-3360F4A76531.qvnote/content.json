@@ -4,7 +4,7 @@
     {
       "type": "latex",
       "language": "latex",
-      "data": "Repeated roots:\n\nFind $\\lambda, u$ that form $e^{\\lambda t} u$\n\nThen, we seek $v$ such that we can construct $e^{\\lambda t} u + t e^{\\lambda t} v$, necessitating $(A - \\lambda I)v = u$\n\nWe find that for an initial condition $Y_0$, the constants $c_1,c_2 = SY_0 = \\matrixstart u & v \\matrixend Y_0$\n\nFurther, the solution is then $Y(t) = e^{\\lambda t} S \\matrixstart 1 & t \\\\ 0 & 1 \\matrixend S^{-1} Y_0$\n\nSketch: cf. wksht #$21$\n\nIn the $v$ direction, we have only $c_2e^{\\lambda t}$\nIn the $u$ direction, we have the more complicated $e^{\\lambda t}(c_1 + c_2t)$\n\nStart with a brief look at physics/springs/systems of equations\n\n"
+      "data": "Repeated roots:\n\nFind $\\lambda, u$ that form $e^{\\lambda t} u$\n\nThen, we seek $v$ such that we can construct $e^{\\lambda t} u + t e^{\\lambda t} v$, necessitating $(A - \\lambda I)v = u$\n\nWe find that for an initial condition $Y_0$, the constants $c_1,c_2 = SY_0 = \\matrixstart u & v \\matrixend Y_0$\n\nFurther, the solution is then $Y(t) = e^{\\lambda t} S \\matrixstart 1 & t \\\\ 0 & 1 \\matrixend S^{-1} Y_0$\n\nSketch: cf. wksht #$21$\n\nIn the $v$ direction, we have only $c_2e^{\\lambda t}$\nIn the $u$ direction, we have the more complicated $e^{\\lambda t}(c_1 + c_2t)$\n\nStart with a brief look at physics/springs/systems of equations\n(cf. wksht #$22$)\n"
     }
   ]
 }
