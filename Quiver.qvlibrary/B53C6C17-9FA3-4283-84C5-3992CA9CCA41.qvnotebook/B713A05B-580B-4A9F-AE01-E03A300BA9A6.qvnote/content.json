@@ -1,0 +1,9 @@
+{
+  "title": "12 April // Lecture 22",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Poll Ev\n\n> Q: How many MST's does the graph shown have? [refs diagram]\n> A: 4\n\n> Q: How many MST's does the graph shown have? [diagram]\n> A: 1. The edge weights are unique\n\n> Q: For the unweighted un-directed graph shown, what is the length of the minimum spanning tree? [diagram]\n> A: 6. $n-1$ for $n$ nodes\n\n> Q: A greedy algorithm is one which\n> A: Builds the larger solution by picking the best solution for each smaller problem\n\n# Shortest Path (directed)\nShortest path from $v$ to $w$ ($w,v \\in V$)\n\n2 situations:\n- digraph, unweighted edges (weight 1 on all)\n- digraph, weighted edges\n\nInput: $G=(V,E), s$ (start at $s$\n\nOutput: Shortest path from $s$ to every other vertex, $\\lvert V \\rvert - 1$ such paths\n\nThe naïve solution is $O(\\lvert V \\rvert^2)$\n\nImprove by noticing we don't need to revisit nodes. We do a breadth-first search\nUse a queue\nSee ppt for example\nEnqueue adjacent nodes when you visit a node\nDequeue to get next node to visit\nVisit marks the distances\n\n$O(\\lvert V \\rvert + \\lvert E \\rvert)$\n\nPriority Queue for weighted edges"
+    }
+  ]
+}
