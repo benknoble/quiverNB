@@ -4,7 +4,7 @@
     {
       "type": "latex",
       "language": "latex",
-      "data": "We examined vector ODEs of the form \n\n$Y' = AY$ where $A \\in \\mathbb{R}^{n\\times n}, Y \\in \\mathbb{R}^{1\\times n}$\n\nSolve for the eigen{vector,value}s of $A$ (i.e., $\\{(\\lambda,v) | (A - \\lambda I)v = 0\\}$\n\nThen we build solutions $Y_i = e^{\\lambda_i t}v_i$ and $Y = \\sum_i c_i Y_i$\n\nThen we looked at graphing based on differing initial conditions (determined by $c_1,c_2,\\dots$ which forms a new coordinate space using the vectors $v_1,v_2,\\dots$). We note that positive $\\lambda_i$ push along $v_i$ away from the origin and negative $\\lambda_i$ pull along $v_i$ towards the origin. This helps us identify the shape of the graph in different quadrants in the $C$-space."
+      "data": "We examined vector ODEs of the form \n\n$Y' = AY$ where $A \\in \\mathbb{R}^{n\\times n}, Y \\in \\mathbb{R}^{n\\times 1}$\n\nSolve for the eigen{vector,value}s of $A$ (i.e., $\\{(\\lambda,v) | (A - \\lambda I)v = 0\\}$\n\nThen we build solutions $Y_i = e^{\\lambda_i t}v_i$ and $Y = \\sum_i c_i Y_i$\n\nThen we looked at graphing based on differing initial conditions (determined by $c_1,c_2,\\dots$ which forms a new coordinate space using the vectors $v_1,v_2,\\dots$). We note that positive $\\lambda_i$ push along $v_i$ away from the origin and negative $\\lambda_i$ pull along $v_i$ towards the origin. This helps us identify the shape of the graph in different quadrants in the $C$-space."
     }
   ]
 }
