@@ -1,0 +1,9 @@
+{
+  "title": "26 April // Lecture 38: ET Life",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Detect planets\n\n1. Take pics\n2. Doppler shift (sun)\n    - If the center of gravity is farther from the sun, there is less doppler shift\n    - height $\\propto \\frac{m}{\\sqrt{Md}}$"
+    }
+  ]
+}
