@@ -1,0 +1,14 @@
+{
+  "title": "27 April // Last Lecture",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Final information:\n12 noon here in Peabody"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "We are turning $Y' = AY (+G)$ into $Y = S\\Lambda S^{-1}Y (+G)$ by diagonalizing $A$.\n\nAside:\nIf $\\Psi(0) = I$, $Y(t) = \\Psi(t)Y_0 + \\Psi(t)\\int_0^t\\Psi^{-1}(s)G(s)ds$\nIf not, $\\matrixstart c1 \\\\ c2 \\matrixend = \\Psi^{-1}(0)Y_0$, and we replace $Y_0$ above with the $c$-matrix\n\nLooking at Undetermined Coefficients (to avoid the messiness of integrating, like how we avoided variation of parameters with a guessing trick)\n\nStill find homogeneous solution...\nThen specific solution\n\nGuess!\nLike $Y = tu + v, (u,v \\in \\mathbb{R}^2)$\n\nPlug in and start matching"
+    }
+  ]
+}
