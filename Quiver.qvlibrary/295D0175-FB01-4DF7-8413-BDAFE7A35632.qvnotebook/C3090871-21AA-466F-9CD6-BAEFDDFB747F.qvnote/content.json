@@ -1,0 +1,14 @@
+{
+  "title": "22 August // Lecture 1",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Office: 312 Phillips\nSyllabus online (*SAKAI*)\n\nLecture + Wksht + Weekly HW (like DifEqs)\n\nLeave 3rd rows empty\n\nToday: (Augmented) Matrices, Upper Triangular Form, RREF"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$100$ tickets, $3$ dollar child, $5$ dollar adult\nRevenue: $422$\n\n$$ x + y = 100 $$\n$$ 3x + 5y = 422$$\n\nSubstitution is ok. Graphically it works. Subtracting the equations works pretty well. Is there something better? Matrices.\n\n$\\matrixstart 1 & 1 \\\\ 3 & 5 \\matrixend \\matrixstart x \\\\ y \\matrixend = \\matrixstart 100 \\\\ 422 \\matrixend$\n\nAnd, reduce. Augment the matrix."
+    }
+  ]
+}
