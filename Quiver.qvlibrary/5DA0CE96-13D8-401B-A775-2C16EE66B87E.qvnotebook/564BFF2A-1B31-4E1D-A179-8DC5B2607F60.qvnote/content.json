@@ -1,0 +1,13 @@
+{
+  "title": "23 August // Lecture 1",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Computer Organization and Design\n\nMontek Singh\n\n## Course Objectives\n\nTo learn:\n- how programs are translated into machine language\n  - and how they are executed\n- Hardware software interface\n- Program performance and how it can improved\n- Processors\n- Hardware correlation to performance\n\n## Course Mechanics\n\nLecture slides online\nProblem sets online\nQuiz on SAKAI Friday\nLabs on Friday (review-quiz-lab session)\nNO LATE MATERIAL\n\n2 lowest lab scores dropped (not mini-project)\nSome other things (hw?)\n\nQuizzes/Exams are open book\n\nPiazza!"
+    },
+    {
+      "type": "markdown",
+      "data": "# Computer Abstractions\n\nMoore's Law: every couple years, number of transistors doubles (with lots of caveats about cost and efficiency and size)\n\n*abstraction* -- move focus away from details towards the quintessential idea\n  The \"black box\" of programming\n\nHardware abstraction: one chip has multiple billions of components\nComputer < Circuit Board (maybe 8), 1-2bil devices < Integrated Circuit (maybe 8-16), .25-16million devices < Module (8-16) 100k devices < Cell (1k-10k) 16-64 devices < Gate(2-8) 8 devices < Transistor\n\nHardware > Systems software > Applications\n\n## What determines performance?\n\nFor now, let performance := speed\nGood algorithms!\nLanguage, compiler, architecture\nProcessor, memory\nIO"
+    }
+  ]
+}

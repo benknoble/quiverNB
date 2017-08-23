@@ -1,0 +1,14 @@
+{
+  "title": "23 August // Lecture 1",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Office Hrs: MW 1-2pm, F 8-9am\nPhillips 307\n\nDiscrete about integers numbers $\\mathbb Z$, while calculus is about real numbers $\\mathbb R$\n\nSections:\n1. Logic & Applications: What is a proof and how to write it\n2. Sets & Functions\n4. Number Theory\n5. Mathematical Induction\n6. Counting (combinatorics)\n7. Probability\n9. Relations (b/w numbers of a set)"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "1 Logic and Proofs\n\nMathematical statements: declarative (a statement $p,q,r$ is either true or false), called a proposition\nNegation of a statement $p$ is given by $\\neg p$\n\nTruth Tables $\\checkmark$\n\nConjunction denoted by $p \\land q$, is true $\\iff$ $p$ is true and $q$ is true (intersection)\nDisjunction denoted by $p \\lor q$, is false $\\iff$ $p$ is false and $q$ is false (union)\nExclusive Or denoted by $p \\oplus q$ is true $\\iff$ exactly one of $p,q$ is true\n\nConditional Statements\n\nHypothesis (implication) $p \\implies q$ is the statement if $p$, then $q$\n    N.B. This says nothing about the implication of $\\neg p$!\n    That is, $p \\implies q$ is true even if $\\neg p$ is true (vacuously true)\n    The statement is only false when $p$ and $\\neg q$\nConverse is $q \\implies p$\nContrapositive is $\\neg q \\implies \\neg p$\nBiconditional $p \\iff q = (p \\implies q) \\land (q \\implies p)$\n\nTruth table for $(p \\lor \\neg q) \\implies (p \\land q)$\n\n$p$     $q$     $\\neg q$    $p \\lor \\neg q$     $p\\land q$      statement\nT       T       F           T               T               T\nT       F       T           T               F               F\nF       T       F           F               F               T\nF       F       T           T               F               F\n\nPrecedence of Operators\n\n1. $\\neg$\n2. $\\land$\n3. $\\lor$\n4. $\\implies$\n5. $\\iff$\n\nA compound prop. is an expression in propositional variables\n    It is a tautology if it is true independent of the truth-values of the variables\n    It is a contradiction if it is always false (\"\")\n    \nLogical Equivalence\n\nA compound prop. is logically equivalent $\\iff$ $(a \\iff b)$ is a tautology\nE.g. $p \\implies q \\equiv \\neg q \\implies \\neg p$\n\nLogic symbols dictionary\n\nAnd: $\\land$ or $\\wedge$\nOr: $\\lor$ or $\\vee$\nXor: $\\oplus$\nExists: $\\exists$\nExists uniquely: $\\exists!$\nMembership: $\\in$, $\\ni$\nImplies: $\\implies$\nIff: $\\iff$\nLogical Equivalence: $\\equiv$"
+    }
+  ]
+}
