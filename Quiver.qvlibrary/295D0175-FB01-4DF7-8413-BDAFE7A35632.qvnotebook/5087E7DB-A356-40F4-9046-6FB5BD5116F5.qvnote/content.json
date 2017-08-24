@@ -1,0 +1,10 @@
+{
+  "title": "24 August // Lecture 2",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "From now on: Coker 201\n\nRow Reduction\n3 operations\n    1. Swap rows\n    2. Scale a row\n    3. Add to another row\n\nRow Echelon Form, Reduced REF\n\nContradiction $\\implies$ no solutions\n\n$\\matrixstart 0 & 0 & \\dots & 0 \\matrixend \\implies$ infinitely many solutions (degrees of freedom; parameterize)"
+    }
+  ]
+}
