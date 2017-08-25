@@ -1,0 +1,9 @@
+{
+  "title": "25 August // Lecture 2",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## What determines performance?\n\nHierarchy:\n1. Algorithm (number of operations executed)\n2. Programming language, compiler, & architecture (number of machine instructions executed per operation)\n3. Processor and memory system (how fast instructions are executed)\n4. I/O (how fast I/O operations are executed)\n\n## Levels of Program Code\n\n- High level Language\n  - Level of abstraction closer to domain\n  - Provides for productivity/portability\n- Assembly langugae\n  - Textual representation of instructions\n- Hardware representation\n  - Binary\n\n## Components of a Computer\n\nInput, Process (Control, Datapath, Processor), Output, Storage (Memory)\n\nInput/Output:\n- User interface\n- Storage devices\n- Network adapters\n\n## Issues for Modern Computers\n\nEnergy/Power consumption has become a major challenge\n  - Perhaps the most limiting factor in most processors\n  - Limited by heat\n\n## Tech Trends\n\n### Processor\n\nTubes, Transistor, IC, VLSI, Ultra large scale IC\n\n### Memory\n\n16K in 1976 to 4G in 2012\n\n### Implementation\n\nRelays\nVacuum Tubes\nTransistors\nIC\nNanotubes?\nQuantum-Effect Devices??\n\nAbstraction: switches and wires\n\n### Chips\n\nSilicon wafers (semiconductor--perfect for a switch)\n\n# More on Performance (cont.)\n\n## Why study it?\n\nBy itself, not meaningful\nMeaningful to compare performance, so you can choose better options (intelligent design choices)\n- see through all the *marketing hype*\n\nKey to understanding underlying computer organization\n\n## What is Performance?\n\nLoosely: speed (for now)"
+    }
+  ]
+}

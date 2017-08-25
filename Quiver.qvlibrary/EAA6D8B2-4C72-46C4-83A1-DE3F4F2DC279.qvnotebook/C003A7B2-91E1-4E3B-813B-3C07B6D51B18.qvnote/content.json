@@ -1,0 +1,10 @@
+{
+  "title": "25 August // Lecture 2",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "See Textbook 1.3(27,28) for some various identities related to propositional logic (such as $p \\implies q \\equiv \\neg p \\lor q$)\n\nLogical Equivalences ($\\equiv$)\n\n$a \\equiv b \\iff (a \\iff b)$ is a tautology (equivalent, if the truth tables of $a,b$ are the same)\n\n$p \\implies q \\equiv \\neg q \\implies \\neg p \\not\\equiv q \\implies p$\n\nDe Morgan's Laws\n\n$\\neg (p \\land q) \\equiv \\neg p \\lor \\neg q$\n$\\neg (p \\lor q) \\equiv \\neg p \\land \\neg q$\n\nOthers:\n\nIdentity Laws\n$p \\land T \\equiv p$\n$p \\lor F \\equiv p$\n\n$p \\lor T \\equiv T$\n$p \\land F \\equiv F$\n\n$p (\\lor,\\land) p \\equiv p$\n\n$\\neg \\neg p \\equiv p$\n\nCommutative Laws $\\checkmark$\n\nAssociative Laws $\\checkmark$\n\nDistributive Laws $\\checkmark$\n\nAbsorption Laws\n$p \\lor (p \\land q) \\equiv p$\n$p \\land (p \\lor q) \\equiv p$\n\nImplication Laws\n$p \\implies q \\equiv \\neg p \\lor q$\n$p \\implies q \\equiv \\neg q \\implies \\neg p$ (contrapositive)\n\nExample\n\nShow that $p \\land q \\equiv \\neg (\\neg p \\lor (p \\land \\neg q))$\n$\\neg (\\neg p \\lor (p \\land \\neg q)) \\equiv p \\land \\neg (p \\land \\neg q) \\equiv p \\land (\\neg p \\lor q) \\equiv (p \\land \\neg p) \\lor (p \\land q) \\equiv F \\lor (p \\land q) \\equiv (p \\land q) \\square$\n\nShow that $p \\land q \\implies p$ is a tautology\n$p \\land q \\implies p \\equiv \\neg (p \\land q) \\lor p \\equiv \\neg p \\lor \\neg q \\lor p \\equiv T \\lor \\neg q \\equiv T \\square$\n\n1.4 Predicate Logic\n\n$P(x): x \\gt 3$ is not a proposition, but a predicate that becomes a proposition when a value of $x$ is assigned; that is, it is a propositional function of $x$\n\n$P(1) \\equiv F, P(5) \\equiv T$\n\nGiven $P(x):$ \"Planet $x$ has $7$ moons, express\n1. There is a planet with $7$ moons\n2. All planets have $7$ moons\n\n1a. $\\exists x : P(x)$\n2a. $\\forall x : P(x)$"
+    }
+  ]
+}
