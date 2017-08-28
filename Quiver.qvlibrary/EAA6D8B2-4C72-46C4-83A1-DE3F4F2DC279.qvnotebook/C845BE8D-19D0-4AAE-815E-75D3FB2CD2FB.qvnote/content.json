@@ -1,0 +1,10 @@
+{
+  "title": "28 August // Lecture 3",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Propositional functions (some with multiple variables)\n\nUniversal quantifications\n\n$P(x)$ is a propositional function of $x$\n\nBy $\\forall x : P(x)$ we mean $P(x)$ holds for all $x$ in the domain\nTo prove it false, you need one counter example. To prove it true, you must show that it holds for all values of $x$ in the domain \nThat is, $\\forall x : P(x) \\equiv P(x_1) \\land \\dots \\land P(x_n)$\n\nBy $\\exists x : P(x)$ we mean there exists at least one $x$ in the domain such that $P(x)$ holds \nTo prove it true, you need one example. To prove it false, you must show that there is no such value of $x$ in the domain\nThat is, $\\exists x : P(x) \\equiv P(x_1) \\lor \\dots \\lor P(x_n)$\n\nBy $\\exists! x : P(x)$ we mean there exists a unique $x$ such that $P(x)$ holds\n\nLogical equivalence involving quantifiers\n\n$\\neg (\\forall x : P(x)) \\equiv \\exists x : \\neg P(x)$\n\nSame truth values no matter the predicates or domains\n\nProofs:\n1. Argue that if LHS is T than RHS is T\n2. Argue that if RHS is T than LHS is T\n\n$\\neg (\\exists x : P(x)) \\equiv \\forall x : \\neg P(x)$\n\nNot logically equivalent if one can be false while the other is true\n\n$\\exists$ a student $s \\in$ this class : $s$ has visited Japan\nalternately,\nLet $C$ = this class, $P(s)$ : $s$ has visited Japan\n$\\exists s \\in C : P(s)$"
+    }
+  ]
+}
