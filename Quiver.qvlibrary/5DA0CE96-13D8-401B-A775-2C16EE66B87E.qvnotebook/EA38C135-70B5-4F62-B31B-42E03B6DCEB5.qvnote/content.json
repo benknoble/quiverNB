@@ -1,0 +1,9 @@
+{
+  "title": "30 August // Lecture 4",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Clocks\n\nSee Ch 1.5 or 1.6 (I forget which) (CPI, &c.)\n\n$cycles = instructions \\cdot CPI$\n\n$1 Hz = 1 \\frac{cycle}{s}$\n\n### Instruction count\n\nDetermined by\n- program\n- instruction set architecture (ISA)\n- compiler\n\n### CPI\n\nDetermined by CPU\nIf different instructions have different CPI, take avg\n\nMillions of instructions per second $= \\frac{rate}{CPI}$\n$rate$ is in $MHz$\n\nCan't compare $MIPS$ of two different processors if they run different sets of instructions\n\n## Processors\n\nPDP, &c, $CPI \\gt 1$\nMIPS, &c. $CPI = 1$\n- ARM (Advanced RISC Machine) is a successor of MIPS\n\nModern $CPI \\lt 1$\n\nFor MIPS processor, # of cycles $= \\approx$ # of instructions (since $CPI = 1$)\n- Can fail (different machines, memory access, floating point, branches)\n\n## Benchmarks\n\nRun a real application!\n\nPeople used to use small benchmarks (good for architects and designers, standardized, &c., but can be abused)\n\nGeekbench?\n\n### Amdahl's Law\n\n$t_{improved} = \\frac{t_{affected}}{r_{speedup}} + t_{unaffected}$\n\nPrinciple: Make the common case fast!\nEventually gains limited by what cannot be improved"
+    }
+  ]
+}
