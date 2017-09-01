@@ -1,0 +1,9 @@
+{
+  "title": "1 September // Lecture 5",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Review Amdahl's Law\n\n## Power\n\n= Energy consumed per unit time\n\nEnergy important for things like mobile batteries\nPower important because of heat generated\n\nTwo things contribute to power consumption:\n- Dynamic Power\n  - Power consumed doing actual work\n  - Called dynamic b/c components are switching between '0' and '1' (one cycle is $0 \\to 1 \\to 0$)\n- Static or 'leakage' power\n  - Power consumed even when everything is idle or 'static'\n  - Due to some small amount of 'leakage' current that still flows\n\n### Dynamic Power\n\n$P = CV^2 \\times \\frac{f}{2}$\n\n### Static Power\n\n$P = IV$\n\nSee slides for a total $P$ example\n\nPower wall: cannot reduce voltage further, cannot remove heat faster"
+    }
+  ]
+}
