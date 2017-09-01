@@ -1,0 +1,10 @@
+{
+  "title": "1 September // Lecture 5",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Word problems in argument forms\n\nE.g.\nShow that the premises\n\n$\\neg p:$ \"It is not sunny this afternoon\"\nand $q:$ \"It is colder than yesterday\"\nand $r:$ \"We will go swimming only if it is sunny\"\nand $s:$ \"If we do not go swimming, then we will take a canoe trip\"\nand $t:$ \"If we take a canoe trip then will be home by sunset\"\n\nimply the conclusion $t$ (for conditional statements, the variables given above are there results)\n\n$\\neg p \\land q$\n($\\therefore \\neg p$)\n$r \\implies p$\n($\\therefore \\neg r$)\n$\\neg r \\implies s$\n($\\therefore s$)\n$s \\implies t$\n$\\therefore t$\n\nIs this a valid argument form? (Indications in parentheses are not from the original premises, but rather implied by them)\n\nTo justify an argument format, you number each step and give reasons for each.\n\n(1) $\\neg p \\land q$        [premise]\n(2) $\\neg p$                [rule of inference]\n(3) $r \\implies p$          [premise]\n(4) $\\neg r$                [rule of inference, (2,3)]\n(5) $\\neg r \\implies s$     [premise]\n(6) $s$                     [rule of inference, (4,5)]\n(7) $s \\implies t$          [premise]\n(8) $t$                     [rule of inference, (6,7)]\n$\\square$\n\nFallacies\n\nFallacy of affirming the conclusion: $(p \\implies q) \\land q \\implies p$\nFallacy of denying the hypothesis: $(p \\implies q) \\land \\neg p \\implies \\neg q$\n\nFor quantifiers\n\nWith $\\forall x$ we should be able to give a value to $x$ and eliminate the quantifier (universal instantiation)\n$(\\forall x : P(x)) \\implies P(c)$ for any $c \\in D[x]$ (domain)\n$(\\exists x : P(c)) \\implies P(c)$ for some $c \\in D[x]$ (existential instantiation)\n\nWe also have their converses (universal and existential generalization)"
+    }
+  ]
+}
