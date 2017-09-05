@@ -1,0 +1,9 @@
+{
+  "title": "5 September // Lecture 5",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Evidence for Non-Linear Structure (cont.)\n\n### Phrase Structure\n\nSee Chomsky Ch. 3\nAll languages have this recursive structure (Universal Grammar)\n\n### Phrasal Type\n\nPhrases have multiple parts, some of which dominate the others\nHead & Compliment\nProjection\n\nHead selects complement type, phrasal type\nSpecifiers are *not generally* selected by the head"
+    }
+  ]
+}

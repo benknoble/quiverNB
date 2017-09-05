@@ -1,0 +1,10 @@
+{
+  "title": "5 September // Lecture 5",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Linearly dependent and independent\n$u_1, \\dots, u_m \\in \\mathbb{R}^n$\n\nConsider a linear combination\n$x_1u_1 + \\dots + x_mu_m = 0$ which is equivalent to\n\n$\\matrixstart u_1 & \\dots & u_m \\matrixend \\matrixstart x_1 \\\\ \\vdots \\\\ x_m \\matrixend = \\bar{0}$\n\nIf there is a non-zero solution for $x_{1 \\dots m}$, they are linearly dependent ($\\iff Ax = 0$ for $x \\neq \\bar{0}$)\n\nIf there is $Ax = 0, x = \\bar{0}$, they are linearly independent.\n\nLet's take $A = \\matrixstart v_1 & v_2 & v_3 & v_4 \\matrixend$ and row-reduce it to e.g.\n\n$B = \\matrixstart 1 & 0 & 1 & 0 \\\\ 0 & 1 & 2 & 0 \\\\ 0 & 0 & 0 & 1 \\matrixend$.\n\nThen $Ax = 0 \\iff Bx = 0$\nWorking with $B$ is easier.\nPick your free variable to be non-zero (e.g., $1$), then inspect it to identify the dependence of some vectors on others.\n\nYou can pull out a vector $u_i$ for each free variable $t_i$ (by letting it $= 1$ and others $= 0$). Then the all solutions $x$ are $span(u_1, u_2, u_3, u_4)$"
+    }
+  ]
+}
