@@ -1,0 +1,9 @@
+{
+  "title": "6 September // Lecture 6",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Fallacy: Low Power at Idle\n\nLow load still consumes a decent amount of power\n*Industry challenge*: Design processors to make power proportional to load\n\n# Representing Information\n\n(see Ch 2.3-4, 3.5)\n\n### Motivation\n\nAt the computer level, all we have is binary digits (bits)\n\n## Information Encoding\n\nEncoding is assigning representation to information\nEncoding is an art\n- Complexity\n- Efficiency\n- Reliability\n- Security\n\nFixed length encoding uses same number of bits for all information\n\n### Binary\n$\\checkmark$"
+    }
+  ]
+}

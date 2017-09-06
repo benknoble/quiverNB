@@ -1,0 +1,10 @@
+{
+  "title": "6 September // Lecture 6",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Introduction to Proofs\n\nExample: Theorem--If $n$ is an ondd integer then $n^2 + 1$ is even\nProof--The statement is of the form $\\forall n (P(n) \\implies Q(n))$\n\nAssume $P(n)$\n$n$ is odd\n$\\therefore \\exists k: n = 2k + 1$\n$n^2 + 1 = (2k + 1)^2 + 1 = 4k^2 + 4k + 1 = 2(k^2 + 2k + 1)$\n$n^2 + 1 = 2m$ for some integer $m$, namely $k^2 + 2k + 1$.\n$\\therefore n^2 + 1$ is even\n$\\therefore Q(n)$\n\nA theorem is a statement that can be shown to be true (by a proof)\nAlso called a Lemma (easy), Proposition (moderate), Corollary (follows easily from something else)\n\nA proof is a valid argument establishing the truth of a theorem\nCan use RoI, axioms, and proof techniques\n\nDirect Proof:\n$\\forall n : P(n) \\implies Q(n)$\n\nAssume $P(n)$\n$\\vdots$ (likely unraveling definition)\n$\\therefore Q(n)$\n\nProof by Contraposition:\nTo prove $P(n) \\implies Q(n)$, note that\n$P(n) \\implies Q(n) \\equiv \\neg Q(n) \\implies \\neg P(n)$\n\nAssume $\\neg Q(n)$\n$\\vdots$\n$\\therefore \\neg P(n)$\n\nVacuous Proof for $p \\implies q$:\nIf $p$ is false, there is nothing to be shown as the statement is always true\n\nTrivial proof for $p \\implies q$ is if $q$ is true\n\nProof by Contradiction:\nTo prove $p$, note that\n$p \\equiv \\neg p \\implies F \\equiv \\neg p \\implies (r \\land \\neg r)$\n\"Reductio ad absurdum\"\n\nAssume $p$ and $\\neg q$\n$\\vdots$\nShow a contradiction"
+    }
+  ]
+}
