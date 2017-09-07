@@ -1,0 +1,10 @@
+{
+  "title": "7 September // Lecture 6",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Matrices and Transformations (Ch. 3)\n\n$T : \\mathbb{R}^m \\to \\mathbb{R}^n$\n$T$ is a linear transformation if $\\forall u,v,c$:\n- $T(u + v) = T(u) + T(v)$\n- $T(cu) = c T(u)$\n\nPrimary example:\n$T(x) = Ax$\n$A$ is an $n \\times m$ matrix means $T : \\mathbb{R}^m \\to \\mathbb{R}^n$\n\n$range(T)$ is the possible values we can attain in $\\mathbb{R}^n$; that is, the possible values of $Ax, x \\in \\mathbb{R}^m$; that is, the possible values for $b$ in $Ax = b$.\n$range(T)$ is $\\{ T(u) : u \\in \\mathbb{R}^m \\} = \\{ Au : u \\in \\mathbb{R}^m \\}$\nIf $A = \\matrixstart a_1 \\dots a_m \\matrixend$, then $range(A) = span(a_1, \\dots, a_m)$\n\n$T$ is onto:\nGeometrically, all values are possible\n$\\forall w \\in \\mathbb{R}^n (\\exists u : T(u) = w)$\n$Ax = b$ is always solvable\n(Every row has a leading $1$)\n(No row of $0$s at the bottom)\n\n$T$ is one-to-one:\n$\\forall w \\in \\mathbb{R}^n \\left[(\\exists! u : T(u) = w) \\lor (\\forall u : T(u) \\neq w)\\right]$\n$Ax = b$ has $1$ or $0$ solutions\n(No free variables)\n(Means that $a_1, \\dots, a_m$ are linearly independent)\n\n$T(e_k) = a_k$ for $T(x) = Ax, e_i = \\matrixstart 0 \\\\ \\vdots \\\\ 1_i \\\\ \\vdots \\\\ 0 \\matrixend$\ni.e., $A = \\matrixstart T(e_1) & \\dots & T(e_m) \\matrixend$\n\nRotation by angle $\\alpha$\nLinear Transformation!\n$T(u)$ is $u$ rotated counter-clockwise by $\\alpha$\n$T(u) = Au = \\matrixstart \\cos(\\alpha) & -\\sin(\\alpha) \\\\ \\sin(\\alpha) & \\cos(\\alpha) \\matrixend$"
+    }
+  ]
+}
