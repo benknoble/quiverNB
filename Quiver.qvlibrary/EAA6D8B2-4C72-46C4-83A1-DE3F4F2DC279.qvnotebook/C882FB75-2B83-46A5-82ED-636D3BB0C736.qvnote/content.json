@@ -1,0 +1,10 @@
+{
+  "title": "8 September // Lecture 7",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Proofs (cont.)\n\nIff ($\\iff$) proofs: $p \\iff q$\nNeed 2 proofs, since it is logically equivalent to $p \\implies q \\land q \\implies p$\n\nWhat about $p_1 \\iff p_2 \\iff p_3$?\nThis is the statement that all three $p_i$ have the same truth value\nSplit it apart: $(p_1 \\implies p_2) \\land (p_2 \\implies p_3) \\land (p_3 \\implies p_1)$\n\nHow to show something is $F$\nShow it's negation is true\n\n$\\forall n : P(n)$, use counterexample\n\n1.8 Proof Methods and Strategy\n\nProof by exhaustion\nCase-by-case\nw/o Loss of Generality (wlog)\nExistence Proof (Constructive or Non-constructive)\nUniqueness\n$\\exists! x : P(x) \\equiv \\exists x : (P(x)  \\land \\forall y : y \\neq x \\implies \\neg P(y))$"
+    }
+  ]
+}
