@@ -1,0 +1,9 @@
+{
+  "title": "11 September // Lecture 7",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Representation of numbers (cont).\n\n2's complement, using same addition rules for all integers (signed, unsigned)\n\nSign Extension (for bit extension, padding)"
+    }
+  ]
+}
