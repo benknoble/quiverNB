@@ -1,0 +1,10 @@
+{
+  "title": "12 September // Lecture 7",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Review of linear transformations from Lecture 6\n\nReflections across lines $y = mx$\nReflect $e_1, e_2$ into $T(e_1), T(e_2)$, and let $A = \\matrixstart T(e_1) & T(e_2) \\matrixend$\nWe find a vector orthogonal to $y = mx = x \\matrixstart 1 \\\\ m \\matrixend$; namely, $\\matrixstart -m \\\\ 1 \\matrixend$\nThen we let $e_1 = a \\matrixstart 1 \\\\ m \\matrixend + b \\matrixstart -m \\\\ 1 \\matrixend$ and use dot-products to pull out $a,b$\nFinally, $T(e_1) = a \\matrixstart 1 \\\\ m \\matrixend - b \\matrixstart -m \\\\ 1 \\matrixend$ and $T(e_2)$ follows similarly\nSee worksheet $7$\n\nThen matrix multiplication and inversion\n\nMotivation: composition of linear functions $g(f(x)) = (g \\circ f)(x)$\n\nThen we have $T = Ax$ mapping $\\mathbb{R}^m \\to \\mathbb{R}^n$, $S = Bx$ mapping $\\mathbb{R}^n \\to \\mathbb{R}^o$\nSo $A$ is $n \\times m$, $B$ is $o \\times n$\n\nConsider $S(T(x)) = (S \\circ T)(x) = B(Ax)$"
+    }
+  ]
+}

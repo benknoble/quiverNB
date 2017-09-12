@@ -1,0 +1,9 @@
+{
+  "title": "12 September // Lecture 7",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Grammars\n\n## Adequacy\n\n- **descriptively** adequate generates *all* grammatical s/phr, but *no*\n  ungrammatical\n- **explanatorily** adequate explains *why*\n\n## Parts of Speech\n\nN, V, Adj, Adv, Det, P, I, C\n\nNot linear (tree-like)\n\n### Some phrases\n\nPP $\\to$ P NP\nNP $\\to$ (Det) N'\nN' $\\to$ N (PP)\n\nVP $\\to$ (Adv) V'\nVP $\\to$ V IP\nV' $\\to$ V (NP)\n\nIP $\\to$ (NP) I'\nI' $\\to$ I VP (intuitively, an IP is a sentence)\n\nCP $\\to$ C IP\n\n## Generative Grammer\n\nInfinity from the finite\nNo upper limit to length of sentence\n*Yet*, we master a finite vocabulary and finite grammer with finite capacities\n\n**generative grammar** should generate an infinite set of phrases from a finite starting point (lexicon, rules)\n\nDue to:\n\n### Recursion\n\n$\\checkmark$\n\nThis infinity might still be not large enough to encompass *all* grammatical sentences\nWe need more.\n\n### Long-Distance Dependencies\n\n\"Jane knows Mary will kiss John\" is fine\n\\*\"Jane knows Mary will kiss\" fails because kiss requires a direct object...\nBut then... \"Jane knows who Mary will kiss\"\n\nMovement phenomenon, tranformation, &c."
+    }
+  ]
+}
