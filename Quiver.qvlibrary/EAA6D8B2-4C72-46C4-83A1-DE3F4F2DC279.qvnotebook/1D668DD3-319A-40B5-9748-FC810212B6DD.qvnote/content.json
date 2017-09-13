@@ -1,0 +1,10 @@
+{
+  "title": "13 September // Lecture 9",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Set operations\n\nUnion $\\cup$\nIntersection $\\cap$\n\n$A$ and $B$ are disjoint if $A \\cap B = \\emptyset$\n\n$|A \\cup B| = |A| + |B| - |A \\cap B|$\n\nDifference of two sets\n$A - B = \\{ x : x \\in A \\land x \\notin B \\}$\nThis is also $A \\setminus B$\n\nComplement of a set\n$\\bar{A} = U - A = U \\setminus A$\n$x \\in A \\iff x \\notin \\bar{A}$\n\nTheorem: $A \\setminus B = A \\cap \\bar{B}$\n\nNeed to show both $A \\setminus B \\subseteq A \\cap \\bar{B}$ and $A \\cap \\bar{B} \\subseteq A \\setminus B$\n($C \\subset D$, assume $x \\in C$, implies $x \\in D$)\n\nSet identities\n$\\overline{A \\cup B} \\equiv \\bar{A} \\cap \\bar{B}$\n$\\overline{A \\cap B} \\equiv \\bar{A} \\cup \\bar{B}$\n$\\bar{\\bar{A}} = A$\n$A \\cup B = B \\cup A$\n$A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$\n$A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$\nAssociative $\\checkmark$\n$\\bigcup\\limits^n_{i=1} A_i = \\{ x : \\exists i : x \\in A_i \\}$\n$\\bigcap\\limits^n_{i=1} A_i = \\{ x : \\forall i : x \\in A_i \\}$\n\nComputer representation of a set\nHow to describe a a set of elements from $\\{ 1, 2, \\dots, 11 \\}$\nIs $1$ in subset? $T,F$\n&c.\n$11$ bit string\n\nNumber of subsets of set $S$ is $|P(S)| = 2^{|S|}$\n\nFunctions\n$f : A \\to B$\nexactly one element of $B$ is assigned to each element of $A$\n$f(a \\in A) = b \\in B$\n$A$ is the domain\n$b$ is the image of $a$\n$B$ is the codomain\nrange is $\\{ b : \\exists a : f(a) = b \\}$"
+    }
+  ]
+}

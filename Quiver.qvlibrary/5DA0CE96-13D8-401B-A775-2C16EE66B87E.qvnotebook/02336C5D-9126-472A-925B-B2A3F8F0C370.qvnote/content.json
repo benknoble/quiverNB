@@ -1,0 +1,18 @@
+{
+  "title": "13 September // Lecture 8",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Fixed-Point representation\n\nDecimal point defined to be in certain spot\n\nDecimal to binary and vice-versa\n\nWhat about signs?\n\nSign bit, 2's complement, bias notation\n\n## Floating-point\n\nScientific notation\n\nNormalized Fraction $\\times 2^{Exponent}$\nAlso a sign\nSo $-1^S \\times 1.significand \\times 2^{Exponent - bias}$\n\n# Instruction Sets\n\nBasic language of computer at hardware level (assembly language, *not* machine language *yet*)\n\nvon Neumann model (1940s)\nI/O $\\iff$ CPU $\\iff$ Main memory\n\n- CPU: fetches, interprets, and executes a specified set of operation called instructions\n- Memory: storage of $N$ words of $W$ bits each, where $W$ is a fixed architectural parameter, and $N$ can be expanded to meet needs\n- I/O \n\n## Instructions\n\nWords of a computer's language\n*Set* is full vocabulary\n*Stored Program Concept*\n- the idea that instructions and data can be stored in memory\n- Distinct from \"application specific\" hardware (hardwired)\n- Distinct from punch-card computers (which developed from looms)\n\n### Anatomy\n\nPrimitive operation like "
+    },
+    {
+      "type": "code",
+      "language": "assembly_x86",
+      "data": "add $t0, $t1, $t2 # t0 = t1 + t2\naddi $t0, $t1, 12 # t0 = t1 + 12"
+    },
+    {
+      "type": "markdown",
+      "data": "Operations have `opcodes` (1-4 letters)\nInstructions have a very regular syntax\n\n## Execution\n\nSequential. Period. Full Stop. (Excepting jumps, &c.)\n\nKnowing what a set of instructions does helps us label it\n\nWe can `j`ump to labelled instructions\n\n## Questions\n\nStorage of instructions? In memory\nHow? In binary\nWhere are variables stored? Hardware registers (how many? dependent on hardware)\nLabels? Become numerical addresses\nArrays? Structs? Objects? Illusion\nStart & Stop? ..."
+    }
+  ]
+}
