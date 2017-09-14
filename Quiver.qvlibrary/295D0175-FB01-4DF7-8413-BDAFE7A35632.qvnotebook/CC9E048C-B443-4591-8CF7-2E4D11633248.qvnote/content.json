@@ -1,0 +1,10 @@
+{
+  "title": "14 September // Lecture 8",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Inverting a matrix by row-reducing with respect to $I$\n\nNot invertible $\\iff$ $Ax = 0$ has non-trivial solutions; Columns are linearly dependent; $rref(A)$ row of $0$s\n\n$AA^{-1} = A^{-1}A = I$ (not the general case, of course, for matrix multiplication)\n$(AB)^{-1} = B^{-1}A^{-1}$\n$AB = AC \\iff B = C \\land A$ invertible\n\nDecomposing $A$ into two matrices $= LU$\n\n$L(Ux) = b \\iff Ly = b$ (solve for y)\n$Ux = y$ (solve for x)\n\nVery easy thanks to $U,L$ Gaussian forms"
+    }
+  ]
+}
