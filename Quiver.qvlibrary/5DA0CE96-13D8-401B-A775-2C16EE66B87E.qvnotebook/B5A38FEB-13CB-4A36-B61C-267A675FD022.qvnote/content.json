@@ -1,0 +1,18 @@
+{
+  "title": "20 September // Lecture 10",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "For R instructions, the opcode is 0, and the `func` field indicates the instruction    \nCan only shift by 31 bits, which makes sense because shifting 32 bits by 32+ loses the entire number\n\nLet's say we want to compute\n$$f = (g + h) - (i + j)$$\nWhere the values of the variables are in `$16...$20$"
+    },
+    {
+      "type": "code",
+      "language": "assembly_x86",
+      "data": "add $8, $17, $18        # g + h\nadd $9, $19, $20        # i + j\nsub $16, $8, $9         # f"
+    },
+    {
+      "type": "markdown",
+      "data": "Register conventions\n`$zero` contains 0\n`$at` (1) for assembler use\n`$v0,1` (2-3) for return values\n`$a0-3` (4-7) for arguments\n`$t0-7` (8-15) for temps\n`$s0-7` (16-23) for saved temps\n`$t8,9` (24-25) more temps\n`$gp` (29) global pointer\n`$sp` (29) stack pointer (top)\n`$fp` (30) frame pointer (bottom)\n`$ra` (31) return address\n\n`addiu` is *NOT* unsigned addition"
+    }
+  ]
+}
