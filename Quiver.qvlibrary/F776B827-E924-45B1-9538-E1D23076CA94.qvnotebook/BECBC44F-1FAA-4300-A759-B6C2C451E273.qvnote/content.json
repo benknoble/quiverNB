@@ -1,0 +1,9 @@
+{
+  "title": "21 September // Lecture 10",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Constraints on X-bar\n\nPhrases of the same type don't act as complements\nWhy?\n\n### Case Marking\n\nNoun phrases are marked for case (in all languages, even when not case marked)\nOnly verbs and prepositions assign case to their complement\n\n### Direct & Indirect Objects?\n\nHow do we keep the binary tree structure and represent \"give\" taking two different object forms?\n\n## Theta Theory\n\nCapturing things from active to passive voice\nIntroduce $\\theta$ role, the patient/agent/instrument of the action\n\nErgative Verbs\n\n**Sisterhood condition**\nTheta-roles are assigned by the verb at the level of D-structure to its *sister*\n\n**VP-internal subject**\nThe subject term of a sentence originates inside the VP as the specifier\n\n**Theta Criterion**\nAll theta roles must be assigned to exactly one argument"
+    }
+  ]
+}
