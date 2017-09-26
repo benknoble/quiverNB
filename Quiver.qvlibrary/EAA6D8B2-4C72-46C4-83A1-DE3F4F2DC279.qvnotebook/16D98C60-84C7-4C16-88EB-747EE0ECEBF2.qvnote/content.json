@@ -1,0 +1,10 @@
+{
+  "title": "25 September // Lecture 13",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Integers\n\nWe've done division $a \\div b$, $a \\mid b$, modulus\n\nSuppose $a \\equiv b \\mod m, \\equiv d \\mod m$\nThen\n(i) $a + c \\equiv b + d \\mod m$\n(ii) $ac \\equiv bd \\mod m$\n\n$ab \\mod m = (a \\mod m)(b \\mod m) \\mod m$\nThis allows us to repeatedly apply rules\n\nArithmetic modulo m\n$m \\gt 1$\n$\\mathbb{Z}_m = \\{ 0, 1, \\dots, m-1 \\}$\n\nDefine addtion $a,b \\in \\mathbb{Z}_m$\n$a +_m b = (a + b) \\mod m$\n$a \\times_m b = (ab) \\mod m$\n\n$0$ is the multiplicative absorption ($0 \\times_m a = 0$)\nAnd the additive identity ($0 +_m a = a$)\n$1$ is the multiplicative identity\n\nAssociative, Distributive Property $\\checkmark$\n\nIn other bases $b$\nSome number $a$, whose digits are $a_{n-1}, \\dots a_0$ in a base $b$ is equal to $\\sum_0^{n-1} a_ib^i$\n$0 \\leq a_i \\lt b$; i.e., $a_i \\in \\mathbb{Z}_b$\n$a_{n-1} \\neq 0$\n$a$ is the unique representation of the number in base $b$"
+    }
+  ]
+}
