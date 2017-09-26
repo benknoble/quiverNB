@@ -1,0 +1,14 @@
+{
+  "title": "26 September // Lecture 10",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Got exams, discussed, &c."
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Subset $S \\subseteq \\mathbb{R}^n$, subspace if\n$0 \\in S$\n$u,v \\in S \\implies u+v \\in S$\n$r \\in \\mathbb{R}, u \\in S \\implies ru \\in S$\n\nMatrix $A$\n$S = null(A) = \\{ x : Ax = 0 \\}$\nShowing $null(A)$ is subspace\n$A0 = 0 \\implies 0 \\in S$\n$Au = 0, Av = 0 \\implies A(u+v) = Au + Av = 0$\n$Au = 0 \\implies A(ru) = rAu = r0 = 0$\n\nIf $B$ is a basis for $S$, then every vector $s \\in S$ has a unique representation $Bc = s$ where $c$ is a constant vector of scalars\n\nThis allows us to find coordinates $c$ with respect to a basis"
+    }
+  ]
+}
