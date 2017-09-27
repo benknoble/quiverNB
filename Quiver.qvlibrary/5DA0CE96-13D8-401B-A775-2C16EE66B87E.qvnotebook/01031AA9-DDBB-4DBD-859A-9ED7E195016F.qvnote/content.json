@@ -1,0 +1,27 @@
+{
+  "title": "27 September // Lecture 13",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Mips Instructions\n\nExample, logical instructions\n16 bit constants, but we might need 32!\nSo we have to do it half by half"
+    },
+    {
+      "type": "code",
+      "language": "assembly_x86",
+      "data": "addi $5 $0 0xHIGH\nsll  $5, $5, 16\naddi $5, $5, 0xLOW"
+    },
+    {
+      "type": "markdown",
+      "data": "subtle bug: might accidentally add a negative number if not careful (due to leading 1s)\nremember `ori` 0-extends"
+    },
+    {
+      "type": "code",
+      "language": "assembly_x86",
+      "data": "lui $5, 0xHIGH # load upper immediate\nori $5, $5, 0xLOW"
+    },
+    {
+      "type": "markdown",
+      "data": "This works because logical or sets the bit if either bit in the operand is set; the lower half is originally all 0s, so when the lower has ones, the result gets ones\n\n## Memory\n\n`lw` (I type)\n`lw rt, imm(rs)` := `rt = Mem[rs + sign-ext(imm)]`\n`lw rt,imm == lw rt,imm($0)`\n\nalso `sw` for putting info back into memory\n\nAlso byte-sized flavors\n\n### Storage Conventions\n\nData stored in memory\nLoad, compute, store\nLoad memory into registers, operate on registers, store in memory\n\n## Branch\n\nI-type\n\nbranch equal (`beq`)\nbranch not equal (`bne`)\n\nThe \"constant\" is the label\n\nTo really use this, we need some more conditional power\n\n## Jumps\n\nJ-type\nUnconditional `j`\nJump and link `jal` puts \"return address\" in `$31=$ra`\n\nR-type\nJump register `jr`\nJump and link register `jalr`\n\n## Multiply and Divide\n\nProduct is too long, Division produces quotient and remainder\n`$hi,$lo` are used\n\nWe use `mfhi, mflo` to move from hi and lo"
+    }
+  ]
+}
