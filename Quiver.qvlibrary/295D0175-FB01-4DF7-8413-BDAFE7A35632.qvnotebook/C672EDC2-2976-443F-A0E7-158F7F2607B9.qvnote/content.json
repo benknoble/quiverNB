@@ -1,0 +1,10 @@
+{
+  "title": "Theoretical Worksheet Problem 5",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Q: Show that the set $V = \\Bigl\\{ \\matrixstart a & b \\\\ c & d \\matrixend : a + b = 0 \\land c - d = 0 \\Bigr\\}$ is a subspace of $\\mathbb{R}^{2 \\times 2}$.\n\nA: Recall that the definition of a subspace requires three componenents:\n(a) $0 \\in V$.\n(b) $u,v \\in V \\implies (u+v) \\in V$.\n(c) $r \\in \\mathbb{R}, u \\in V \\implies ru \\in V$.\n\nWorking in order,\n(a) Clearly $a = b = c = d = 0$ satisfies the restrictions on the set ($0 + 0 = 0 - 0 = 0$) and is the $0$ element of $\\mathbb{R}^{2 \\times 2}$.\n\n$\\therefore 0 \\in V, \\checkmark$.\n\n(b) Let $u,v \\in V = \\matrixstart a_u & b_u \\\\ c_u & d_u \\matrixend, \\matrixstart a_u & b_v \\\\ c_v & d_v \\matrixend$, respectively.\n\nThen $u + v = \\matrixstart a_u + a_v & b_u + b_v \\\\ c_u + c_v & d_u + d_v \\matrixend$.\n\nIf $u + v$ satisfies the conditions on the set $V$, it will be in $V$.\n$(a_u + a_v) + (b_u + b_v) = (a_u + b_u) + (a_v + b_v) = 0 + 0 = 0$.\n$(c_u + c_v) - (d_u + d_v) = (c_u - d_u) + (c_v - d_v) = 0 + 0 = 0$.\n\n$\\therefore u+v \\in V, \\checkmark$.\n\n(c) $r$ is a scalar in $\\mathbb{R}, u \\in V$.\n\nThen $ru = \\matrixstart ra & rb \\\\ rc & rd \\matrixend$.\n\n$ra + rb = r(a+b) = r0 = 0$.\n$rc - rd = r(c-d) = r0 = 0$.\n\n$\\therefore ru \\in V, \\checkmark, \\square$.\n\nI have neither given nor recieved any aid on this assignment: David Ben Knoble.\nI verify that this is my own intellectual work: David Ben Knoble."
+    }
+  ]
+}
