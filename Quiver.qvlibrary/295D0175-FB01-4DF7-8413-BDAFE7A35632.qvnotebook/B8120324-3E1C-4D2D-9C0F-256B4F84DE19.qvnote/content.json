@@ -1,0 +1,10 @@
+{
+  "title": "28 September // Lecture 11",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Remember to view a matrix as a transformation between two spaces.\n$image(A) = span(u_1, u_2, \\dots, u_n)$ looking at the column vectors\nNot necessarily a basis (not necessarily linearly independent), but definitely the a span\n\nCan only solve $Ax = b$ if $b \\in image(A)$\n\nSo we find a basis to make things easier\n\nWe can also look at the row space ($v_1, v_2, \\dots, v_n$)\nOr we look at $A^T$ and look at the old rows as columns (and the transpose, the adjoint, maps in the opposite the direction)\n\nWe can identify the redundancies by row reducing $A$ and $A^T$, OR\nwe can row reduce $A$ with the identity matrix on the right (like computing the inverse). Keep track of the row operations.\nThen we can pull out the row operations that generate the the equivalent rows.\n\nThe ones that equal $0$ help you identify linear dependencies, which allows you to identify redundancies and further pull out a span for the row space.\n\nThe augmented side will basically be in lower triangular form\n\nColumn and Row space have same number of basis vectors\n\nSwapping makes things messy\n\n$S$ is a subspace of $D^n$ where $D$ is some vector space\n$S = span(u_1, u_2, \\dots, u_m), m \\leq n$\n$S$ is a subset of $D^n$ that acts like a space on its own\n\nRule: Every subspace $\\in \\mathbb{R}^n$ has a basis (i.e., is a span of vectors)\n\nUnique number of basis vectors that spans the subspace, and that defines the dimension\n\n$rank(A) :=$ dimension of row/column space\n$rank(A) :=$ is number of leading 1s (pivot)\n$nullity(A) :=$ dimension of null space of $A$\n\n$rank(A) + nullity(A) = cols(A)$, since the free variables in $rref(A)$ show up in the span of $ker(T) = null(A)$"
+    }
+  ]
+}
