@@ -1,0 +1,10 @@
+{
+  "title": "29 September // Lecture 15",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "If a number is composite, it has a prime divisor less than or equal to its square root.\n\nSieve of Eratosthenes\nEuclid theorized that there are infinitely many primes (and proved it)\n\nProof by contradiction:\nSuppose there are finitely many primes $p_1, \\dots, p_n$\nLet $Q = \\prod p_i + 1$\n\n$Q$ has a prime divisor $p$, but none of $p_i$ divide $Q$!\nSuppose $p_i \\mid Q$\nAnd $p_i \\mid \\prod p_i$\n$p_i \\mid Q - \\prod p_i$\n$p_i \\mid 1$ which is impossible.\nTherefore $p$ is not one of $p_i$ and is prime, and we arrive at a contradiction\n\nThe frequency of prime numbers (counting them $\\leq n$)\n$\\Pi(n) = $ number of primes between 1 and $n$\n$ = |\\{ a \\mid (1 \\leq a \\leq n ) \\land prime(a) \\}|$\n\n$\\frac{\\Pi(n)}{n}$ is the proportion of prime numbers\n\nPrime Number Theorem: $\\frac{\\Pi(n)}{n} \\approx \\frac{1}{\\ln(n)}$\nMore precisely: $\\lim_{n \\to \\infty} \\frac{\\Pi(n)}{\\frac{n}{\\ln(n)}} = 1$\n\nGCD\n\nDef: $\\gcd(a,b)$ is the largest positive integer that divides both $a,b$\n$\\gcd(a,0) = a$\n$\\gcd(a,b) = \\gcd(-a,-b)$\n$\\gcd(0,0)$ is not defined\n\nDef: $a,b$ are relatively prime if $\\gcd(a,b) = 1$\nDef: $a_1, \\dots, a_n$ are relatively prime if $\\forall i \\forall j (j \\neq i) \\implies (\\gcd(a_i, a_j) = 1)$\n\nSuppose $a = \\prod p_i^{k_i}, b = \\prod p_i^{r_i}$ where exponents are $\\geq 0$\n\nThen $\\gcd(a,b) = \\prod p_i^{\\min(k_i,r_i)}$\n\nLCM\n\nDef: $lcm(a,b)$ is the smallest positive integer that both $a,b$ divide\n\n$lcm(a,b) = \\prod p_i^{\\max(k_i,r_i)}$\n\n$lcm(a,b) = \\frac{ab}{\\gcd(a,b)}$"
+    }
+  ]
+}
