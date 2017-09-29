@@ -8,7 +8,7 @@
     {
       "type": "latex",
       "language": "latex",
-      "data": "Bases\n\nAlgorithm to divide $n$ by $b$ with remainder\n$n = q_0 b + a_0$\nIf $q_0 \\lt b$\n    halt ($n = q_0a_0$)\nIf $q_0 \\geq b$\n    divide $q$ by $b$ with remainder\n    ($q_0 = q_1 b + a_1$)\n    $n = (q_1 b + a_1)b + a_0 = q_1 b^2 + a_1b + a_0$\n    \nInduction: Assume we know the theorem for $1,2, \\dots, n-1$ and we want to prove it for $n$\n\nPrime numbers\n$p$ is prime if\n$\\forall b \\geq 1 : b \\mid p \\implies (b = 1) \\lor (b = p)$\n\nNon-primes are composite numbers\n\nThe fundamental theorem of arithmetic: every integer greater than 1 can be written uniquely as a prime or a product of two or more primes (where the prime factorization is written in order of non-decreasing terms).\n\nDecide whether a number is prime or not\nCheck (primes) up to $\\sqrt{n}$ to see if they divide $n$"
+      "data": "Bases\n\nAlgorithm to divide $n$ by $b$ with remainder\n$n = q_0 b + a_0$\nIf $q_0 \\lt b$\n    halt ($n = q_0 + a_0$)\nIf $q_0 \\geq b$\n    divide $q$ by $b$ with remainder\n    ($q_0 = q_1 b + a_1$)\n    $n = (q_1 b + a_1)b + a_0 = q_1 b^2 + a_1b + a_0$\n    \nInduction: Assume we know the theorem for $1,2, \\dots, n-1$ and we want to prove it for $n$\n\nPrime numbers\n$p$ is prime if\n$\\forall b \\geq 1 : b \\mid p \\implies (b = 1) \\lor (b = p)$\n\nNon-primes are composite numbers\n\nThe fundamental theorem of arithmetic: every integer greater than 1 can be written uniquely as a prime or a product of two or more primes (where the prime factorization is written in order of non-decreasing terms).\n\nDecide whether a number is prime or not\nCheck (primes) up to $\\sqrt{n}$ to see if they divide $n$"
     }
   ]
 }
