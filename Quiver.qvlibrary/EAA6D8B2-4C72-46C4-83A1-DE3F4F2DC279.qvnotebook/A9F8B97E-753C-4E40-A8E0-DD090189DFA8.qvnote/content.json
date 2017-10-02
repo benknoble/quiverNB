@@ -1,0 +1,14 @@
+{
+  "title": "2 October // Lecture 16",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Office Hours changed to M 12-1, W 12-2"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Algorithms for $\\gcd$\nThe prime factorization method takes a long time computationally\n\nEuclid's algorithm reduces the problem to $O(\\log b)$ steps\nIt relies on the fact that $a = qb + r, \\gcd(a,b) = \\gcd(b,r)$\n\nAt each step, we divide the larger number by the smaller with remainder. The divisor becomes the next largest integer and the remainder the new divisor. The $\\gcd$ is the last non-zero remainder.\n\nBézout's Theorem: $\\gcd(a,b) = sa + tb$"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "2 October // Lecture 14",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Studying **MiniMips**\nAssembler directives\nInstructions vs. pseudo-instructions\n\n*Settings*\n- Permit extended (pseudo) instructions and formats\n- Memory Configuration > Compact, Data at Address 0 (data at 0, code a 0x3000)"
+    }
+  ]
+}
