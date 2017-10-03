@@ -1,0 +1,9 @@
+{
+  "title": "3 October // Lecture 13",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# \"Wanna\" Contraction\n\n> Who did Eisenhower to defeat?\n> Who did Eisenhower wanna defeat?\n> Who did Eisenhower want to retreat?\n> *Who did Eisenhower wanna retreat?\n\nAnswer to question is an object vs. a subject of the verb... Look at the placement of \"who\":\n\n> Eisenhower wanted to defeat who?\n> Eisenhower wanted who to retreat?\n\nThis seems to imply we cannot contract \"wanted\" and \"to\"\n\nLook at the structure diagram\n\n(Do-insertion)\n\n### Constraint on \"Wanna\" Contraction\n\n*Subjacency* (SEE SLIDES)\n-> No movement can cross more than one bounding node\n*Bounding Node*\n-> IP,DP,CP, subject to parameterization\nEnglish: IP,DP\nItalian: CP,DP\n\n## Binding Theory\n\nPronouns\n\n> John said that Bill admires *himself*.\n> John sait that Bill admires *him*.\n> He said that Bill admires John."
+    }
+  ]
+}
