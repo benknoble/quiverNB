@@ -1,0 +1,9 @@
+{
+  "title": "4 October // Lecture 15",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Going over the asm programs\n\nUsing .word to store array in memory\nUsing .space to make space in bytes for values\nLabels vs. Addresses\n\n## Adressing Modes\n\nAbsolute (Direct): Go to specific memory location like 0x1000\nRegister-Indirect: Go to regiister specified place (like a pointer!)\nDisplacement: Go to a constant location and offset it to find the memory\n\nIndirect addressing for pointers `la`"
+    }
+  ]
+}

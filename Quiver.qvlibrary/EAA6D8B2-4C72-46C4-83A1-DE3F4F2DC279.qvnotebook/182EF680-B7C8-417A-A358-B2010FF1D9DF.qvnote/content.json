@@ -1,0 +1,10 @@
+{
+  "title": "4 October // Lecture 17",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Some theorems\n\n$p$ prime and $p \\mid a_1 \\dots a_n \\implies p$ divides one of the $a_i$\n\nIf $\\gcd(a,b) = 1, a \\mid c, b \\mid c, \\implies ab \\mid c$\n\nProved uniqueness of prime factorization\n\nCongruences:\nMultiplication and addition works fine.\nIf we want to divide--\n$ax \\equiv ay \\mod n \\land \\gcd(a,n) \\equiv 1 \\implies x \\equiv y \\mod n$\n\nHow to solve $ax \\equiv b \\mod m$\nNeed to find $\\bar{a}$ s.t. $a\\bar{a} \\equiv 1 \\mod m$\n\nWhen is this unsolvable?\nSuppose $a,m$ are relatively prime ($\\gcd(a,m) = 1$)\n$\\exists \\bar{a}$ s.t. $a\\bar{a} \\equiv 1 \\mod m$\nand $\\bar{a}$ is unique $\\mod m$ (This follows from application of Bézout's Theorem)"
+    }
+  ]
+}
