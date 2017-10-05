@@ -1,0 +1,10 @@
+{
+  "title": "5 October // Lecture 13",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Determinants!\nCrucial to eigenvalues/vectors\n\nCan we find some test $op(A)$ that is 1 when invertible, 0 when singular?\nEventually, $\\det(A) = 0 \\implies A$ singular\n\n$\\det(A) = \\sum_\\sigma {sign(\\sigma)\\prod_i{a_{i\\sigma(i)}}}$\n\n$\\det(A) = \\det(A^T)$\n$\\det(I) = 1$\n$\\det(U) = $ product of diagonal\n$\\det(L) = $ product of diagonal\nScaling a row scales the determinant\n(Row operations preserve determinant; also preserve row space!)\n(Swapping a row negates the determinant)\n\nCofactor expansion\n$\\matrixstart 1 & 2 \\\\ 3 & 1 \\matrixend$, $\\det = 1 \\cdot 1 - 2 \\cdot 3$\nEspecially useful for $\\mathbb{R}^{3 \\times 3}$\nRemember that the sign alternates!\n\nBig Theorem:\n$\\det(AB) = \\det(A)\\det(B)$\nThis tells us that $A$ and $B$ are invertible $\\iff$ $AB$ is invertible"
+    }
+  ]
+}

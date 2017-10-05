@@ -1,0 +1,10 @@
+{
+  "title": "5 October // Make up Lecture 12",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Take a basis $\\mathscr{B}$\n${[x]}_\\mathscr{B}$, the coordinate of $x$ with respect to $\\mathscr{B}$, is the coordinates necessary to represent $x$ in that basis.\n\nLet $\\mathscr{B} = \\{ u_1, \\dots, u_n \\}$ be a basis for $\\mathbb{R}^n$\nIf $y = \\sum{y_iu_i}$, then ${[y]}_\\mathscr{B} = \\matrixstart y_i \\\\ \\vdots \\\\ y_n \\matrixend$\n\nNow define $U = \\matrixstart u_1 & \\dots & u_n \\matrixend \\in \\mathbb{R}^n$\n$U{[y]}_\\mathscr{B} = y$\n\n$U$ is a change of basis matrix that allows us to switch from $\\mathscr{B} \\to \\mathscr{I}$ ($I$, the standard basis)\nThat is, (informally) $U : \\mathscr{B} \\to \\mathscr{I}$\n\n$U^{-1}$, if it exists, is $U^{-1} : \\mathscr{I} \\to \\mathscr{B}$\n\n$x = U{[x]}_\\mathscr{B}$\n${[x]}_\\mathscr{B} = U^{-1}x$\n\nTwo bases $\\mathscr{B}_1, \\mathscr{B}_2$ given by matrices $U,V$\n${[x]}_{\\mathscr{B}_2} = V^{-1}U{[x]}_{\\mathscr{B}_1}$\n${[x]}_{\\mathscr{B}_1} = U^{-1}V{[x]}_{\\mathscr{B}_2}$\n\n\nNow suppose $S$ is a subspace of $\\mathbb{R}^n$ with bases $\\mathscr{B}_1 = \\matrixstart u_1 & \\dots & u_k \\matrixend, \\mathscr{B}_2 = \\matrixstart v_1 & \\dots & v_k \\matrixend, k \\leq n$\n\nLet $C = \\matrixstart {[u_1]}_{\\mathscr{B}_2} & \\dots & {[u_k]}_{\\mathscr{B}_2} \\matrixend$\n${[x]}_{\\mathscr{B}_2} = C{[x]}_{\\mathscr{B}_1}$\n\ncf. Worksheet 12"
+    }
+  ]
+}

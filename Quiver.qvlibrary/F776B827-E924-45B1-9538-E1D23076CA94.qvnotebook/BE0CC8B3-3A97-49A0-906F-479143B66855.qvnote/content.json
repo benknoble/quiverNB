@@ -1,0 +1,9 @@
+{
+  "title": "5 October // Lecture 14",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Review\n\nStructure is preserved by movement (must anticipate movement)\nD-structure does not show the actual movement, where S does, but if something is going to move it needs a place to move to\nS-structure represents movement and traces\n\n**\"Seems\"**\n\n> Jane seems to like the proposal.\n> It seems that Jane likes the proposal.\n\n*Movement*: at the D-structure, things work out for theta roles, and then we invoke movement in the S-structure"
+    }
+  ]
+}
