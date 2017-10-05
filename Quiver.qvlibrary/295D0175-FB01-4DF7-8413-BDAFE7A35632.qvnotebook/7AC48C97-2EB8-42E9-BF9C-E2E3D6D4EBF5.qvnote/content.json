@@ -1,0 +1,14 @@
+{
+  "title": "Theoretical Worksheet Problem 6",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Q: If $B$ is an $m \\times n$ matrix and $S$ is an invertible $m \\times m$ matrix, show that $B$ and $A = S \\cdot B$ have the same rank.\n\nA: Consider first the rank of $B$: being the dimension of the column space, we know $rank(B) \\in [0,n]$\nConsider second the properties of $S$. $S$ is square and invertible, so we know that it's columns are linearly independent. Further, we then know that the span of the column space of $S$ is \"full\"; that is, $rank(S) = m$ and $null(S) = \\{0\\}$. Finally, we know that we can row-reduce $S$ to be $I_m$, so $S \\sim I_m$. This is easy to show, since $S$'s linearly independent columns must form a basis for $\\mathbb{R}^m$, and the easiest such basis $\\matrixstart e_1 \\dots e_m \\matrixend$ is equivalent.\n\nNow, $A = S \\cdot B \\sim I_m \\cdot B = B$, so $A \\sim B$ and therefore they have the same rank (the column space and row space are equivalent). $\\square$\n\nI have neither given nor recieved any aid on this assignment: David Ben Knoble.\nI verify that this is my own intellectual work: David Ben Knoble."
+    },
+    {
+      "type": "markdown",
+      "data": ""
+    }
+  ]
+}
