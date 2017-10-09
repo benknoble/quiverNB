@@ -1,0 +1,9 @@
+{
+  "title": "9 October // Lecture 16",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Addressing Modes (cont.)\n\nSee ppt. It does a really good job\n\n# Translating Conditionals and Loops\n\nProviding some templates\n\n# Procedures, Stacks, &c.\n\nProcedures, methods, functions, subroutines...\n\nThere are many good reasons to use them\n\nConventions dictate register usage to make procedure calling easier\nBut the straightfoward usage is not enough"
+    }
+  ]
+}

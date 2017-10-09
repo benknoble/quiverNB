@@ -1,0 +1,10 @@
+{
+  "title": "9 October // Lecture 19",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Proof by Induction\n\n1. $P(1)$\n2. $\\forall k \\mid P(k) \\implies P(k+1)$"
+    }
+  ]
+}
