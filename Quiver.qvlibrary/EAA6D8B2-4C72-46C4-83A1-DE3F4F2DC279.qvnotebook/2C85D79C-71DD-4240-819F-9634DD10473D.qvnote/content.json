@@ -1,0 +1,10 @@
+{
+  "title": "6 October // Lecture 18",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Chinese Remainder Theorem\n\nThere are certain things whose number is unknown:\nWhen divided by 3 the remainder is 2\nmod 5 is 3\nmod 7 is 2\n\nWhat is the number of things?\n\nCan have different numbers, of course\n\n$x \\equiv 2 \\mod 3$\n$x \\equiv 3 \\mod 5$\n$x \\equiv 2 \\mod 7$\n\nIf $x_1$ is a solution, so is $x'_1 = x_1 + 3 \\cdot 5 \\cdot 7$\nSo we are searching for the smallest such $x$\n\nMethod:\n$x \\equiv a_1 \\mod m_1 \\\\\n\\vdots \\\\\nx \\equiv a_n \\mod m_n$\nAssume $m_1 \\dots m_n$ are relatively prime\n\nThen the system has a unique solution $\\mod \\prod m_i$\n\nLook for a solution of the form $(m_2 \\cdot m_3 \\cdots m_n)x_1 + (m_1 \\cdot m_3 \\cdots m_n)x_2 + \\dots + (m_1 \\cdot m_2 \\cdots m_{n-1})x_n$\nWe could also write:\nLet $M = \\prod m_i, M_i = \\frac{M}{m_i} = m_1 \\cdots \\hat{m}_i \\cdots m_n$\nThen we want $M_1x_1 + \\cdots + M_nx_n$\nAnd we require $M_1x_1 = a_1 \\mod m_1$\nThen we can separate the congruences\n\n$x \\equiv 23 \\mod 105$\n\nFermat's Little Theorem\n$p$ a prime, $p \\not\\mid a$\nQ: What is the pattern $a, a^2, a^3, \\dots \\mod p$?\n\n$a^{p-1} \\equiv 1 \\mod p, p \\not\\mid a$\n$a^p \\equiv a \\mod p, \\forall a$\n\nQ: $(p-1)! \\equiv $ what? $ \\mod p$\nWe pair the numbers to form $1 \\mod p$\nAlways going to be $-1$\n\nQuick intro to induction"
+    }
+  ]
+}
