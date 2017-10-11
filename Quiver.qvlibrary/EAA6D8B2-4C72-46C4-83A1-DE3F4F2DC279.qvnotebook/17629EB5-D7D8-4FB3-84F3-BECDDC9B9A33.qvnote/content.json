@@ -1,0 +1,10 @@
+{
+  "title": "11 October // Lecture 20",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "More induction examples\n\nStrong induction versus weak induction\nAllows you to assume $P(1) \\land \\dots \\land P(k)$ to prove $P(k+1)$"
+    }
+  ]
+}

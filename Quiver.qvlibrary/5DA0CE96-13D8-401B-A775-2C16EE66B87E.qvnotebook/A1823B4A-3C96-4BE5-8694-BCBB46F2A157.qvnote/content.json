@@ -1,0 +1,9 @@
+{
+  "title": "11 October // Lecture 17",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### Unaddressed Problems with Leaf Functions\n\n- How can one function call another?\n- How can we have 5+ arguments?\n- Where are local variables stored?\n- What about recursion?\n\n## Introducing, Call Stacks/Stack Frames in Assembly\n\nAlso called activation records\nWe will keep stuff on stack!\n\nStack grows **DOWN** (to lower addresses) on pushes and allocates\n`$sp == $29` is the stack pointer; points to *TOP*, used location\nTo reserve $k$ words, subtract $4 \\times k$\n`addi $sp, $sp, -4*k`\n(obv. the multiplication is done beforehand)\nDeallocate: add same value\n`addi $sp, $sp, 4*k`\n\nTo push a register `x` on the stack:\n`addi $sp, $sp, -4`\n`sw $rx, 0($sp)`\n\nPop:\n`lw $rx, 0($sp)`\n`addi $sp, $sp, 4`\n\n## Solving our problems\n\nsp points to top of stack\n`$fp == $30` is the frame pointer (points to start of callee's activation record on the stack; used to access extra args)\n\n### Conventions for Saving Information\n\nWe have some choices\nMIPS chooses scratch registers (`$t`) that can be changed, and saved temps (`$s`) that must not be clobbered"
+    }
+  ]
+}
