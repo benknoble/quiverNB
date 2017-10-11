@@ -1,0 +1,15 @@
+{
+  "title": "10 October // Lecture 14",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Quick applications lesson\n\n$\\det\\left(\\matrixstart v_1 & v_2 \\matrixend\\right) = $ Area of parellelogram from $v_1,v_2$\nExtends to volume, &c."
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Eigenvalues and -vectors\n\nMapping $T(x) = Ax = \\matrixstart 1 & 1 \\\\ 2 & 0 \\matrixend \\matrixstart x \\\\ y \\matrixend = \\matrixstart x + y \\\\ 2x \\matrixend$\n\nWe looked at scaling and changing things to identify special points/vectors (geometric intuition)\n\nNow the algebra\n\nWe would like $Av \\parallel v \\iff Av = \\lambda v, \\lambda \\in \\mathbb{R}$\nSo $Av - \\lambda v  = 0$ or $(A - \\lambda I)v = 0$\n\nThis is only solvable when $\\det(A - \\lambda I) = 0$ (when $A - \\lambda I$ is not invertible)\nSolve for $\\lambda$ and use that to find one such $v$ that fits.\n\nIf $A - \\lambda I$ is not invertible, $\\ker(A - \\lambda I) \\neq \\{ 0 \\}$\n\nShortcut for $\\mathbb{R}^{2 \\times 2}$ (assume $A$ is $a,b,c,d$ in the natural order)\n$\\det(A - \\lambda I) = p(\\lambda) = \\lambda^2 - tr(A)\\lambda + \\det(A)$\n$tr(A) = a + c = $ sum of diagonal"
+    }
+  ]
+}
