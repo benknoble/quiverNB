@@ -1,0 +1,10 @@
+{
+  "title": "12 October // Lecture 15",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Eigen vectors and stuff\n\nWe examine constructing a matrix with its eigenvectors and values\n*As long as eigenvectors form a basis:\n\n$Av_i = \\lambda_i v_i$\n$AP = A \\matrixstart v_i \\matrixend = \\matrixstart Av_i \\matrixend = \\matrixstart \\lambda_i v_i \\matrixend = P \\Lambda$\nThen $A = P \\Lambda P^{-1}$ or $P^{-1}AP = \\Lambda$\n*Sometimes we write $S$ instead of $P$ for the diagonalization\n\n$A$ is unique!!!\n\nFor $L$, we can read the eigenvalues from the diagonal. Then we can find the eigenvectors quickly, construct $P$ and $\\Lambda$ and we can diagonalize $A$\n\nReflections can be diagonalized by $R(-\\alpha)\\matrixstart 1 & 0 \\\\ 0 & -1 \\matrixend R(\\alpha)$\n\nNOT DIAGONALIZABLE if $P$ is not invertible"
+    }
+  ]
+}
