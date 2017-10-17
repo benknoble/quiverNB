@@ -1,0 +1,10 @@
+{
+  "title": "17 October // Lecture 16",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Generally, we are doing $A = P \\Lambda P^-1$\nColumns of $P$ are eigenvectors, $\\Lambda$ contains eigenvalues\n\nMeans $A$ is diagonlizable\n\n$A$ is a hard transformation to examine; $\\Lambda$ just scales elements.\nSo we're scaling ${[x]}_\\mathscr{P}$ and then mapping back into $x$\n\nIf we have distinct eigenvalues (and their corresponding eigenvectors) then they are linearly independent, and they span $\\mathbb{R}^n$, so they form a basis for it.\nThis also means we can diagonalize $A$\n\nConstruct $A$: $A = P \\Lambda P^{-1}$\nWe can make any $\\Lambda$ we want, and take $P = LU$ such that $P^{-1} = U^{-1}L^{-1}$\n\nWe take $L,U$ as lower and upper unit triangular"
+    }
+  ]
+}

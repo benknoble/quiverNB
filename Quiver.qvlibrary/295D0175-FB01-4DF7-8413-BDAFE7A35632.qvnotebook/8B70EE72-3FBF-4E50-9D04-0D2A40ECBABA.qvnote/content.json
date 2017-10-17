@@ -1,0 +1,10 @@
+{
+  "title": "Theoretical Worksheet Problem 7",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Q: Find all eigenvalues and eigenvector for each eigenvalue.\n$$A = \\matrixstart 0 & 5 & 3 \\\\ 1 & 1 & 0 \\\\ -3 & 6 & 5 \\matrixend$$\n\nA: First, we compute\n$p(\\lambda) = \\det(A - \\lambda I) = (-\\lambda)\\left[ (1-\\lambda)(5-\\lambda) \\right] - 5 \\left[ 5-\\lambda \\right] + 3 \\left[ 6 + 3(1-\\lambda) \\right] \\\\\n= (\\lambda^2 - \\lambda)(5-\\lambda) + 5\\lambda - 25 + 27 - 9\\lambda \\\\\n= -\\lambda^3 + 6\\lambda^2 -5\\lambda -4\\lambda + 2 \\\\\n= -\\lambda^3 + 6\\lambda^2 -9\\lambda + 2 = 0$\n\nWe can see that $\\lambda_1 = 2$ is a solution, so we get\n$(\\lambda - 2)(-\\lambda^2 + 4\\lambda - 1) = (\\lambda + 2)(\\lambda^2 - 4\\lambda + 1) = 0$\n\nIn the case where $\\lambda^2 - 4\\lambda + 1 = 0$, we have\n$\\lambda^2 - 4\\lambda + 1 = (\\lambda - 2)^2 - 3$\n$(\\lambda - 2)^2 = 3$\n$\\lambda_{2,3} = 2 \\pm \\sqrt{3}$\n\nEigenvectors:\n\nFor $\\lambda_1 = 2$, we have $A - \\lambda I = \\matrixstart -2 & 5 & 3 \\\\ 1 & -1 & 0 \\\\ -3 & 6 & 3 \\matrixend$\n\nThis is row-equivalent to $\\matrixstart 0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 0 & 0 & 0 \\matrixend$\nSo $v_1 = \\matrixstart -1 \\\\ -1 \\\\ 1 \\matrixend$\n\nFor $\\lambda_2 = 2 + \\sqrt{3}$, we have $A - \\lambda I = \\matrixstart -2 - \\sqrt{3} & 5 & 3 \\\\ 1 & -1 - \\sqrt{3} & 0 \\\\ -3 & 6 & 3 - \\sqrt{3} \\matrixend$\n\nThis is row-equivalent to $\\matrixstart 0 & 3 & -\\sqrt{3} \\\\ 1 & 0 & \\frac{-3-\\sqrt{3}}{3} \\\\ 0 & 0 & 0 \\matrixend$\nSo $v_2 = \\matrixstart \\frac{3+\\sqrt{3}}{3} \\\\ \\frac{\\sqrt{3}}{3} \\\\ 1 \\matrixend$\n\nFor $\\lambda_3 = 2 - \\sqrt{3}$, we simply negate the roots in $v_2$\n\nSo $v_3 = \\matrixstart \\frac{3-\\sqrt{3}}{3} \\\\ \\frac{-\\sqrt{3}}{3} \\\\ 1 \\matrixend$\n\nI have neither given nor recieved any aid on this assignment: David Ben Knoble.\nI verify that this is my own intellectual work: David Ben Knoble."
+    }
+  ]
+}
