@@ -1,0 +1,9 @@
+{
+  "title": "23 October // Lecture 18",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## More Call Stack details\n\nStoring return values, parameters, and needed local values on the stack using `sp`\n\nSaved vs. Scratch"
+    }
+  ]
+}
