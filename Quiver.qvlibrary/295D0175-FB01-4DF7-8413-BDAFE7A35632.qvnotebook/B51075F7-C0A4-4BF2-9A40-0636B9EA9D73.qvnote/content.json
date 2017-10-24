@@ -1,0 +1,10 @@
+{
+  "title": "24 October // Lecture 17",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Why diagonalization?\n\nDecomposing $T(x) = Ax : \\mathbb{R}^n \\to \\mathbb{R}^n$ into simpler geometric steps (the higher level of what the machine $A$ is doing)\nThat is, we're drawing a comparison between $A$ and $\\Lambda$\n\nWe don't often compute $P^{-1}$--it follows from $P$ (so long as $P$ is invertible, which, if the geometric/algebraic multiplicities match, it will)\n\nCase 1) Diagonalizable: $\\exists P : \\exists P^{-1} : PP^{-1} = P^{-1}P = I$\n    Every eigenvalue has an eigenvector\n    Eigenvectors from different eigenvalues are linearly independent ($P$ is invertible, $\\det(P) \\neq 0$, &c.)\n    \n    $\\therefore$ if $A$ has $n$ distinct eigenvectors, $v_1 \\dots v_n$ form a basis $P$, which is invertible and spans $\\mathbb{R}^n$\n    $\\therefore$ $A = P \\Lambda P^{-1}$\n\nCase 2) Not diagonalizable: \n    Geometric and algebraic multiplicities don't match\n    \nNext, complex eigenvalues and vectors\nMotivation using rotation matrix $R(\\theta)$\n$p(\\lambda) = (\\lambda - \\cos\\theta + i\\sin\\theta)(\\lambda - \\cos\\theta - i\\sin\\theta)$\nNote however that $\\cos\\theta \\pm i\\sin\\theta = \\dots$ (out of time)\n\nFinally, $A^{-1} = (P \\Lambda P^{-1})^{-1} = P \\Lambda^{-1} P^{-1}$"
+    }
+  ]
+}
