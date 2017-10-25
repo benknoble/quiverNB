@@ -4,7 +4,7 @@
     {
       "type": "latex",
       "language": "latex",
-      "data": "Review of some old homework problems\n\nEquivalence relation if reflexive, symmetric, transitive\n\nLet $R$ be an eq. relation on $A$\n$a \\in A \\implies {[a]}_R = \\{ b \\mid bRa \\}$"
+      "data": "Review of some old homework problems\n\nEquivalence relation if reflexive, symmetric, transitive\n\nLet $R$ be an eq. relation on $A$\n$a \\in A \\implies {[a]}_R = \\{ b \\mid bRa \\}$ is the equivalence class of $a$"
     }
   ]
 }
