@@ -1,0 +1,10 @@
+{
+  "title": "25 October // Lecture 25",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Partition of a set $S$ is a collection $\\{ A_i \\mid i \\in I \\}$ of non-empty disjoint subsets $A_i$ of $S$\n$A_i \\neq \\emptyset$\n$i \\neq j \\implies A_i \\cap A_j \\neq \\emptyset$\n\nEquivalence relations give a partition\nThe sets in the parition are the equivalence classes\n\nRelation $a - b \\in \\mathbb{Z}$ is an equivalence relation on $\\mathbb{R}$ that partitions it into $\\{ A_x \\mid x \\in [0,1) \\}, A_x = [x] = \\{ y \\mid y = x + m, m \\in \\mathbb{Z} \\}$\n\nA partition of $S = \\{ 1,2,3 \\dots, 10 \\}$ is given by $P = \\{\\{1,2,7\\}, \\{3,5,8,10\\}, \\{4\\}, \\{6,8\\}\\}$\nWe can define the relation $R$ given by $a \\sim_R b$ if $a,b$ are in the same $A_i$ for some $i$\nCan easily prove this is an equivalence relation\n\nLet $f : A \\to B$ be a function\nThe graph of $f$ is a relation from $A \\to B$\n\nCounting\n\nFundamental principle (multiplication)"
+    }
+  ]
+}
