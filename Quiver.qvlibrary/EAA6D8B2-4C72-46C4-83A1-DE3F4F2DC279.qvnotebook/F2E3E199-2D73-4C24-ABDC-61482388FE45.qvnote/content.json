@@ -1,0 +1,10 @@
+{
+  "title": "27 October // Lecture 26",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Review of Product rule\n\nE.g. number of subsets (bit strings)\n\nE.g. number of functions from $A$ to $B$ vs. one-to-one functions $A$ to $B$\n\nAdding disjoint steps in tasks (Sum rule)\nIf we overcount, we have to correct for that\n\nSubtraction rule"
+    }
+  ]
+}
