@@ -1,0 +1,10 @@
+{
+  "title": "30 October // Lecture 27",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Midterm 2: 4.{1,2,3,4}; 5.{1,2}; 9.{1,5}; 6.1\n\nProduct, Sum, Addition rules review\n\nDivision rule (e.g., seating order around a round table)\nWe can view this as partitioning a set $X$ into equivalence classes\n\nPigeonhole principle (birthday problem)"
+    }
+  ]
+}

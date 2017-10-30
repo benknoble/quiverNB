@@ -1,0 +1,9 @@
+{
+  "title": "30 October // Lecture 20",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### Silicon (cont.)\nRemember that As is n-type (free electrons)\nB is p-type (holes)\n\n### MOS Transistors\n3 terminals\n1. Gate: the voltage here controls whether current flows\n2. Source: current flows from it\n3. Drain: current flows to it\n\nIslands of n (p) in substrate of p (n), control is gate\nWires to and from source and drain\n\nnMOS:\n- Gate $= 0 \\implies$ OFF\n- Gate $= 1 \\implies$ ON\n- pass good 0s, bad 1s\n\npMOS:\n- Gate $= 0 \\implies$ ON\n- Gate $= 1 \\implies$ OFF\n- pass good 1s, bad 0s\n\n### CMOS Topologies\nConnect nMOS to ground (because of bad 1s) (pull-down network)\nConnect pMOS to high voltage (because of bad 0s) (pull-up network)\n\nOnly one of the two must conduct at a time!\nIf neither conducts, output will be floating\n\n### CMOS Gates\nWe can use complementary networks like this to build logic gates (e.g., inverters)\n\nDigital logic works because of a curve that is not straight\nIt removes noise\n\n### CMOS Complements\nSeries vs. Parallel circuits\nBuild logical gates\n\nNot, Nand, Nor are really easy\n\nWhat about and? Invert a nand\n\n### Complex circuits\nDetermine the bottom half (when is output 0)\nTop half is n/p, series/parallel inversion of bottom"
+    }
+  ]
+}
