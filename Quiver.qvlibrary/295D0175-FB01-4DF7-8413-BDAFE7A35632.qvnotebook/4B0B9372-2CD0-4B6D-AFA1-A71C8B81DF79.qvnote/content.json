@@ -1,0 +1,10 @@
+{
+  "title": "31 October // Lecture 18",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Complex eigenvalues/vectors\n\n$Av_i = \\lambda_i v_i$\n\nRemember, we write complex eigenvectors as $u + iv$\nSo $A(u+iv) = Au + iAv = (au-bv) + i(bu + av)$\nSo\n$Au = au - bv$\n$Av = bu + av$\n\n$A \\matrixstart u & v \\matrixend = \\matrixstart au - bv & bu + av \\matrixend$\n\n$P = \\matrixstart u & v \\matrixend \\matrixstart a & b \\\\ -b & a \\matrixend$\n\nThis looks similar to $R(-\\theta)$\n\n$A = P \\matrixstart a & b \\\\ -b & a \\matrixend P^{-1} = \\matrixstart u & v \\matrixend \\matrixstart a & b \\\\ -b & a \\matrixend {\\matrixstart u & v \\matrixend} ^{-1}$\n\nNormalizing the $a,b$ matrix allows us to find a rotation-dilation matrix."
+    }
+  ]
+}
