@@ -1,0 +1,10 @@
+{
+  "title": "1 November // Lecture 28",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Midterm review\n\n$32^7 \\mod 11$\n$32 \\equiv (-1) \\mod 11$\n$32^7 \\equiv (-1)^7 \\equiv -1 \\mod 11$\n\n$a = qd + r$\n$0 \\leq r \\lt d$\n$a \\mod m := r$\n$a \\div m := q$\n\nEuclidean $\\gcd$ algorithm\nContinue to divide with remainder; last non-zero remainder is the $\\gcd$\nThen we can write it as a linear combination\n\nLinear congruences\nSuppose $\\gcd(a,n) = 1$\n$ax \\equiv b \\mod n$\n$x$ is unique $\\mod n$\nWe solve by finding $a'$ such that $aa' \\equiv 1 \\mod n$\nOR\nWe write $ai + nj = 1$ using Euclidean algorithm\nThen $ai \\equiv 1 \\mod n$ and\n$a(bi) \\equiv b \\mod n$ and \n$x \\equiv bi \\mod n$\n\nNo CRT on exam\n\nInduction (weak, strong)\n\nRelations\n\nCounting"
+    }
+  ]
+}

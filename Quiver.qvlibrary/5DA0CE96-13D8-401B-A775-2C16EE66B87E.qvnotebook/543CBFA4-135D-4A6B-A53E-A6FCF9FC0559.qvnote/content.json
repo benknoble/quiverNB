@@ -1,0 +1,9 @@
+{
+  "title": "1 November // Lecture 21",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Gates (cont.)\nRemember, CMOS gates like to invert\n\ne.g., not((a or b) and c)\n\n### Next up\nBoolean algebra, gate-level design\n\n# Basic Logic\nNot, buf, and, or, nand, nor, xor, xnor\n\nEverything can be done with CMOS gates (might take more than 1)\n\n# Boolean Algebra\nNand/Nor are the two univeral gates, but we generally add a few more"
+    }
+  ]
+}
