@@ -1,0 +1,10 @@
+{
+  "title": "2 November // Lecture 19",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "ODEs using coordinates and vectors, then matrices.\n\nSee quiver:///notes/F2359161-9E15-43CF-881E-5660121F81E6\n\n${\\left[ Y(t) \\right]}_\\mathscr{B}$\n\nWe can do it with matrices as\n$(P^{-1}Y)' = \\Lambda (P^{-1}Y)$ which looks like coordinates ($Z = P^{-1}Y$)"
+    }
+  ]
+}
