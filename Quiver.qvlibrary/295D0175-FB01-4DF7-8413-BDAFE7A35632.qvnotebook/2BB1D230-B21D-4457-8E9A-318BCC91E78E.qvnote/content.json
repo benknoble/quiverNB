@@ -1,0 +1,10 @@
+{
+  "title": "Theoretical Worksheet Problem 8",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Q: Find all matrices $A$ such that\n\n$$ A^2 + 2A = \\matrixstart 23 & -10 \\\\ 30 & -12 \\matrixend $$\n\nA: We begin writing $A$ as the diagonal matrix $P \\Lambda P^{-1}$:\n\n$$ (P \\Lambda P^{-1})^2 + 2 (P \\Lambda P^{-1}) = \\matrixstart 23 & -10 \\\\ 30 & -12 \\matrixend $$\n\nFactoring,\n$$ P \\Lambda^2 P^{-1} + 2 P \\Lambda P^{-1} = P (\\Lambda^2 + 2 \\Lambda) P^{-1}$$\n\nNow we compute the diagonlization of the result matrix $\\matrixstart 23 & -10 \\\\ 30 & -12 \\matrixend$\n\nWe get\n$$S \\Lambda_s S^{-1} = \\matrixstart 1 & 2 \\\\ 2 & 3 \\matrixend \\matrixstart 3 & 0 \\\\ 0 & 8 \\matrixend \\matrixstart -3 & 2 \\\\ 2 & -1 \\matrixend$$\n\nThus\n$$ P (\\Lambda^2 + 2 \\Lambda) P^{-1} = S \\Lambda_s S^{-1}$$\n\nClearly, $P = S$, $P^{-1} = S^{-1}$, $(\\Lambda^2 + 2 \\Lambda) = \\Lambda_s$\n\nBreaking $\\Lambda$ into $\\matrixstart \\lambda_1 & 0 \\\\ 0 & \\lambda_2 \\matrixend$, we have\n\n$$\\matrixstart \\lambda_1^2 & 0 \\\\ 0 & \\lambda_2^2 \\matrixend + 2 \\matrixstart \\lambda_1 & 0 \\\\ 0 & \\lambda_2 \\matrixend = \\matrixstart \\lambda_1^2 + 2\\lambda_1 & 0 \\\\ 0 & \\lambda_2^2 + 2\\lambda_2 \\matrixend = \\matrixstart 3 & 0 \\\\ 0 & 8 \\matrixend$$\n\nThe two simulatenous equations are independent of each other and readily solved:\n\n(1)\n$$\\lambda_1^2 + 2\\lambda_1 = 3 \\\\\n(\\lambda_1 - 1)(\\lambda_1 + 3) = 0 \\\\\n\\lambda_1 = 1,-3$$\n\n(2)\n$$\\lambda_2^2 + 2\\lambda_2 = 8 \\\\\n(\\lambda_2 - 2)(\\lambda_2 + 4) = 0 \\\\\n\\lambda_2 = 2,-4$$\n\nIt is readily verifiable that $A = P \\Lambda P^{-1}$ satisfies the equation, with\n$\\Lambda = \\matrixstart \\lambda_1 & 0 \\\\ 0 & \\lambda_2 \\matrixend \\forall \\lambda_1 = \\{1,-3\\}, \\lambda_2 = \\{2,-4\\}$\n\nThat is, any combination of the $\\lambda_1,\\lambda_2$ solutions from (1) and (2) suffice\n\nI have neither given nor recieved any aid on this assignment: David Ben Knoble.\nI verify that this is my own intellectual work: David Ben Knoble."
+    }
+  ]
+}
