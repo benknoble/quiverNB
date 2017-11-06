@@ -1,0 +1,9 @@
+{
+  "title": "6 November // Lecture 22",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Building towards an entire processor\n\n### Sum of Products\n1. Write functional spec as truth table\n2. Write down a boolean expression for every row with 1 in the output (0 gets inverted, and inputs, or outputs)\n3. Wire up gates\n\nE.g, 2-input multiplexer (mux)\nMultiple bit-wide, multiple input mux\n\n## Arithmetic Circuits\n### Adder: bit-by-bit, with a carry output\n\nFull adder, which we then cascade\n\nSum = A xor B xor C\nCn = C and (A xor B) or (A and B)\n\n### Subtract: add a boolean input to the adder\nA + ~B + 1\nTo take care of ~B, we do B xor 1\nThe plus 1 is the first carry in\n\n### Condition codes\nCheck if\n    zero (e.g., beq A B is the same as checking if B - A is 0)\n    negative (e.g., slt)\n    carry (carry from leftmost)\n    overflow (carry in leftmost xor carry out leftmost)\n    \nConditions used for comparing numbers via subtraction\n\nTradeoff between adders size and speed"
+    }
+  ]
+}

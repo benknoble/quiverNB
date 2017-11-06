@@ -1,0 +1,10 @@
+{
+  "title": "6 November // Lecture 29",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Pigeonhole principle cont.\n\nFor $N$ items being put into $k$ boxes, there are at least $\\left\\lceil{\\frac{N}{k}}\\right\\rceil$ in the same box"
+    }
+  ]
+}
