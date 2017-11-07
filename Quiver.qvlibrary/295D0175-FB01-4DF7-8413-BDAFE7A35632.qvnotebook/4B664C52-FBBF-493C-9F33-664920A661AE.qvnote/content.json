@@ -1,0 +1,10 @@
+{
+  "title": "7 November // Lecture 20",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Diagonalizing $A$ is also like moving $A$ into a basis where it is diagonal:\n$PAP^{-1} = D$\n\n$\\sin (A) = P (\\Lambda - \\frac{\\Lambda^3}{3!} + \\frac{\\Lambda^5}{5!} - \\dots)P^{-1}$\n$\\sin (A) = P \\sin(\\Lambda) P^{-1}$ (holds for all power series)\n\n$(e^{At})' = Ae^{At}$ by the power series definition, so the solution to $Y' = AY$ is $Y = e^{At}Y_0$\n$e^{At} = P e^{\\Lambda t} P^{-1}$\n\nIn the complex plane:\n$P = \\matrixstart u \\pm iv \\matrixend$\n$\\Lambda = diag(a \\pm ib)$\n\nSo $e^{At}$ is the same as before. But we can keep things in the real plane with a trick.\nWe know that the entire thing must be real when you finish the multiplications, but that's a lot of computation.\n\nWe let $P = \\matrixstart u & v \\matrixend, D = \\matrixstart a & b \\\\ -b & a \\matrixend$\nThen $A = PDP^{-1}$\n\nBecause $e^{(a + ib)t} = e^{at}(\\cos(bt) + i\\sin(bt)$,\n$e^{At} = e^{at} P R(bt) P^{-1}$"
+    }
+  ]
+}
