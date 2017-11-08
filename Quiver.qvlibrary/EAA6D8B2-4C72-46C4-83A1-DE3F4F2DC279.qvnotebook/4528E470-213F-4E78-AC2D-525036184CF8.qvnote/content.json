@@ -1,0 +1,10 @@
+{
+  "title": "8 November // Lecture 30",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Permutations and Combinations\n\nOrder matters for a permutation: A permutation $p$ of a set $S$ is an ordered arrangement of elements of $S$\nAn $r$-permutation has magnitude $|p| = r$\n\n$P(n,r)$ is number of $r$-permutations of a set with $n$ elements\n$P(n,r) = \\frac{n!}{(n-r)!}$\n\nNote that the empty or identity product ($0!$) is $1$, and the empty sum is $\\sum_{x \\in \\emptyset} x = 0$\n\nOrder does not distinguish one combination from another: A combination $c$ of a set $S$ is an non-ordered subset of elements of $S$\nAn $r$-combination has magnitude $|c| = r$\n\n$C(n,r)$ is number of $r$-combinations of a set with $n$ elements\n$C(n,r) = \\frac{n!}{(n-r)! \\cdot r!} = \\frac{P(n,r)}{r!}$\nAlso called $n$ choose $r$, $_nC_r$, $\\left(\\begin{matrix} n \\\\ r \\end{matrix}\\right)$\n\n$C(n,r) = C(n,n-r)$"
+    }
+  ]
+}

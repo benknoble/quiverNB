@@ -1,0 +1,9 @@
+{
+  "title": "8 November // Lecture 23",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### Shifting with Gates\nEither shift or don't, feeding input into next output\n\n### Other bit operations\nAnd, Or, Xor\n\n## The ALU (without comparisons)\nA,B come in, go into add/sub, boolean, shifter\nFlags come out, result depends on control inputs\n\n### LT[U]\nWe can add comparisons easily once we have an adder\nLTU = ~C, LT = N xor V\n11 operations!\n\n# Multiplication in Hardware\n## Binary multiplication\nJust use a table (single & gate)\nFor longer numbers, we use the longhand algorithm (partial products, each of which are shifted by (line - 1), then add)\nThe partial products are really easy due to binary (anding)"
+    }
+  ]
+}
