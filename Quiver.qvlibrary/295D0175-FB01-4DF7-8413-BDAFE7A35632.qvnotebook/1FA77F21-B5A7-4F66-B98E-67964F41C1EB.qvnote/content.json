@@ -1,0 +1,10 @@
+{
+  "title": "9 November // Lecture 21",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$\\mathbb{P}_n$ is space of polynomials with degree $\\leq n$\nProvably a space\n\nLinear transformations on $\\mathbb{P}_n$\n\nWe also have $\\mathbb{R}^{m \\times n}$, $C([0,1])$\n\nThe standard linear transformation on functions is $T(f) = f'$ (i.e., the derivative operator is a linear transformation)\n\nEx:\nQ: Show that $1,x,x^2,x^3$ are linearly independent\n\nA: Assume there are constants $a_i$ such that $a_1 + a_2x + \\dots + a_4x^3 = 0$\n\nThen $p(0) = p(1) = \\dots = p(3) = 0$\nAnd $p(x) = (x-0)(x-1)(x-2)(x-3) + q(x)$, which is $4^{th}$ degree. Contradiction.\n\nOne fashion of examining linear independence is the same as earlier $c_1p_1 + c_2p_2 + c_3p_3 = 0$\nOur vectors are just $p_i \\in \\mathbb{P}_n$\n\nTo impose a coordinate structure on polynomials, we use a slight (but intuitive) trick of notation\n\n$v_1,\\dots, v_k \\in V$ are linearly independent $\\iff$ $[v_1], \\dots, [v_k] \\in \\mathbb{R}^n$ are linearly independent\n\nCoordinates of linear transformations (see wksht. 21)"
+    }
+  ]
+}
