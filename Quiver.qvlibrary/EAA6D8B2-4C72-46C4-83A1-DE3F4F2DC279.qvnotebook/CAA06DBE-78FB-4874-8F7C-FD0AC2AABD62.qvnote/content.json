@@ -1,0 +1,10 @@
+{
+  "title": "10 November // Lecture 31",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Binomial Coefficients\n\n$P(n,r) = \\frac{n!}{(n-r)!}$\n$C(n,r) = \\frac{n!}{(n-r)! \\cdot r!} = \\frac{P(n,r)}{r!}$\n\nPowers of binomials $(x+y)^n$\nUse the $n^{th}$ row of Pascal's triangle\n\n$(x+y)^n = \\sum\\limits_{k=0}^n \\left( \\begin{matrix} n \\\\ k \\end{matrix} \\right) x^{n-k} y^k$\n\nThe sum of the coefficients is $2^n$\nSum of alternatingly signed coefficients is $0$"
+    }
+  ]
+}
