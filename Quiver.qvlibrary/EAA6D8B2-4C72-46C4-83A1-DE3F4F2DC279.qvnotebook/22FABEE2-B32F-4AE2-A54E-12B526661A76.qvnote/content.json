@@ -1,0 +1,10 @@
+{
+  "title": "13 November // Lecture 32",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Review counting (6.3/4)\n\nSeeing the binomial theorem as strings in $x,y$\n\n$(x+y)^n$ has number of terms equal to number of strings of length $n$ (if you don't combine like terms; don't exponentiate)\nHow many have $k$ $y$s and $n-k$ $x$s?\nWe have $n$ spots, and we need choose $k$, so $\\binom{n}{k}$ (also typed as ${{n}\\choose{k}}$)\n\nWhen we sum this we get the full product. We can generate Pascal's triangle by looking at the binomial coefficients\n\nNote $\\binom{n+1}{k} = \\binom{n}{k-1} + \\binom{n}{k}$\n\nStudying Combinatorial proofs\n\nThe idea is to come up with multiple ways to count things, like in\n$k \\binom{n}{k} = n \\binom{n-1}{k-1}$\n\nWe are counting the number of ways to choose a $k$-subsets of $S = \\{ 1 \\dotsc n \\}$ and an element of $S$\n\nWe let $U = \\{ (s,a) \\mid s \\subset S, \\lvert s \\rvert = k, a \\in s\\}$\n\nMethod 1:\nSelect $s$, which is $\\binom{n}{k}$\nThen select $a \\in s$, which is $k$. Therefore $\\lvert U \\rvert = k \\binom{n}{k}$\n\nMethod 2:\nSelect $a \\in S$: $n$\nSelect $k$-subsets contain $a$, which is the same as counting $k-1$-subsets of $S \\setminus \\{a\\}$\nThis is $\\binom{n-1}{k-1}$.\n$\\therefore \\lvert U \\rvert = n \\binom{n-1}{k-1}$\n\nSample space $S$ is set of possible outcomes that are all equally likely\nEvent $E$ is a subset of $S$\n\n$p(E) = \\frac{\\lvert E \\rvert}{\\lvert S \\rvert}$"
+    }
+  ]
+}
