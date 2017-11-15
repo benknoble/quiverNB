@@ -1,0 +1,10 @@
+{
+  "title": "15 November // Lecture 33",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Probability\n\nProbability of one of a finite set of equally likely outcomes is $p(E) = \\frac{\\lvert E \\rvert}{\\lvert S \\rvert}$\n\nComplementary Event $E^C = \\bar{E}$\n$\\bar{E} = S \\setminus E$\n$p(\\bar{E}) = 1 - p(E)$"
+    }
+  ]
+}
