@@ -1,0 +1,10 @@
+{
+  "title": "16 November // Lecture 23",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Gram-Schmidt process\n\nWe actually normalize the vectors too\n\n$v_1 = \\frac{u_1}{\\lvert u_1 \\rvert}$\n$u^{\\perp}_2 = u_2 - \\frac{u_2 \\cdot v_1}{{\\lvert v_1 \\rvert}^2}v_1 = u_2 - (u_2 \\cdot v_1)v_1$\n$v_2 = \\frac{u^{\\perp}_2}{\\lvert u^{\\perp}_2 \\rvert}$\n$v_3 = u_3 - c_1v_1 - c_2v_2 = \\dots$\n\nHow to pick $c_1, c_2$...\nIt's a system of equations that gives us\n$c_1 = u_3 \\cdot v_1$\n$c_2 = u_3 \\cdot v_2$\n\nSo $u^{\\perp}_3 = u_3 - (u_3 \\cdot v_1)v_1 - (u_3 \\cdot v_2)v_2$\n$v_3 = \\frac{u^{\\perp}_3}{\\lvert u^{\\perp}_3 \\rvert}$\n\nWe can prove that the subspace doesn't change by stating these definitions as elementary row operations\n\n$QR$ factorization is a factorization of $A$ with $Q$ unit orthogonal ($QQ^{-1} = QQ^T = I$) and $R$ upper triangular\n\n$r_{11} = \\lvert u_1 \\rvert$\n$u_1 = r_{11} v_1$\n$r_{12} = v_1 \\cdot u_2$\n$r_{22} = \\lvert u^{\\perp}_2 \\rvert$\n$u_2 = r_{12}v_1 + r_{22}v_2$\n$r_{13} = v_1 \\cdot u_3$\n$r_{23} = v_2 \\cdot u_3$\n$r_{33} = \\lvert u^{\\perp}_3 \\rvert$\n$u_3 = r_{13}v_1 + r_{23}v_2 + r_{33}v_3$\n\n$R = \\matrixstart r_{11} & r_{12} & r_{13} \\\\ 0 & r_{22} & r_{23} \\\\ 0 & 0 & r_{33} \\matrixend$\n\nUses?\n\nTo project $x$ into the subspace given by the orthonormal basis, we compute a linear combination of $v_i$\n$(v_1 \\cdot x)v_1 + (v_2 \\cdot x)v_2 + (v_3 \\cdot x)v_3$\nThat is, the coordinate of the projection is $\\matrixstart v_1 \\cdot x \\\\ v_2 \\cdot x \\\\ v_3 \\cdot x \\matrixend$\nAND the actual vector is of course $\\matrixstart v_1 & v_2 & v_3 \\matrixend \\matrixstart v_1 \\cdot x \\\\ v_2 \\cdot x \\\\ v_3 \\cdot x \\matrixend$\nThis is $Q\\matrixstart v_1 \\cdot x \\\\ v_2 \\cdot x \\\\ v_3 \\cdot x \\matrixend = QQ^Tx = x?$"
+    }
+  ]
+}
