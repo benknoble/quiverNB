@@ -1,0 +1,9 @@
+{
+  "title": "20 November // Lecture 26",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Building a Computer (cont.)\n## Clocks\n### Synchronous Systems\nData => Flipflop => Logic => Flipflop\n\n## Finite State Machines\nStates, Inputs, Outputs (sets)\nMap $F: (S,I) \\to (S,O)$\nState represents memory!\n\nUse flipflops to implement, combinational logic to compute output and next state\n\n## Now we build!\nDatapath: registers, alu, memories\nControl: clock, FSM, look-up tables\n\n### Registers and Datapath for R-type\nAll the registers are called register bank (or register file)\n\nThe register file is a 32 to 1 Mux\n\nIncremental approach"
+    }
+  ]
+}

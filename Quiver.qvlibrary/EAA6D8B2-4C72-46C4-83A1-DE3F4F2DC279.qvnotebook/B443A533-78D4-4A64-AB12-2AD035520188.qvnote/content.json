@@ -1,0 +1,14 @@
+{
+  "title": "20 November // Lecture 35",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Lecture 34 (makeup) was 17 Nov"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Conditional Probability\n\n$p(E \\mid F) = \\frac{p(E \\cap F)}{p(F)}$\n\nIn general, $p(E \\cap F) = p(E \\mid F)p(F)$\n    $E$ and $F$ are independent if $p(E \\cap F) = p(E)p(F)$\n    $p(E \\mid F) = p(E)$; that is, $E$ does not depend on $F$\n    \nBaye's Theorem (later)\n    How to relate $p(E \\mid F)$ and $p(F \\mid E)$\n\nBernoulli trials\n    Experiments with two classes of outcome (success and failure)\n    Let $p$ be probability of success, and $q$ be probability of failure\n    Repeat $n$ independent trials searching for $k \\leq n$ successes\n    $p(k) = \\binom{n}{k} p^k q^{n-k}$\n    \nFurther, since $p + q = 1$ by definition, $\\sum_{k=0}^n {\\binom{n}{k} p^k q^{n-k}} = {(p+q)}^n = 1$\n\nRemember from statistics all this stuff?\nLike $X : S \\to \\mathbb{R}$ is a random variable\n$X(s)$ might be number of heads in $s$\n$p(X = 4)$ would then be probability that $X(s) = 4$\n\nBaye's Theorem\n    $p(F \\mid E) = \\frac{p(E \\mid F)p(F)}{p(E \\mid F)p(F) + p(E \\mid \\bar{F})p(\\bar{F})}$"
+    }
+  ]
+}
