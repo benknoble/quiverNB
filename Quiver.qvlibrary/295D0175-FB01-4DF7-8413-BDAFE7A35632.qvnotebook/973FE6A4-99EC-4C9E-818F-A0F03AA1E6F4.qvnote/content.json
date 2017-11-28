@@ -1,0 +1,10 @@
+{
+  "title": "28 November // Lecture 24",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Eigen decomposition: $A = P \\Lambda P^{-1}$--this is not always possible: there must be a basis for eigenvectors\nIf $A$ is symmetric, it is always diagonalizable (Sym $\\iff A^T = A$) and the eigenvalues are real and eigenvectors for diff eigenvalues are orthogonal\n\n$Au_1 \\cdot u_2 = (Au_1)^T_2 = u_1^TA^Tu_2 = u_1 \\cdot (A^Tu_2) = u_1 \\cdot (Au_2)$\nSo therefore $\\lambda_1 u_1 \\cdot u_2 = \\lambda_2 u_1 \\cdot u_2$ and therefore the dot product is $0$\n\nTherefore the columns of $P$ are orthogonal, and if they have length $1$ then $P^T = P^{-1}$\nWhen $P^T = P^{-1}$, we typically call it $Q$\n\nSVD\n\nLet $C$ be a non-square matrix\nWe want to use a similarly \"diagonal\" form for $C$\n\n$C^TC$ is square and is $c \\times c$ where $c$ is the number of columns in $C$\nFurther $C^TC$ is symmetric and therefore $C^TC = Q \\Lambda Q^T$\n\nNote that $C^TC$ is just all of the dot products of the columns\n\nThus, any $C^TC$ can be written as a square matrix diagonalization\nWe have $C^TCQ = Q \\Lambda$\nWhat about $CQ$?\n$c_i = Cq_i$\nSo $c_i \\cdot c_j = (Cq_i)^T(Cq_j)T = q_i^TC^TCq_j = q_i^T \\lambda_j q_j = \\lambda_j q_i \\cdot q_j$\nFurther, $\\lvert c_i \\rvert = \\sqrt{\\lambda_i}$\n\nTheorem: $\\Lambda$ has positive eigenvalues\n\nAll the $v$s are in the image of $C$ (a subspace); they are an orthogonal basis for that image\n\nSVD for $C \\in \\mathbb{R}^{m \\times n}, m \\gt n$\nStep 1: Compute $C^TC$ as diagonal $Q \\Lambda Q^T = \\matrixstart q_1 \\cdots q_n \\matrixend \\Lambda_n Q^T \\in \\mathbb{R}^{n \\times n}$, with $Q$ orthonormal in the columns\n    The scaling used to achieve normality is called the singular value $\\sigma_i = \\lvert C q_i \\rvert = \\sqrt{\\lambda_i}$\nStep 2: Normalize\n    $v_i := \\frac{Cu_i}{\\sigma_i}$\n    $C = V \\Sigma Q^T$\n    $V$ is also a normalized $CQ$\n    \nNow $C = \\sum {\\sigma_i c_i q_i^T}$"
+    }
+  ]
+}
