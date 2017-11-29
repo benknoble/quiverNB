@@ -1,0 +1,14 @@
+{
+  "title": "29 November // Lecture 37",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Lecture 36 was probably 7.3\n\nMake sure you review all of chapter 6 & 7! Counting and probability are usually hard\n\nLooking at probabilities of random variables\n\nExpected Values\n$E(X) = \\sum_{s \\in S} X(s)p(s) = \\sum_r p(X=r)r$\n\nIf $X$ and $Y$ are independently random, the expected values of their product and sum are intuitive\n\nVariance: How far is $X(s)$ from $E(X)$\nChebyshev's inequality: $p(\\lvert X(s) - E(X) \\rvert \\geq r) \\leq \\frac{\\sigma^2(X)}{r^2}$\n\n$\\sigma^2(X) = \\sum {(X(s) - E(X))}^2p(s)$\nThis is the expected value of (the square of the deviation of $X$)"
+    },
+    {
+      "type": "markdown",
+      "data": ""
+    }
+  ]
+}
