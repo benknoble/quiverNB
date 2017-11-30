@@ -1,0 +1,10 @@
+{
+  "title": "30 November // Lecture 25",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Looking at SVD\n\nWhat if $\\sigma_i = 0$?\nWe end up with a free $v_i$ (as long as it is orthogonal to the rest)\n\nBackground for Least-Squares Fit\nMinimizing the distance between $x$ and a subspace $S$ is $\\lvert x - proj_S(x) \\rvert$, which is the point $p$ such that $x - p \\in S^{\\perp} = \\ker(A^T)$\n\nHow to compute that projection?\n$proj_{u_1} (x) - proj_{u_2} (x) \\cdots$ which looks an awful lot like Gram-Schmidt (because it is)\nWhen we have $Q$ as an orthonormal basis for $S$, the projections are easy: $(x \\cdot q_1)q_1 + (x \\cdot q_2)q_n \\cdots$\nWe can also use $QQ^Tx$ to find $p$\n\nFurther, $x - p$ is orthogonal to $S$ and expands the subspace\n\nSince $p \\in S, \\exists c : Ac = p$. Then we are essentially minimizing $\\lvert Ac - x \\rvert$\n\nNormal equation:\n$A^TAc = A^Tx$\n$c = (A^TA)^{-1}A^Tx$\nRemember that $A^TA$ contains $a_i \\cdot a_i$ on the diagonal and the other dot products on the off\n\nIf we have $QR$ factorization of $A$, the normal equation becomes\n$c = R^{-1}Q^Tb$\n\nLeast Squares Fit\nFitting data to $a + bx_i + cx_i^2 = y_i, 0 \\leq i \\leq n-1$\n$n$-dimensional system\n$\\matrixstart 1 & x_0 & x_0^2 \\\\ \\vdots \\\\ 1 & x_{n-1} & x_{n-1}^2 \\matrixend \\matrixstart a \\\\ b \\\\ c \\matrixend = \\matrixstart y_0 \\\\ \\vdots \\\\ y_{n-1} \\matrixend$\n\nIt's an $Ax = b$! And we want to approximate $x$ as best as possible: $\\matrixstart a \\\\ b \\\\ c \\matrixend = (A^TA)^{-1}A^Tb$\n\n"
+    }
+  ]
+}
