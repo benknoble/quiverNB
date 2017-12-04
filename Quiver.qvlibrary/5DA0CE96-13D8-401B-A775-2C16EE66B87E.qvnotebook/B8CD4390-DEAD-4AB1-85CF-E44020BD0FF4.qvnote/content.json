@@ -1,0 +1,9 @@
+{
+  "title": "4 December // Lecture 29",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Memory Hiererarchy\n\nTradeoffs between different kinds (registers, SRAM, DRAM, Hard disk)\nWant big, fast, cheap (but pick 2)\nWe can get big and fast using a hierarchy\n\n## Principle of Locality\n\n1. Keep data used often in a small fast SRAM (cache, often on same chip as CPU)\n2. Keep all data in a bigger but slower DRAM (\"main memory\")\n3. Access Main Memory only rarely\n\n### Definitions\n\n*Locality of Reference*\nIf memory is accessed now, it and its neighbors are highly likely to be accessed soon\n> E.g., instructions in programs (one after the other, excepting branches, which still usually go nearby); arrays; stack; reading from files\n\n*Cache*\nFast storage buffer\nNeeds to be very good\nMakes slow Main Memory faster\n\n*Virtual Memory*\nMakes small Main Memory appear bigger\n\n*Fully Associative*\nRequested data could be fully associative\n\n*Direct Mapped Cache*\nCompute the cache entry from the address"
+    }
+  ]
+}
