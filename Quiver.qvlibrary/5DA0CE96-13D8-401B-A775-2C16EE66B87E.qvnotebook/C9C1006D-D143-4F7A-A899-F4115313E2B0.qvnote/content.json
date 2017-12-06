@@ -1,0 +1,9 @@
+{
+  "title": "6 December // Lecture 30",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Pipelining\nFor analysis we mostly care about steady state\nGenerally increases latency and throughput\nAs good as the *weakest* link\n\nTo increase instructions per second, we could\n- decrease CPI (done with instruction set simplicity--each takes about one)\n- increase Frequency (limited by delay along longest path--hence we need pipelining to increase throughput to allow a faster clock)\n\n### Tips and Tricks\nFew instruction formats make it easy\n\nDependencies on previous instructions make it hard\n- could ask compiler to guarantee no data hazards, but this is inefficient\n- we do data forwarding\n    - This does lead to a stall occasionally (thanks to lw)\n\nBranching hazards: need to flush the instructions if we are wrong at guessing the branch\n\n### Fallacies Debunked\n*NOT* easy\n*NOT* independent of ISA\nDiminishing returns"
+    }
+  ]
+}
