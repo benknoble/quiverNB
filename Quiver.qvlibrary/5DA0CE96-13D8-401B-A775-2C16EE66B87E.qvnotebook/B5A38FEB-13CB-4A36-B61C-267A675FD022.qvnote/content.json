@@ -3,7 +3,7 @@
   "cells": [
     {
       "type": "markdown",
-      "data": "For R instructions, the opcode is 0, and the `func` field indicates the instruction    \nCan only shift by 31 bits, which makes sense because shifting 32 bits by 32+ loses the entire number\n\nLet's say we want to compute\n$$f = (g + h) - (i + j)$$\nWhere the values of the variables are in `$16...$20$"
+      "data": "For R instructions, the opcode is 0, and the `func` field indicates the instruction    \nCan only shift by 31 bits, which makes sense because shifting 32 bits by 32+ loses the entire number\n\nLet's say we want to compute\n$$f = (g + h) - (i + j)$$\nWhere the values of the variables are in `$16...$20`"
     },
     {
       "type": "code",
