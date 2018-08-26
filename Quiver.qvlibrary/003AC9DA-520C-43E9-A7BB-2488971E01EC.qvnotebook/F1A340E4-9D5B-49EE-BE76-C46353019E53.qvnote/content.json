@@ -1,0 +1,61 @@
+{
+  "title": "23 August // Lecture 2",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# What is an algorithm & How do we define one ?\n\n> Input $\\to \\square \\to$ Output\n\n_Finite_ sequence of _unambiguous_ instructions\n\n### Features\n\n- Finiteness\n- Definiteness\n- Input\n- Output\n- Effectiveness\n\n_heuristic_ works often enough to be useful, but is not an algorithm\n\n### Computer Models\n\n- Real machine\n- Turing machine\n- Lambda Calculus\n- RAM model\n- Specific language/compiler/computer\n\n**RAM Model**\n\n- Simple, unit-time operations (arithmetic, data movement, control)\n- Unlimited memory\n- IO separate from memory\n- Sequential\n- Flat memory model\n\n3 unbounded quantities: time, memory, bits/word"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "For a given input $i \\in I$ we can:\n- count operations to determine running time\n- count memory cells used to determine space\n- determine the magnitude of numbers stored\n\nIn general, we partition inputs by size $n$ to report\n- worst case: $W_{A(n)} = \\max_{\\forall i \\in I, \\mid i \\mid = n} R_A(i)$\n- best case: $\\min$\n- avg case: $\\sum \\Pi(i) \\times R_A(i)$"
+    },
+    {
+      "type": "markdown",
+      "data": "## Analysis\n\n- Predicting resource requirements on some model\n- Can ask if an algorithm is _optimal_\n\n## Complexity\n\nMight depend on\n- size of input (size of sequence, number of vertices & edges)\n- properties of input (nearly sorted, reversed, &c.)\n\n### Example: Linear search (incremental)\n\nInput: a sequence of $n$ numbers in $A$, $key$ to search for\nOutput: true if key occurs in the sequence, false otherwise"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "def linSearch(A,key):\n    i = 1\n    while i <= n and A[i] != key: i++\n    return i <= n"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Cost of loop: $x \\in [1,n+1] \\subseteq \\mathbb{N}$\nThe best case is the sum of a few constants $\\in \\Theta(1)$\nThe worst case is a linear sum $\\in \\Theta(n)$"
+    },
+    {
+      "type": "markdown",
+      "data": "Ask:\n1. Does it terminate?\n2. Is it correct?\n3. What is the complexity?"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Induction to prove a Loop Invariant\n- Initialization\n- Maintenance\n- Termination\n\nFor linear search, we guarantee that $key \\not\\in A[1 \\dots i-1]$\n- At $i=1$, trivially true\n- Assume true for $i$; at $i+1$ we update $i$ iff we don't see $key$ at $A[i+1]$, restoring the invariant\n- $i$ finished at $n+1$ if we didn't find it (returning false); if we found it, $i \\leq n$ and we return true\n\nInsertion sort\n\nInput: $n$ records $R_1 \\dots R_n$\nEach record $R_i$ has at least a key $k_i$\n\nThe $k$ must have an ordering relation such that:\n- one of $a \\leq b, a = b, a \\geq b$ is true (Trichotomy)\n- the relation is transitive\nTotal ordering\n\nSorting determines a permutation $\\Pi = (p_1, \\dots, p_n)$ such that the keys are in non-decreasing order\nPermutation is a bijection from $\\{1, \\dots, n\\}$ to itself\n$rank(k) = \\mid\\{j : j \\lt k\\}\\mid$\n\nInternal v. External (random access v. sequential access)\nComparison-based\nStable\nArray v. List (consecutive memory v. non-consecutive memory)\nIn-place"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "def insSort(A):\n    for j in range(2, len(A)):\n        key = A[j]\n        i=j-1\n        while i > 0 and A[i] > key:\n            A[i+1] = A[i]\n            i--\n        A[i+1] = key"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Invariant: array is sorted through $j-1$ (this is the for loop)"
+    },
+    {
+      "type": "markdown",
+      "data": "## Divide & Conquer\n\n- _Divide_ into smaller problems\n- _Conquer_ via recursion\n- _Combine_ the results\n\nFor merge sort, we will sort a sequence `A[i..j]`"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "def mergeSort(A,p,r):\n    if p < r:\n        q = floor((p+r)/2)\n        mergeSort(A,p,q)\n        mergeSort(A,q+1,r)\n        merge(A,p,q,r)\n        \ndef merge(A,p,q,r)\n    m = q - p + 1\n    n = r - q\n    L = A[p:q]\n    R = A[q+1:r]\n    L.append(inf)\n    R.append(inf)\n    i = j = 1\n    for k in range(p,r)\n        if L[i] <= R[j]:\n            A[k] = L[i++]\n        else:\n            A[k] = R[j++]"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Loop invariant\n$A[p \\dots k - 1]$ contains $k-p$ smallest sorted elements of $A[p \\dots r]$"
+    }
+  ]
+}

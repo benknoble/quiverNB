@@ -1,0 +1,10 @@
+{
+  "title": "23 August // Lecture 2",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Alphabets, Strings, & Languages\n\nIf $\\Sigma$ is an alphabet of symbols $\\{\\sigma_1, \\dots, \\sigma_n\\}$, then a string $s$ is the sequence of symbols $s_1\\dots s_i$ with each $s_i \\in \\Sigma$.\nThe empty string $\\epsilon = e \\in \\Sigma$ for any $\\Sigma$.\n$\\Sigma^*$ is the set of strings over $\\Sigma$.\n$x \\circ y = xy$ is string concatenation.\nStrings can have prefixes, suffixes, and substrings.\nWe can repeat $s^i$ and reverse $s^R$\n\nThere are $\\sum_{i=0}^n i = \\frac{n(n+1)}{2}$ substrings in a string of length $n$. (There are $n$ substrings of length 1, $n-1$ of length 2, &c.) If you include the empty string as a substring, you must add 1 to the sum; that is, $1 + \\sum_{i=0}^{n} i = \\frac{n(n+1)}{2} + 1$. We count substrings by position here, such that $aaa$ still has 7 substrings (it would have less if we counted unique substrings).\n\nA language is a set of strings in an alphabet (a subset of $\\Sigma^*$).\nThe number of languages on an alphabet is equivalent in size to $\\mid \\mathbb{R} \\mid$: further, we cannot describe most of them in finite symbols.\n\n$\\bar{A} = \\Sigma^* - A$\n\nWe can concatenate languages:\n$$ L_1 \\circ L_2 = \\{ x \\circ y : x \\in L_1, y \\in L_2 \\}$$\nThis is a cartesian product ? $L_1 \\times L_2$ ?\nE.g., $\\{ \\epsilon, a, aa, aaa, \\dots \\} \\circ \\{ \\epsilon, b, bb, bbb, \\dots \\} = \\{\\epsilon\\} \\cup \\{a\\}^*\\{b\\}^* = \\epsilon \\cup a^*b^* = a^*b^*$\n\nKleene star of $L$ is $L^*$ is a concatenation of any number of strings in $L$.\nE.g., $\\{ 00, 01, 10, 11 \\}^*$ is the set of all even-length binary strings.\nFurther, $\\emptyset^* = \\{ \\epsilon \\}$ AND $\\{ \\epsilon \\}^* = \\{ \\epsilon \\}$\n\n$L^+ = L \\circ L^*$"
+    }
+  ]
+}

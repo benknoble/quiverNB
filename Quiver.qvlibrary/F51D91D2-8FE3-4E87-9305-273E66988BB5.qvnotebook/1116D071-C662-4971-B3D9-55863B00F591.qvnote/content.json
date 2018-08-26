@@ -1,0 +1,9 @@
+{
+  "title": "23 August // Lecture 2",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Databases\n\n- Designing programs (syntax, semantics, abstraction)\n- Designing algorithms (correct, efficient)\n- Designing data (general, portable, indpendent, robust)\n\n## What is it?\n\n- Collection of related bits\n- Entities & Relationships\n\nDBMS is software package for database management\n\n### Files v. Databases\n\n- Main v. secondary memory\n- Application-dependent code per query\n- Inconsistency protection\n- Crash recovery\n- Security and access control\n\n### Why?\n\n- Independence\n- Efficient\n- Reduced development time\n- Data integrity/security\n- Uniform admin\n- Concurrent access, recovery from crashes\n\n## Why?\n\n- Shift from computation to information\n- Diversity and volume\n- Encompasses most of CS\n\n# Models\n\n- _model_ : concepts relating data\n- _schema_ : data organization implementing a data model\n- _relational model of data_ : uses _relations_ (table of rows and columns) defined by _schema_\n\n## Abstraction layers\n\n- _views_ : look like tables, but computed at runtime from data\n- _conceptual schema_ : what we want to define\n- _physical schema_ : on the disk\n\nDefined by DDLs\nModified/queried by DMLs"
+    }
+  ]
+}

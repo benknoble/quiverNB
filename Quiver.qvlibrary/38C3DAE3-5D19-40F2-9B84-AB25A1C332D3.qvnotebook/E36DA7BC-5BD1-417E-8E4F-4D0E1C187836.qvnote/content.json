@@ -1,0 +1,10 @@
+{
+  "title": "22 August // Lecture 1",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Syllabus & stuff\n\nDisplacement\n$\\bar{x} = (x_0, \\dots, x_n) \\in \\mathbb{R}^n$\n\nVelocity\n$\\bar{v} = (v_0, \\dots, v_n) \\in \\mathbb{R}^n = \\frac{d\\bar{x}}{dt}$\n\nAcceleration\n$\\bar{a} = (a_0, \\dots, a_n) \\in \\mathbb{R}^n = \\frac{d\\bar{v}}{dt}$"
+    }
+  ]
+}
