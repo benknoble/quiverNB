@@ -1,0 +1,10 @@
+{
+  "title": "27 August // Lecture 2",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "More graphs\n\n$a(t) = \\frac{dv}{dt} = \\frac{d^2x}{dx^2}$\n\nFor constant acceleration:\n$s(t) = s_0 + vt + \\frac{at^2}{2}$\n$v^2 = v^2_0 + 2a \\Delta x$"
+    }
+  ]
+}

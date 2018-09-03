@@ -1,0 +1,14 @@
+{
+  "title": "Quantitative Investigation of the Acceleration of a Cart on an Inclined Plane",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "D. Ben Knoble\nPID: 730083304\n\nPartners:\n\nExperiment performed: 27th August 2018\nPreliminary Report Submitted: 5 September 2018\n\n## I. Abstract"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "We measured the distance $x$ travelled over time $t$ by a cart on an inclined plane at a constant but unknown angle $\\theta$. We then analyzed the collected data to investigate a relationship between $x$ and $t$; namely, the acceleration $a$. As was predicted by kinematics models of constant acceleration, we found that $x \\propto t^2$; that is, that the distance travelled is proportional to the square of the time. Our measured acceleration using this model was within expected values, being a fraction of the acceleration near Earth's surface $g$. We discussed the implications of friction on our measurements and acceleration values, and the probable dependence of $a$ on $\\sin\\theta$."
+    }
+  ]
+}

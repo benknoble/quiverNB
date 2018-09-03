@@ -1,0 +1,10 @@
+{
+  "title": "30 August // Lecture 4",
+  "cells": [
+    {
+      "type": "code",
+      "language": "sql",
+      "data": "drop table if exists Students;\ncreate table Students (sid char(20),\n                       name char(20),\n                       login char(10) unique,\n                       age integer,\n                       gpa real,\n                       primary key (sid));\ninsert into Students values\n('53666', 'Jones', 'jones@cs', 18, 3.4),\n('53688', 'Smith', 'smith@cs', 18, 3.2),\n('53650', 'Smith', 'smith@math', 19, 3.9),\n('12345', 'Knoble', 'knoble@knight', 20, 3.9);\n\n-- select * from Students;\n\ndrop table if exists Enrolled;\ncreate table Enrolled (sid char(20),\n                       cid char(20),\n                       grade char(2),\n                       foreign key (sid) references Students (sid)\n                         on delete cascade,\n                       primary key (sid,cid));\ninsert into Enrolled values\n('53688', 'Carnatic101', 'C'),\n('53688', 'Reggae203', 'B'),\n('53650', 'Topology112', 'A'),\n('53666', 'History105', 'B'),\n-- ('abcdef', 'my course', 'D'),\n('53666', 'Topology112', 'C'),\n('12345', 'Topology112', 'C');\n\n-- select * from Enrolled;\n\n-- select * from Students S where S.age=18;\n-- select S.name,E.cid from Students S, Enrolled E where S.sid=E.sid;\n\nselect S.sid,S.name,E.cid\nfrom Students S\njoin Enrolled e on s.sid = e.sid\n-- group by e.cid\norder by S.name;\n\nselect count(e.sid) as students,\n\t   e.cid,\n       e.grade\nfrom Enrolled as e\n-- group by e.cid,e.grade\norder by e.cid;"
+    }
+  ]
+}

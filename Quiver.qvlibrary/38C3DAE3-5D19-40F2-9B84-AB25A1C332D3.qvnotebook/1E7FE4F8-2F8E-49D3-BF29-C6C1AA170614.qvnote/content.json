@@ -1,0 +1,10 @@
+{
+  "title": "29 August // Lecture 3",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Vectors\n\n$u = u' + v \\iff u' = u - v$"
+    }
+  ]
+}

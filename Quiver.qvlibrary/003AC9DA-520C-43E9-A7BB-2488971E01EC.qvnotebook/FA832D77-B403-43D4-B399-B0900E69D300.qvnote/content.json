@@ -1,0 +1,10 @@
+{
+  "title": "28 August // Lecture 3",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Asymptotic notation & Xendo\n\n$\\Theta, O, \\Omega, o, \\omega$ are sets of functions given by $\\theta'(f(n))$ for some $f(n)$ with $\\theta' \\in \\{ \\Theta, O, \\Omega, o, \\omega \\}$\n\n$\\Theta$ is a tight bound;\n$O$ is an upper bound;\n$\\Omega$ is a lower bound.\n\n$o$ is a strict upper bound ($f \\in o \\implies f \\not\\in O$)\n$\\omega$ is a strict lower bound ($f \\in \\omega \\implies f \\not\\in \\Omega$)\n\ncf. Worksheets"
+    }
+  ]
+}

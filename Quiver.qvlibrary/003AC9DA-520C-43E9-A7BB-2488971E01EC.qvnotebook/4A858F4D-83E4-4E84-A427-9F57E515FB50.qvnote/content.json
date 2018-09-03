@@ -1,0 +1,10 @@
+{
+  "title": "30 August // Lecture 4",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Big-O continued.\n\nLimit definitions!\n$\\lim_{n \\to \\infty} \\frac{f(n)}{g(n)} = \\infty \\iff f(n) \\in o(g(n))$\n$\\lim_{n \\to \\infty} \\frac{f(n)}{g(n)} \\lt \\infty \\iff f(n) \\in O(g(n))$\n$0 \\lt \\lim_{n \\to \\infty} \\frac{f(n)}{g(n)} \\lt \\infty \\iff f(n) \\in \\Theta(g(n))$\n$\\lim_{n \\to \\infty} \\frac{f(n)}{g(n)} \\gt 0 \\iff f(n) \\in \\Omega(g(n))$\n$\\lim_{n \\to \\infty} \\frac{f(n)}{g(n)} = 0 \\iff f(n) \\in \\omega(g(n))$\n\nTransitivity and reflexivity\nSymmetry and Complementarity\n\n$lim_{n \\to \\infty} \\frac{n^b}{a^n} = 0 \\implies n^b = o(a^n)$\n\nLog identities:\n$\\log_ba = \\frac{1}{\\log_ab}$\n$a^{\\log_bc} = c^{\\log_ba}$"
+    }
+  ]
+}
