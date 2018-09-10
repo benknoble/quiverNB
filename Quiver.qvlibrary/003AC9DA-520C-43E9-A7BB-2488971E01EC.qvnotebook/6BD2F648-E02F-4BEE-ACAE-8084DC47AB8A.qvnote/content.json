@@ -1,0 +1,10 @@
+{
+  "title": "4 September // Lecture 5",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Quicksort\n\nC.A.R. Hoare paper\n\nWorst-case: $\\Theta(n^2)$\nAverage-case: $\\Theta(n \\log n)$--best comparison-based runtime for sort\n\nDesign: divide-and-conquer paradigm\nDivide: Partition by choice of partition point $q$ : $A[p \\dots r] = A[p \\dots q-1] + A[q+1 \\dots r]$\nConquer: Sort by recursive calls to quicksort\nCombine: Done in place\n\nPartitioning:\nMaintain the following loop invariants\n$A[p \\dots i] \\le x$\n$A[i+1 \\dots j] \\gt x$\n$A[j+1 \\dots r]$ are unseen\n\nRecursively partitioning finishes the sort\n\nRuntime depends on good partitioning\nWorst-case (Unbalanced)\n    Gives one piece empty and the other of size $n-1$, which occurs when pivot $\\ge$ then everything or $\\lt$ everything"
+    }
+  ]
+}

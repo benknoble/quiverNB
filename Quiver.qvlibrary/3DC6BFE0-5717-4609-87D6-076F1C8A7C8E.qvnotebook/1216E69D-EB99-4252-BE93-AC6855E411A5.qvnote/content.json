@@ -1,0 +1,23 @@
+{
+  "title": "Homework 3",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "For Comp455\n11 September 2018\n\n1. Construct a DFA recognizing the following language: $\\{w: w$ has at least 2 $a$s and an odd number of $b$s $\\}$\n\nA drawing will follow, but the formal definition is the machine $M = (Q, \\Sigma, \\delta, q_0, F)$ where:\n- $Q$ is the set of states $\\{ 0AEB, 0AOB, 1AEB, 1AOB, 2^+AEB, 2^+AOB \\}$ which counts the number of $a$s and $b$s seen;\n- $\\Sigma = \\{a,b\\}$ is the alphabet;\n- $q_0 = 0AEB$ is the initial state;\n- $F = \\{2^+AEB\\}$ contains the only accepting state; and\n- $\\delta$ is the function tabulated below:"
+    },
+    {
+      "type": "markdown",
+      "data": "| $\\delta$ | $0AEB$ | $0AOB$ | $1AEB$ | $1AOB$ | $2^+AEB$ | $2^+AOB$ |\n| - | - | - | - | - | - | - |\n| a | $1AEB$ | $1AOB$ | $2^+AEB$ | $2^+AOB$ | $2^+AEB$ | $2^+AOB$ |\n| b | $0AOB$ | $0AEB$ | $1AOB$ | $1AEB$ | $2^+AOB$ | $2^+AEB$ |"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "2. Problem 2.2.9(a), p. 75\nThe original NFA is $(Q, \\Sigma, \\Delta, q_0, F)$ given by:\n- $Q = \\{ q_i : 0 \\le i \\in \\mathbb{N} \\le 4 \\}$\n- $\\Sigma = \\{a,b\\}$\n- $q_0 = q_0 \\in Q$\n- $F = \\{q_3,q_4\\}$\n- $\\Delta = \\{\n(q_0,a,q_0),\n(q_0,b,q_0),\n(q_0,\\epsilon,q_1),\n(q_0,b,q_2),\n(q_1,b,q_2),\n(q_1,b,q_4),\n(q_2,a,q_3),\n(q_3,\\epsilon,q_4),\n(q_4,a,q_3)\n\\}$\n\nSo we construct a new DFA $M' = (Q', \\Sigma, \\delta, q_0', F')$ with\n- $Q' \\subseteq 2^Q = \\{\n\\{q_0, q_1\\},\n\\{q_0, q_1, q_2, q_4\\},\n\\{q_0, q_1, q_3\\}\n\\}$\n- $q_0' = \\{ q_0, q_1 \\}$\n- $F' = \\{\n\\{q_0, q_1, q_2, q_4\\},\n\\{q_0, q_1, q_3\\}\n\\}$\n\n\n\n\n\n\n\nI tabluate $\\delta$ below."
+    },
+    {
+      "type": "markdown",
+      "data": "| $\\delta$ | $\\{q_0, q_1\\}$ | $\\{q_0, q_1, q_2, q_4\\}$ | $\\{q_0, q_1, q_3\\}$ |\n| - | - | - | - |\n| a | $\\{q_0, q_1\\}$ | $\\{q_0, q_1, q_3\\}$ | $\\{q_0, q_1, q_3\\}$ |\n| b | $\\{q_0, q_1, q_2, q_4\\}$ | $\\{q_0, q_1, q_2, q_4\\}$ | $\\{q_0, q_1, q_2,  q_4\\}$ |"
+    }
+  ]
+}

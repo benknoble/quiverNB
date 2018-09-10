@@ -1,0 +1,10 @@
+{
+  "title": "6 September // Lecture 6",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Selection problem: $O(n \\log n)$ is easy\n$\\Theta(n)$ is possible (but crazy--median of medians)."
+    }
+  ]
+}

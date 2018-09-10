@@ -1,0 +1,10 @@
+{
+  "title": "6 September // Lecture 6",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Challenge review\nNFA/DFA conversions (can be explosive)\nRemoving $\\epsilon$ arrows"
+    }
+  ]
+}
