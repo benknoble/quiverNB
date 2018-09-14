@@ -1,0 +1,45 @@
+{
+  "title": "Predicting Projectile Motion",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "D. Ben Knoble\nPID: 730083304\n\nPartners:\n\nExperiment performed: 5th September 2018\nPreliminary Report Submitted: 17th September 2018\n\n## Theoretical Background"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "We investigated the application of 2D kinematics models to projectile motion.\n\nWe began with the following model: a particle is launched at a constant initial speed $v_0$ at angle $\\theta$ above the horizontal, from an initial height $h$ above the ground.\nWe sought to predict the range $R$ and time of flight $T$ for the particle.\n\nFrom application of trigonometric principles and the definition of $x_f$ given by kinematics: $$v_0 = v_0\\cos\\theta\\bar{i} + v_0\\sin\\theta\\bar{j}$$ and $$x_f = x_0 + v_{0x}t + \\frac{a_x}{2}t^2$$\nSince range is simply the horizontal distance traveled, we can define $$R = x_f - x_0 = T \\cdot v_0 \\cos\\theta$$ if we take the particle's initial position to be $x_0 = 0$.\n\nNoting that $R$ depends on $T$, we can derive $T$ from the second dimension $y$. We let $y_0 = 0$ and $y_f = h$. Kinematics tells us that $$y_f - y_0 = h = v_{0y}T + \\frac{a_y}{2}T^2$$\nSolving the resultant quadratic equation for $T$ and substitutng for $v_{0y}$ gives $$T = \\frac{v_0\\sin\\theta + \\sqrt{v^2_0\\sin^2\\theta + 2gh}}{g}$$\n\nThis predicts a dependence between $T$ and $v_0, \\theta, h$, and thus a dependence between $R$ and these quanitites as well. If we can accurately measure these quantities, we expect the theoretical model to give an accurate $(T,R)$ to compare against experimental results."
+    },
+    {
+      "type": "markdown",
+      "data": "## Experimental Methods"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "A ball is placed inside a projectile launcher and launched repeatedly at the same angle from the same height.\nThe launch angle is set to $\\theta = 70^{\\circ} \\pm 1^{\\circ}$ using a plum-ball and angle ticks on the launcher.\nThe initial height is measured from the landing plate to the lip of the launcher by meter stick at $107.5 \\pm 0.5\\mathrm{cm}$.\n\nOnce the launch plate is position, a smart timer measures the time from launch to striking the plate with uncertainty $0.002\\mathrm{s}$.\nThe meter stick measures the range with precision $.002\\mathrm{m}$.\n\nOur theory suggests that $(T,R)$ depends on the height $h$, angle $\\theta$, and initial velocity $v_0$. Further, $R \\propto T \\cdot v_0 \\propto v_0^2$ and $v_0$ is rather difficult to measure. We approximate the instantaneous $v_0$ by an average $\\frac{\\Delta x}{\\Delta t}$. We take several measurements and use statistical methods to obtain a reasonable $v_0$, which we then use to predict $(T,R)$.\n\nA photogate and timer at the end of the launcher is used to measure time $\\Delta t$ taken to travel a very short distance $\\Delta x$ at the beginning of the launch--we perform these measurements at the horizontal angle 0 degrees in order to minimize the effects of gravity. The uncertainty of the time measurements is taken to be $0.001\\mathrm{s}$ based on the instruments.\nDistance between photogates is measured with a meter stick with an uncertainty of $0.2\\mathrm{cm} = 0.002\\mathrm{m}$ due to the width of the photogates. We measure $\\Delta x = 10.0\\mathrm{cm} \\pm 0.2\\mathrm{cm}$.\n\nWith our measured data in hand, we predict $(T,R)$ from the equations above (using $g=981\\mathrm{\\frac{cm}{s^2}}$) and compare against the measured values."
+    },
+    {
+      "type": "markdown",
+      "data": "## Analysis"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Data for the time measured by the photogates used to compute intial velocity is show in Table I. Raw data uncertainties come from instrument precision as described above. Mean time is given by\n$$\\bar{\\Delta t} = \\frac{\\sum\\limits^n {\\Delta t}_i}{n}$$\nand uncertainty by standard deviation\n$$\\sigma_{\\Delta t} = \\sqrt{\\frac{\\sum\\limits^n {({\\Delta t}_i - \\bar{\\Delta t})^2}}{n-1}}$$"
+    },
+    {
+      "type": "markdown",
+      "data": "_Table I_\n| Trial | $\\Delta t$ (s) | Uncertainty (s) |\n| - | - | - |\n| 1 | 0.020 | $\\pm$ 0.001 |\n| 2 | 0.021 | $\\pm$ 0.001 |\n| 3 | 0.020 | $\\pm$ 0.001 |\n| 4 | 0.020 | $\\pm$ 0.001 |\n| 5 | 0.021 | $\\pm$ 0.001 |\n| 6 | 0.021 | $\\pm$ 0.001 |"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "That is,\n$$\\bar{\\Delta t} = \\frac{0.020 + 0.021 + 0.020 + 0.020 + 0.021 + 0.021}{6}\\mathrm{s} = 0.0205\\mathrm{s}$$\n$$\\sigma_{\\Delta t} = \\sqrt{\\frac{\\sum\\limits^6 {({\\Delta t}_i - 0.0205)^2}}{5}}\\mathrm{s} = 0.0005\\mathrm{s}$$\nSo $\\Delta t = 0.0205 \\pm 0.0005 \\mathrm{s}$.\n\nThen, we calculate the initial velocity using the average value\n$$\\bar{v_0} = \\frac{\\Delta x}{\\bar{\\Delta t}} = \\frac{10.0 \\mathrm{cm}}{0.0205 \\mathrm{s}} = 487 \\mathrm{\\frac{cm}{s}}$$\n\nUsing an upper-lower bound for the uncertainty provides\n$$\\min(v_0) = 467 \\mathrm{\\frac{cm}{s}}, \\max(v_0) = 510.\\mathrm{\\frac{cm}{s}}$$\n\nThus a good (conservative) uncertainty bound would $\\pm 23 \\mathrm{\\frac{cm}{s}}$, which we round to one significant figure due to a small data set, and we report\n$$v_0 = 480 \\pm 20 \\mathrm{\\frac{cm}{s}}$$\n\nNow we also have\n$$\\theta = (70 \\pm 1)^\\circ$$\n$$h = 107.5 \\pm 0.5 \\mathrm{cm}$$\n\nUsing the equations derived for $(T,R)$, we calculate predicted values using the averages and upper-lower bound for uncertainty.\nNote that since $\\sin\\theta$ is monotonically increasing from $0 \\le \\theta \\le 90^\\circ$, its minimum occurs at $(70-1)^\\circ = 69^\\circ$, and its maximum at $(70+1)^\\circ = 71^\\circ$. Since $\\cos\\theta$ is monotonically decreasing in the same interval, it is the opposite. The rest of the values used are in polynomial relationships, and so take maximum value at maximum value of parameters (idem. for minimum)."
+    },
+    {
+      "type": "markdown",
+      "data": "| $T_{theoretical}$ (s) | uncertainty |\n| - | - |\n| 1.1 | $\\pm$ 0.5 |\n\n| $R_{theoretical}$ (cm) | uncertainty |\n| - | - |\n| 180 | $\\pm$ 20 |\nHere the uncertainty has been rounded to one significant figure and the result adjusted appropriately, similar to the computation of $v_0$.\n\nWe were given the experimental values\n\n| $T_{experimental}$ (s) | uncertainty |\n| - | - |\n| 1.163 | $\\pm$ 0.002 |\n\n| $R_{experimental}$ (cm) | uncertainty |\n| - | - |\n| 200 | $\\pm$ 0.2 |\n\nPlotting with error bars shows us\n\n![time.png](quiver-image-url/C0CA48AA0FB269B53A9EDD516E9F10A9.png =486x292)\n![range.png](quiver-image-url/1D030542E940E2C7929D62FABE4171CF.png =485x291)\n\nNote that in both charts, the experimental error bars are too small to see. Also note in the time chart that, for linguistic reasons, the decimal-separator on the vertical axis is a comma (`','`).\n\nClearly, our time-of-flight prediction agrees with the experimental value, confirming the results of our theory. Namely, the equation of $T$ above is accurate, giving $T = 1.1 \\pm 0.5 \\mathrm{s}$.\n\nIn the range plot, the theoretical value agrees with the measured value only at the edge of the uncertainty, suggesting perhaps inconclusive results for the range prediction of $R = 180 \\pm 20 \\mathrm{cm}$."
+    }
+  ]
+}

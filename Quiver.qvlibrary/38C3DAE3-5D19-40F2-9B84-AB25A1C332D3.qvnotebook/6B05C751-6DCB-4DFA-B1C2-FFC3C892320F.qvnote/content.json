@@ -1,0 +1,10 @@
+{
+  "title": "10 September // Lecture 7",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Circular motion\n\nUniform\n$$\\omega = \\frac{d\\theta}{dt} = \\frac{v_T}{r}$$\n$$T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi r}{v}$$\n$$a = \\frac{v^2}{r} = \\omega^2r$$\n$$\\bar{s} = r\\cos(\\omega t)\\bar{i} + r\\sin(\\omega t)\\bar{j}, \\mid \\bar{s} \\mid = r$$\n$$\\bar{v} = r\\omega(-\\sin(\\omega t)\\bar{i} + \\cos(\\omega t)\\bar{j}), \\mid \\bar{v} \\mid = \\omega r$$\n$$\\bar{a} = -r\\omega^2(\\cos(\\omega t)\\bar{i} + \\sin(\\omega t)\\bar{j}), \\mid \\bar{a} \\mid = \\omega^2r = \\frac{v^2}{r}$$\nThus acceleration must be in towards the center\n\nNon-uniform\n$$\\alpha = \\frac{d\\omega}{dt}$$\nWith non-uniform, there is a non-zero tangential acceleration $a_T$ and the net acceleration is the vector sum of the centripetal acceleration $a_r$ and $a_T$.\n$$a_T = r\\alpha$$"
+    }
+  ]
+}
