@@ -1,0 +1,32 @@
+{
+  "title": "Projectile Range & Time of Flight",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "D. Ben Knoble\nPID: 730083304\n\nPartners:\n\nExperiment performed: 5th September 2018\nPreliminary Report Submitted: 19th September 2018\n\n## Theoretical Background"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "We investigated the application of 2D kinematics models to projectile motion. We began with the following model: a particle is launched at a constant initial speed $v_0$ at angle $\\theta$ above the horizontal, from an initial height $h$ above the ground.\n\n(a) Since range is simply the horizontal distance traveled, we can define $$R \\equiv x_f - x_0 = T \\cdot v_0 \\cos\\theta$$\nTime-of-flight is derived from the vertical kinematics equations: $$T = \\frac{v_0\\sin\\theta + \\sqrt{v^2_0\\sin^2\\theta + 2gh}}{g}$$\n\nFinally, letting $h=0$ gives\n$$T = \\frac{2v_0\\sin\\theta}{g}$$\n$$R = \\frac{2v_0^2\\sin\\theta\\cos\\theta}{g} = \\frac{v_0^2\\sin(2\\theta)}{g}$$"
+    },
+    {
+      "type": "markdown",
+      "data": "## Experimental Methods\n\nFrom the lab description:\n\nA projectile is launched at ground level and lands on the ground again downrange. The distance (range) from the launch point to the landing point is perfectly flat and horizontal. Identical projectiles are launched repeatedly at the same angle $\\theta$ but with different initial speeds $v_0$, and their rangers $R$ and times-of-flight $T$ are measured. The goal is to use the data to empirically find the launch angle of the projectile and its uncertainty.\n\n## Analysis\n\nData for the projectile speeds, range, and time is given in Table I below. The uncertainties are as follows:\n\n- Speeds: $\\pm 2 \\mathrm{\\frac{m}{s}}$\n- Ranges: $\\pm 5 \\mathrm{m}$\n- Times of flight: $\\pm 0.1 \\mathrm{s}$"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "The uncertainty of $v_0T$ is determined via quadrature, where $\\delta(v_0T) = (v_0T) \\sqrt{\\left(\\frac{\\delta v_0}{v_0}\\right)^2 + \\left(\\frac{\\delta T}{T}\\right)^2}$ and rounded to two significant figures (since rounding to one gives a $10\\%$ difference).\n\nAs an example, $55\\mathrm{\\frac{m}{s}} \\cdot 5.6\\mathrm{s} = 308\\mathrm{m}$\n$308\\mathrm{m} \\cdot \\sqrt{\\left(\\frac{2}{55}\\right)^2 + \\left(\\frac{0.1}{5.6}\\right)^2} = 12.47757989\\mathrm{m} \\approx 12\\mathrm{m}$\n\n(b) We now plot $R$ v. $v_0T$ since $R \\propto v_0T$ as show above. In fact, the proportionality constant $k$ would be $\\cos\\theta$, so the slope of the graph $m$ should give $\\cos\\theta$, from which we can compute $\\theta$. See Plot I."
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "We determine uncertainty with the standard formula $\\frac{\\sigma_m}{m} = \\sqrt{\\frac{R^{-2} - 1}{n-2}} = \\sqrt{\\frac{\\frac{1}{0.98322} - 1}{5-2}} = 0.075424076$, so $\\sigma_m = 0.058182132 \\approx 0.06$. Now we have a slope $m = \\cos\\theta \\approx 0.77 \\pm 0.06$. To calculate $\\theta$, we take $\\arccos{m} = \\arccos\\cos\\theta = \\theta$.\n\n$\\arccos(0.77) = 39.6461^{\\circ}$\nUncertainty via upper-lower bounds gives $\\delta\\theta = 5.8^{\\circ} \\approx 6^\\circ$\n\nSo we report $\\theta = (40 \\pm 6)^\\circ$"
+    },
+    {
+      "type": "markdown",
+      "data": "_Table I_\n\n| Projectile | $v_0$ (m/s) | $R$ (m) | $T$ (s) | $v_0 T$ (m) | Uncertainty of $v_0 T$ (m) |\n| - | - | - | - | - | - |\n| 1 | 55 | 240 | 5.6 | 308 | 12 |\n| 2 | 32 | 86 | 3.5 | 112 | 8 |\n| 3 | 45 | 195 | 5.1 | 230 | 11 |\n| 4 | 36 | 117 | 3.7 | 133 | 8 |\n| 5 | 40 | 155 | 4.9 | 196 | 11 |\n\n_Plot I_\n![r_v_t.png](quiver-image-url/F08A444BC03F85CD91E060E6D3185932.png =553x298)\nNote that in the plot, the vertical error bars are too small to see. Also note in the time chart that, for linguistic reasons, the decimal-separator is a comma (`','`)."
+    }
+  ]
+}
