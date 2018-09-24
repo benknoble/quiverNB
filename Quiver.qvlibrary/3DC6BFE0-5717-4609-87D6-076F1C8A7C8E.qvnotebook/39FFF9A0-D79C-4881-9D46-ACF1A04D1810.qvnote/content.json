@@ -1,0 +1,10 @@
+{
+  "title": "18 September // Lecture 8",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "FA $M \\to$ regular expressions $R$ such that $\\mathcal{L}(M) = \\mathcal{L}(R)$\n\nNon-regular languages\n\n- The pumping lemma (if regular, can be pumped beyond a pumping length $p$)\n    Corollary: if you can find an umpumpable string for all lengths, it isn't regular\n- Proof by contradiction: assume regular, use properties of regular languages to arrive at a contradiction\n- $L \\in \\mathcal{L}(a^*) \\implies L^*$ is regular"
+    }
+  ]
+}
