@@ -1,0 +1,18 @@
+{
+  "title": "27 September // Lecture 10",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Lower Bounds\n\n- Simpler model; no loops in code, just branches--large decision tree\n- Prove a lower bound on the number of decision trees/number of comparisons\n- Any other program using the same comparison/decision idea can be reduced to this model and therefore the \"best\" or \"minimum\" runtime is bounded by the number of decision trees"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Comparison based sorts: $\\Omega(n\\lg{n})$\nNon-comparison based sorts??\n\n- Counting for integer keys $\\in [0 \\dots k]$\n- Radix based on fixed \"digits\"\n- Bucket for random keys"
+    },
+    {
+      "type": "markdown",
+      "data": "Heap Sort\n\ncf. Implementation in Java from 410 & PPT"
+    }
+  ]
+}

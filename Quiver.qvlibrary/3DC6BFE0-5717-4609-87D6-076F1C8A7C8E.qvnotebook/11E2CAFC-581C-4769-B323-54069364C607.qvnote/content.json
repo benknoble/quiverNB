@@ -1,0 +1,10 @@
+{
+  "title": "Homework 4",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "For Comp455\n2 October 2018\n\n1. Problem 2.3.7(b)\n\nRegular expression: $\\left( (a(a \\cup b)) \\cup (b(a \\cup b)) \\right)^* = \\left( (a \\cup b) (a \\cup b) \\right)^*$\n\nI arrived here by successive elimination of states, as diagrammed below. Then I noted that the FA accepts the empty string or an $a$ or a $b$ followed by an $a$ or a $b$, possibly repeated. This is also seen by a reverse application of the distributive law above; that is, $(a \\cup b)c \\equiv (ac) \\cup (bc)$\n\n2. Show that $L = \\{ wbbw : w \\in \\{ a,b \\}^* \\}$ is not regular.\n\nAssume that $L$ is regular.\nTake $L' = L \\cap \\mathcal{L}(a^*bba^*)$. As stated in the problem, $L' = \\{ a^nbba^n : n \\in \\mathbb{N} \\}$. Now, $L'$ is the intersection of two regular languages, and is thus regular.\n\nBut now let us take a string $w \\in L$ of length $N$ or longer for any $N$, say, $a^Nbba^N$. Let us further divide this string into $xyz$, where $|xy| \\le N, y \\neq \\epsilon$. Because of the construction of $w$, $y$ must consist only of $a$s, and $z = bba^N$.\nThen, $xy^2z \\not\\in L'$, since $xyyz$ is some number of $a$s greater than $N$, followed by $bba^N$. That is, $xy^2z = a^Mbba^N, M \\gt N$, which is clearly not in $L'$.\n\nSo $L'$ is not regular, a contradiction! Thus, $L$ is not regular.\n\n3. Find a regular language $L$ and a non-regular language $S \\subset L$\n\nConsider $L = \\mathcal{L}(a^*b^*) \\subset \\Sigma^* = \\{a,b\\}^*$. Evidently, $L$ is regular, as it described by a regular expression.\nBut now consider $S = \\{ a^nb^n : n \\in \\mathbb{N} \\}$, the canonical non-regular language. It is easily noted that $S \\subset L$, since $S$ is simply all elements of $L$ where the number of $a$s and $b$s are equal (assuming $0 \\in \\mathbb{N}$)."
+    }
+  ]
+}

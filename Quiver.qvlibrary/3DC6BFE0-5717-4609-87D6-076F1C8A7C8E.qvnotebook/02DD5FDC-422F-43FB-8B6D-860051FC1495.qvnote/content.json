@@ -1,0 +1,10 @@
+{
+  "title": "Challenge 4",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Problem: Show that $L = \\{ a^n : n \\text{ is composite} \\}$ is not regular.\n\nProof:\n\nRegular languages are closed under several properties, including complementation. Thus, $\\text{reg}(L) \\iff \\text{reg}(\\overline{L})$.\n\nBut now let us examine $\\overline{L}$: this would be the set of strings $\\{ a^n : n \\text{ is prime} \\}$, already shown in this class to be non-regular.\n\nThus $L$ cannot be regular. $\\diamond$"
+    }
+  ]
+}

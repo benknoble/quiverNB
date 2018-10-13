@@ -1,0 +1,10 @@
+{
+  "title": "Challenge 3",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Problem: Suppose languages $L$ and $M$ are recognized by DFA with $m$ and $n$ states, respectively. Give as small a bound as possible on the number of states required to recognize $L \\cap M$.\n\nTrivially, $mn$ is an upper bound if we follow the standard construction of cartesian products.\n\nHowever, Han & Salomaa [1] show that the tightest achievable bound is in fact $mn - 3(m+n) + 12$ states, being both necessary sufficient. They do so by regarding the set of states as an $m \\times n$ matrix, and eliminating the states which are identical and thus unnecessary.\n\n1: State Complexity of Union and Intersection of Finite Languages, § 4 and 5\nYo-Sub Han and Kai Salomaa\nhttps://pdfs.semanticscholar.org/dbf6/bc1e61e59f3afd7b4cd61ae560b4a75f38fa.pdf"
+    }
+  ]
+}

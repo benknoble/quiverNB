@@ -1,0 +1,36 @@
+{
+  "title": "Discussion of Angle of Slip of Brass Blocks on Varied Surfaces",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "D. Ben Knoble\nPID: 730083304\n\nPartners:\n\nExperiment performed: 26th September 2018\nPreliminary Report Submitted: 3rd October 2018\n\n## Experiment"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "A plane on a hinge has 4 different surfaces (rubber, wood, sand paper, and teflon), upon which rest identical brass blocks. The plane is rotated about the hinge, and the angle from horizontal $\\theta$ is measured for each block-surface pair at the moment the block slips. We call $\\theta$ the \"angle of slip.\" From this, we are interested in identifying the coefficient of friction $\\mu$ for each surface."
+    },
+    {
+      "type": "markdown",
+      "data": "### Theory"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "From free-body and force analysis, we conclude that $\\frac{\\tan\\theta}{\\mu} = 1$, or alternatively $$\\tan\\theta = \\mu$$"
+    },
+    {
+      "type": "markdown",
+      "data": "## Discussion"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Results are summarized in Table I.\n\nOf note, we have chosen $\\sigma_\\theta = 2^\\circ$ to estimate the uncertainty in measurements of the angle $\\theta$. Unfortunately, we lack any significant description of how such measurements were made, so it is difficult to estimate the precise uncertainty. $2^\\circ$ is thus chosen to account for the thickness of the plane and the difficulty in identifying the precise moment of slip. The thickness of the plane makes determining the precise angle difficult because there is a lack of clarity about where to measure the angle. Choosing always the top or the bottom may lead to a systemic error. This can be ameliorated with a thinner plane, but then we run the risk of it flexing, further derforming the measurements. Mis-identifying the moment of slip clearly leads to mis-identified angles, and so is perhaps the strongest source of uncertainty. This might be improved with the aid of technology that can accurately detect the movement of the blocks and capture an angle at the precise moment the block moves.\n\nWe note that uncertainty in $\\theta$ is the dominating factor of $\\sigma_\\mu = \\sigma_\\theta \\sec^2\\theta$ (determined by quadrature); in particular, $\\sec^2\\theta \\in [0,1]$, so large $\\sigma_\\theta$ $(\\gt 1)$ contribute to large $\\sigma_\\mu$.\n\nIt is difficult to suggest further improvements without stronger knowledge of the measurements made, but it is clear that reducing uncertainty in $\\theta$ would reduce uncertainty in $\\mu$, allowing us to better estimate the friction coefficients.\n\nRelative uncertainties in $\\mu$ are $\\approx 10\\%$; this too would be reduced by improved measurment of $\\theta$.\n\nOther observations about the experiment include difficulty of repeatability: we are told rubber, wood, sand-paper, and teflon surfaces are used, but there is a significant amount of variability among surfaces in these categories. Which ones were used? The brass block is also non-descript; it too affects the friction coefficient. \n\nLastly, we note that no predictions are given, and so our results are incomparable. Deciding their accuracy is in particular impossible. Detailed knowledge of the surfaces might allow us to research expected values, but, alas, we have no such information. However, it does seem reasonable that rubber has the highest friction coefficient, and teflon the lowest, as they are known for their \"stickiness\" (high friction) and \"smoothness\" (low friction) respectively.\n\nIf anything, then, we may conclude that surfaces with higher friction coefficients will have higher angles of slip, as shown by the theoretical examination and supported by our data. The relationship is not theoretically linear but nonetheless strictly increasing."
+    },
+    {
+      "type": "markdown",
+      "data": "_Table I_\n| | Rubber | Wood | Sand Paper | Teflon |\n| - | -: | -: | -: | -: |\n| $\\theta$ | $50^\\circ$ | $22^\\circ$ | $25^\\circ$ | $18^\\circ$ |\n| $\\sigma_\\theta$ | $\\pm2^\\circ$ | $\\pm2^\\circ$ | $\\pm2^\\circ$ | $\\pm2^\\circ$ |\n| $\\tan\\theta = \\mu$ | $1.2$ | $0.40$ | $0.47$ | $0.32$ |\n| $\\sigma_\\mu = \\sigma_\\theta\\sec^2\\theta$ | $\\pm0.08$ | $\\pm0.04$ | $\\pm0.04$ | $\\pm0.04$ |"
+    }
+  ]
+}
