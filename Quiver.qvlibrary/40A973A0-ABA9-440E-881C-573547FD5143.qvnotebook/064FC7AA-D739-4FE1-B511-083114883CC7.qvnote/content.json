@@ -1,0 +1,9 @@
+{
+  "title": "Nuage Accomplishments",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "D. Ben Knoble\n\n- Designed and implemened a build tool to cache and reuse artifacts with information from `git` and `make`\n- Identified and realized an opportunity for parallel builds, reducing overall build time by $\\approx \\frac{1}{3}$\n- Assisted in converting to Docker-based builds\n- Researched & designed a proposal to cluster lab PXE server to reduce single point of failures"
+    }
+  ]
+}
