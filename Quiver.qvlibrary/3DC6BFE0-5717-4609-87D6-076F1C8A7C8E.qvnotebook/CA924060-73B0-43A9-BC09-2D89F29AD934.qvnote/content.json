@@ -1,0 +1,23 @@
+{
+  "title": "Homework 8",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "4.1.1 (a)\nGiven the string $aabbab$ and the machine $M$ from the problem:\n\\[\n(q_0, \\triangleright \\underline{a}abbab) \\vdash \\\\\n(q_1, \\triangleright \\underline{b}abbab) \\vdash \\\\\n(q_0, \\triangleright b\\underline{a}bbab) \\vdash \\\\\n(q_1, \\triangleright b\\underline{b}bbab) \\vdash \\\\\n(q_0, \\triangleright bb\\underline{b}bab) \\vdash \\\\\n(q_1, \\triangleright bb\\underline{a}bab) \\vdash \\\\\n(q_0, \\triangleright bba\\underline{b}ab) \\vdash \\\\\n(q_1, \\triangleright bba\\underline{a}ab) \\vdash \\\\\n(q_0, \\triangleright bbaa\\underline{a}b) \\vdash \\\\\n(q_1, \\triangleright bbaa\\underline{b}b) \\vdash \\\\\n(q_0, \\triangleright bbaab\\underline{b}) \\vdash \\\\\n(q_1, \\triangleright bbaab\\underline{a}) \\vdash \\\\\n(q_0, \\triangleright bbaaba\\underline{\\sqcup}) \\vdash \\\\\n(h, \\triangleright bbaaba\\underline{\\sqcup}) \\vdash \\\\\n\\]\n(b) In an arbitrary position on a string in state $q_0$, the machine either:\n- inverts $a$s and $b$s, overwriting one in place of the other, and goes to state $q_1$; or,\n- halts, on reading a blank\n\n4.2.2 (c)\nGiven the language $L = \\{ a \\}$, we build $M = (K, \\Sigma, \\delta, q_0, \\{y,n\\})$ where \n\\begin{align}\nK &= \\{ q_0, q_1, y, n \\} \\\\\n\\Sigma &= \\{ a, \\bar{a}, \\sqcup, \\triangleright \\}\n\\end{align} and $\\delta$ is tabulated below:"
+    },
+    {
+      "type": "markdown",
+      "data": "| $q, \\sigma$ | $\\delta(q,\\sigma)$ |\n| - | - |\n| $q_0, a$ | $(q_1,\\rightarrow)$ |\n| $q_0, \\bar{a}$ | $(n,\\rightarrow)$ |\n| $q_0, \\sqcup$ | $(n,\\rightarrow)$ |\n| $q_0, \\triangleright$ | $(q_0,\\rightarrow)$ |\n| $q_1, \\sqcup$ | $(y,\\sqcup)$ |\n| $q_1, a$ | $(n,\\rightarrow)$ |\n| $q_1, \\bar{a}$ | $(n,\\rightarrow)$ |\n| $q_1, \\triangleright$ | $(q_1,\\rightarrow)$ |"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$\\bar{a}$ means any input symbols that aren't $a$, blanks, or the left-end marker. $M$ starts in the configuration $(q_0, \\triangleright\\underline{w})$, and halts in $y \\iff w \\in L$, $n \\iff w \\not\\in L$. Here, as in the text, we assume $w$ contains no blanks.\n\n(d) The language is now $L = \\{ a \\}^*$. We again construct $M = (K, \\Sigma, \\delta, q_0, \\{y,n\\})$:\n\\begin{align}\nK &= \\{ q_0, y, n \\} \\\\\n\\Sigma &= \\{ a, \\bar{a}, \\sqcup, \\triangleright \\}\n\\end{align}"
+    },
+    {
+      "type": "markdown",
+      "data": "| $q, \\sigma$ | $\\delta(q,\\sigma)$ |\n| - | - |\n| $q_0, a$ | $(q_0,\\rightarrow)$ |\n| $q_0, \\sqcup$ | $(y,\\sqcup)$ |\n| $q_0, \\bar{a}$ | $(n,\\rightarrow)$ |\n| $q_0, \\triangleright$ | $(q_0,\\triangleright)$ |"
+    }
+  ]
+}
