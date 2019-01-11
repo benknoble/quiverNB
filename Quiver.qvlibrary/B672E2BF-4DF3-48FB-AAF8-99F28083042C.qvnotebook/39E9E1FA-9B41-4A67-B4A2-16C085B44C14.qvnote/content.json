@@ -1,0 +1,10 @@
+{
+  "title": "10 January // Lecture 1",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "Equally Likely Outcomes\n\nOutcome $\\omega \\in \\Omega$\nEvent $A \\subseteq \\Omega$ (e.g. $\\emptyset, \\omega, \\Omega$)\n\nAssumptions (1.1):\n$\\mid \\Omega \\mid = n \\in \\mathbb{N}$\n$\\forall \\omega \\in \\Omega, \\Pr(\\omega) = \\frac{1}{n}$\n\nConclusion:\nThen $\\Pr(A \\subseteq \\Omega) = \\frac{\\mid A \\mid}{\\mid \\Omega \\mid}$: this requires good counting!\n\nDilemma: When to add, when to multiply\n\nComplementation: $A^C = \\bar{A}$\n$\\mid A^C \\mid = \\mid \\Omega \\mid - \\mid A \\mid \\iff \\mid A \\mid = \\mid \\Omega \\mid - \\mid A^C \\mid$\n\nBirthday Problem\n365 possible birthdays, 50 students\nLet $A = \\{$ at least 2 students have the same birthday $\\}$. Find $\\Pr(A)$\nCalculate $\\Pr(A^C)$; then $\\Pr(A) = 1 - \\Pr(A^C)$\nNow note that our outcome space $\\Omega$ has cardinality $365^{50}$ (since each event can be represented as a 50-tuple). We are interested in a subset of this, $A^C$; namely, the tuples having no repeated elements. This subset is counted by $\\binom{365}{50}50!$ (Why? First we choose the 50 slots, then we must arrange them in some order).\nSo, $\\Pr(A) = 1 - \\frac{\\binom{365}{50}50!}{365^{50}}$"
+    }
+  ]
+}
