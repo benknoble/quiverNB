@@ -1,0 +1,9 @@
+{
+  "title": "15 January // Lecture 2",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# The Quest for the Holy Grammar\n\nTranslation:\n- syntax (structure)\n- semantics (meaning)\n\nIf we can precisely describe the source & target languages, the compiler will be a meaning-preserving translator\n\n## CFGs (in EBNF)\n\n- Can have recursion (careful: may lead to ambiguity! order matters, &c.)\n- Ensure a unique syntax tree for each sentence\n- Can be efficiently parsed (linear in length of sentence? e.g., LL(1), &c.) (not all CFGs fit this)\n\n### Views:\n\n- Derivation\n    - produces a \"syntax\" tree with _all_ the nodes\n- AST\n    - elides unneccessary components to describe the structure, using its own grammar: comes with evaluation rules\n    - easier to translate/evaluate, but much harder to parse directly\n\nMini-Triangle example: surprising precedences (draw the trees)!\n\n## Contextual constraints\n\nSome programs are malformed, not by the grammar (they may be valid strings in its language), but by context (remember the grammar is hopefully CF...):\n- undeclared identifiers;\n- type-check errors;\n- &c.\n\nOften, we catch this in an AST\n\n## Summary\n\n1. Syntax\n    1. CFG\n    2. Lexical Rules (comments, whitespace)\n2. Contextual Constraints\n    1. Identifier declaration/reference\n    2. Types\n3. Semantics\n    1. Operations definition of evaluation\n\nCharacter stream => tokens => AST => decorated AST (=> decorated AST)* => machine instructions"
+    }
+  ]
+}

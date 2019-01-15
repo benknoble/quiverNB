@@ -1,0 +1,10 @@
+{
+  "title": "15 January // Lecture 3",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "MORE RULES\n$\\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)}$ ($=0$ if $\\Pr(B) = 0$)\n$\\Pr(A \\cap B) = \\Pr(A) \\Pr(B \\mid A) = \\Pr(B) \\Pr(A \\mid B)$\n$\\Pr(B) = \\sum{ \\Pr(A_i) \\Pr(B \\mid A_i) }$"
+    }
+  ]
+}
