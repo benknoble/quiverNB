@@ -1,0 +1,39 @@
+{
+  "title": "12 February // Homework 4",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "3.1\n1)\na)\n| $X$ | 0 | 1 | 2 | 3 |\n| - | - | - | - | - |\n| $\\Pr(X)$ | $\\frac{1}{8}$ | $\\frac{3}{8}$ | $\\frac{3}{8}$ | $\\frac{1}{8}$ |\nb)\n| $\\mid X - 1 \\mid$ | 0 | 1 | 2 |\n| - | - | - | - |\n| $\\Pr(\\mid X - 1 \\mid)$ | $\\frac{3}{8}$ | $\\frac{1}{2}$ | $\\frac{1}{8}$ |"
+    },
+    {
+      "type": "markdown",
+      "data": "    4)\na)\n| $X_1/X_2$ | 1 | 2 | 3 | 4 | 5 | 6 | |\n| - | - | - | - | - | - | - | - |\n| 1 | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{6}$ |\n| 2 | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{6}$ |\n| 3 | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{6}$ |\n| 4 | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{6}$ |\n| 5 | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{6}$ |\n| 6 | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{36}$ | $\\frac{1}{6}$ |\n| | $\\frac{1}{6}$ | $\\frac{1}{6}$ | $\\frac{1}{6}$ | $\\frac{1}{6}$ | $\\frac{1}{6}$ | $\\frac{1}{6}$ | $1$ |"
+    },
+    {
+      "type": "markdown",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "b)\n| $Y_1/Y_2$ | 1 | 2 | 3 | 4 | 5 | 6 | |\n| - | - | - | - | - | - | - | - |\n| 1 | $\\frac{1}{36}$ | 0 | 0 | 0 | 0 | 0 | $\\frac{1}{36}$ |\n| 2 | $\\frac{1}{18}$ | $\\frac{1}{36}$ | 0 | 0 | 0 | 0 | $\\frac{3}{36}$ |\n| 3 | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{36}$ | 0 | 0 | 0 | $\\frac{5}{36}$ |\n| 4 | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{36}$ | 0 | 0 | $\\frac{7}{36}$ |\n| 5 | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{36}$ | 0 | $\\frac{9}{36}$ |\n| 6 | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{18}$ | $\\frac{1}{36}$ | $\\frac{11}{36}$ |\n| | $\\frac{11}{36}$ | $\\frac{9}{36}$ | $\\frac{7}{36}$ | $\\frac{5}{36}$ | $\\frac{3}{36}$ | $\\frac{1}{36}$ | $1$ |"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "7)\n(a) $N=2 \\equiv (A \\cap B) \\cup (A \\cap C) \\cup (B \\cap C)$\n(b) $\\Pr(N=2) = ab + ac + bc - 2abc$"
+    },
+    {
+      "type": "markdown",
+      "data": "    9)\n| $X$ | 2 | 3 | 4 | 5 | |\n| - | - | - | - | - | - |\n| $\\Pr(X)$ | $\\frac{1}{7}$ | $\\frac{2}{7}$ | $\\frac{12}{35}$ | $\\frac{8}{35}$ | $1$ | "
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "14)\n(a) $\\forall 4 \\le g \\le 7 : \\Pr(A\\text{ wins in }g\\text{ games}) = p \\cdot \\binom{g-1}{3}p^3q^{g-1-3}$\n(b) $\\Pr(A\\text{ wins the WS}) = \\sum_{4 \\le g \\le 7}{\\Pr(A\\text{ wins in }g\\text{ games})} = \\sum_{4 \\le g \\le 7}{p \\cdot \\binom{g-1}{3}p^3q^{g-1-3}}$\n(e) $\\Pr(G = g) = \\Pr(A\\text{ wins in }g\\text{ games}) + \\Pr(B\\text{ wins in }g\\text{ games}) \\\\\n= p\\cdot\\binom{g-1}{3}p^3q^{g-1-3} + q\\cdot\\binom{g-1}{3}q^3p^{g-1-3}$\nClearly, the probabilities are independent of $p$ iff $p=\\frac{1}{2}$.\n15)\n(a) $\\Pr(X=Y) = \\frac{1}{n}$\n\n(b) $\\Pr(X \\lt Y) = \\frac{1}{n}\\sum_{1 \\le i \\le n}{(n-i})$\n\n(c) $\\Pr(X \\gt Y) = \\frac{1}{n}\\sum_{1 \\le i \\le n}{(n-i)}$\n(d) Let $U = \\max(X,Y)$. Then $\\Pr(U = k) = \\Pr(U \\le k) - \\Pr(U \\le k-1)$. $\\Pr(U \\le k) = \\left(\\frac{k}{n}\\right)^2$, so $\\Pr(U = k) = \\frac{k^2-(k-1)^2}{n^2}$\n(e) Similarly, let $V = \\min(X,Y)$. Then $\\Pr(V = k) = \\Pr(V \\ge k) - \\Pr(V \\ge k+1)$.\n$\\Pr(V \\ge k) = \\left(\\frac{n-k+1}{n}\\right)^2$, so $\\Pr(V = k) = \\frac{(n-k+1)^2 - (n-k)^2}{n^2}$.\n18)\n(a) By symmetry, we are just as likely to roll more than 11 as we are to roll less than 10. The probability is then 1/2.\n24)\n(a) Let $E$ denote the event that an even number was drawn with probability $e$. Similarly, let $O$ be the event that an odd number was drawn with probability $o=1-e$. Note that $\\Pr(X + Y\\text{ is even}) = \\Pr(EE + OO) = 2e^2 - 2e + 1 \\ge \\frac{1}{2}$, since when $\\frac{\\text{d}P}{\\text{d}x} = 4e-2 = 0$, then $e = \\frac{1}{2}$, and thus the minimum is $\\Pr(EE + OO \\mid e = \\frac{1}{2}) = \\frac{1}{2}$"
+    }
+  ]
+}
